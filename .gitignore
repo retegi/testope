@@ -1,0 +1,53 @@
+# 🚀 Archivos de Python
+*.pyc
+*.pyo
+__pycache__/
+
+# 🚀 Archivos de entorno virtual
+env/
+venv/
+ENV/
+.venv/
+
+# 🚀 Configuración de IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+
+# 🚀 Configuración y logs del sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# 🚀 Archivos de dependencias
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# 🚀 Base de datos SQLite (si usas SQLite)
+db.sqlite3
+*.sqlite3
+
+# 🚀 Archivos de migraciones de Django (opcional)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# 🚀 Archivos de credenciales (⚠️ IMPORTANTE ⚠️)
+.env
+*.env
+config/settings_local.py
+
+# 🚀 Archivos de caché y estáticos
+staticfiles/
+media/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# 🚀 Archivos de Docker y despliegue (si usas Docker)
+docker-compose.override.yml
+.dockerignore
+
+# 🚀 Archivos de compilación
+*.egg-info/
+*.so
