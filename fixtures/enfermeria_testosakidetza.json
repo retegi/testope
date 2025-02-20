@@ -1,0 +1,1402 @@
+[
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 1,
+            "question": "La Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datosde Carácter Personal, se aplica a:",
+            "aAnswer": "Todos los datos de carácter personal registrados en soporte físico, quelos haga susceptibles de tratamiento y a toda modalidad de uso posterior por los sectores público o privado.",
+            "bAnswer": "A los ficheros mantenidos por personas físicas en el ejercicio de actividades exclusivamente personales o domésticas.",
+            "cAnswer": "A los ficheros sometidos a la normativa sobre protección de materiasclasificadas.",
+            "dAnswer": "A los ficheros establecidos para la investigación del terrorismo y deformas graves de delincuencia organizada. No obstante, en estos supuestos, el/la responsable del fichero comunicará previamente la existencia del mismo, sus características generales y su finalidad a laAgencia de Protección de Datos.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 2,
+            "question": "Los centros sanitarios tienen la obligación de conservar la documentación clínica como mínimo:",
+            "aAnswer": "Cinco años contados desde la fecha del inicio de cada proceso asistencial.",
+            "bAnswer": "Cinco años contados desde la fecha del alta de cada proceso asistencial.",
+            "cAnswer": "Seis años contados desde la fecha del alta de cada proceso asistencial.",
+            "dAnswer": "Seis años contados desde la fecha del inicio de cada proceso asistencial.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 3,
+            "question": "El tratamiento de datos se define por la Ley Orgánica 15/1999, de 13de diciembre, de Protección de Datos de Carácter Personal como:",
+            "aAnswer": "Cualquier información concerniente a personas físicas identificadas oidentificables.",
+            "bAnswer": "Todo conjunto organizado de datos de carácter personal, cualquieraque fuere la forma o modalidad de su creación, almacenamiento, organización y acceso.",
+            "cAnswer": "Operaciones y procedimientos técnicos de carácter automatizado o no,que permitan la recogida, grabación, conservación, elaboración, modificación, bloqueo y cancelación, así como las cesiones de datos que resulten de comunicaciones, consultas, interconexiones y transferencias.",
+            "dAnswer": "La persona física o jurídica, de naturaleza pública o privada, u órganoadministrativo, que decida sobre la finalidad, contenido y uso del tratamiento.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 4,
+            "question": "El derecho de oposición en cuanto a los datos de carácter personal:",
+            "aAnswer": "Se configura como el derecho que tienen los/as interesados/as, endeterminadas circunstancias, a oponerse al/a la médico/a asignado/a.",
+            "bAnswer": "Es preciso que existan motivos personales y subjetivos, aunque noestén fundados.",
+            "cAnswer": "Es preciso que los motivos sean fundados y legítimos.",
+            "dAnswer": "Si se ejerce será previa petición y de forma onerosa, corriendo losgastos de cuenta del/de la paciente.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 5,
+            "question": "El derecho de acceso a los datos de carácter personal sólo podrá serejercitado a intervalos no inferiores:",
+            "aAnswer": "A seis meses, salvo que el/la interesado/a acredite un interés legítimoal efecto, en cuyo caso podrá ejercitarlo antes.",
+            "bAnswer": "A cuatro meses, salvo que el/la interesado/a acredite un interés legítimo al efecto, en cuyo caso podrá ejercitarlo antes.",
+            "cAnswer": "A diez meses, salvo que el/la interesado/a acredite un interés legítimoal efecto, en cuyo caso podrá ejercitarlo antes.",
+            "dAnswer": "A doce meses, salvo que el/la interesado/a acredite un interés legítimoal efecto, en cuyo caso podrá ejercitarlo antes.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 6,
+            "question": "El/la responsable del tratamiento de los datos de carácter personal tiene la obligación de hacer efectivo el derecho de rectificación o cancelacióndel/de la interesado/a en el plazo de:",
+            "aAnswer": "5 días.",
+            "bAnswer": "10 días.",
+            "cAnswer": "15 días.",
+            "dAnswer": "20 días.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 7,
+            "question": "El/la Director/a de la Agencia Española de Protección de Datos seránombrado/a por un período de:",
+            "aAnswer": "Cinco años.",
+            "bAnswer": "Cuatro años.",
+            "cAnswer": "Tres años.",
+            "dAnswer": "Dos años.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 8,
+            "question": "El/la Director de la Agencia Española de Protección de Datos estará asesorado/a por un Consejo Consultivo compuesto, entre otros/as, por:",
+            "aAnswer": "Dos Diputados/as, propuestos/as por el Congreso de los Diputados/as.",
+            "bAnswer": "Un miembro de la Real Academia de Bellas Artes, propuesto/a por lamisma.",
+            "cAnswer": "Tres expertos/as en la materia, propuestos/as por el Consejo Superiorde Universidades.",
+            "dAnswer": "Un/a representante de los/as usuarios/as y consumidores/as.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 9,
+            "question": "Las infracciones graves en materia de protección de datos de carácterpersonal se sancionan con multa de:",
+            "aAnswer": "601,01 a 60.101,21 euros.",
+            "bAnswer": "60.101,21 a 300.506,05 euros.",
+            "cAnswer": "300.506,05 a 601.012,10 euros.",
+            "dAnswer": "601.012,10 a 901.518,16 euros.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 10,
+            "question": "Las personas a las que se soliciten datos personales deberán ser previamente informadas de una serie de circunstancias, de modo:",
+            "aAnswer": "Expreso.",
+            "bAnswer": "Presunto.",
+            "cAnswer": "Tácito.",
+            "dAnswer": "Todas las respuestas anteriores son correctas.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 11,
+            "question": "La regulación del régimen de Autonomía del Paciente se encuentra en:",
+            "aAnswer": "El Decreto 179/1989, de 14 de noviembre.",
+            "bAnswer": "La Ley 14/2002, de 14 de diciembre.",
+            "cAnswer": "La Ley 41/2002, de 14 de noviembre.",
+            "dAnswer": "La Ley 20/2001, de 14 de noviembre.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 12,
+            "question": "De acuerdo con la norma que regula la Autonomía del Paciente, el certificado médico se define como:",
+            "aAnswer": "La declaración escrita de un/a médico/a que dé fe del estado de saludde una persona en un determinado momento.",
+            "bAnswer": "El soporte de cualquier tipo o clase que contiene un conjunto de datose informaciones de carácter asistencial.",
+            "cAnswer": "Todo dato, cualquiera que sea su forma, clase o tipo, que permite adquirir o ampliar conocimientos sobre el estado físico y la salud de unapersona, o la forma de preservarla, cuidarla, mejorarla o recuperarla.",
+            "dAnswer": "El conjunto de documentos que contienen los datos, valoraciones einformaciones de cualquier índole sobre la situación y la evoluciónclínica de un/a paciente a lo largo del proceso asistencial.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 13,
+            "question": "De acuerdo con la norma que regula la Autonomía del Paciente, el informe de alta médica se define como:",
+            "aAnswer": "El documento emitido por el/la médico/a responsable en un centrosanitario al finalizar cada proceso asistencial de un/a paciente, queespecifica los datos de éste/a, un resumen de su historial clínico, laactividad asistencial prestada, el diagnóstico y las recomendacionesterapéuticas.",
+            "bAnswer": "El soporte de cualquier tipo o clase que contiene un conjunto de datose informaciones de carácter asistencial.",
+            "cAnswer": "Todo dato, cualquiera que sea su forma, clase o tipo, que permite adquirir o ampliar conocimientos sobre el estado físico y la salud de unapersona, o la forma de preservarla, cuidarla, mejorarla o recuperarla.",
+            "dAnswer": "El conjunto de documentos que contienen los datos, valoraciones einformaciones de cualquier índole sobre la situación y la evoluciónclínica de un/a paciente a lo largo del proceso asistencial.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 14,
+            "question": "De acuerdo con la norma que regula la Autonomía del Paciente, el servicio sanitario se define como:",
+            "aAnswer": "El conjunto organizado de profesionales, instalaciones y medios técnicos que realiza actividades y presta servicios para cuidar la salud delos/as pacientes y usuarios/as.",
+            "bAnswer": "Toda actuación realizada con fines preventivos, diagnósticos, terapéuticos, rehabilitadores o de investigación.",
+            "cAnswer": "La unidad asistencial con organización propia, dotada de los recursos técnicos y del personal cualificado para llevar a cabo actividades sanitarias.",
+            "dAnswer": "Ninguna de las respuestas es correcta.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 15,
+            "question": "De acuerdo con la norma que regula la Autonomía del Paciente, elconsentimiento informado se define como:",
+            "aAnswer": "La declaración escrita de un/a médico/a que dé fe del estado de saludde una persona en un determinado momento.",
+            "bAnswer": "La conformidad libre, voluntaria y consciente de un/a paciente, manifestada en el pleno uso de sus facultades después de recibir la informaciónadecuada, para que tenga lugar una actuación que afecta a su salud.",
+            "cAnswer": "El documento emitido por el/la médico/a responsable en un centrosanitario al finalizar cada proceso asistencial de un/a paciente, queespecifica los datos de éste/a, un resumen de su historial clínico, laactividad asistencial prestada, el diagnóstico y las recomendacionesterapéuticas.",
+            "dAnswer": "La persona que utiliza los servicios sanitarios de educación y promoción de la salud, de prevención de enfermedades y de informaciónsanitaria.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 16,
+            "question": "Según el artículo 4.1 de la Ley básica reguladora de la Autonomía delPaciente, como regla general, la información ha de ser proporcionada al/ala paciente:",
+            "aAnswer": "De forma escrita.",
+            "bAnswer": "Se ha de dejar constancia de la información facilitada en la historiaclínica y de su contenido.",
+            "cAnswer": "Dicha constancia ha de comprender sólo la finalidad y naturaleza dela intervención.",
+            "dAnswer": "No es preciso detallar los riesgos de la intervención.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 17,
+            "question": "Las voluntades anticipadas en el ámbito de la sanidad se regulan por:",
+            "aAnswer": "La Ley 41/2002, de 17 de marzo.",
+            "bAnswer": "La LO 15/1999, de 13 de diciembre.",
+            "cAnswer": "La Ley 7/2002, de 12 de diciembre.",
+            "dAnswer": "Decreto 50/2003, de 15 de marzo.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 18,
+            "question": "De acuerdo con lo dispuesto en la norma que regula las voluntades anticipadas en el ámbito de la sanidad, no es cierto que:",
+            "aAnswer": "Cualquier persona mayor de edad que no haya sido judicialmente incapacitada para ello y actúe libremente tiene derecho a manifestarsus objetivos vitales y valores personales, así como las instruccionessobre su tratamiento, que el/la médico/a o el equipo sanitario que leatiendan respetarán cuando se encuentre en una situación en la queno le sea posible expresar su voluntad.",
+            "bAnswer": "La expresión de los objetivos vitales y valores personales tiene comofin ayudar a interpretar las instrucciones y servir de orientación para latoma de decisiones clínicas llegado el momento.",
+            "cAnswer": "Podrá designar uno o varios representantes para que sean los interlocutores válidos del/de la médico/a o del equipo sanitario y facultarlespara interpretar sus valores e instrucciones.",
+            "dAnswer": "Sin salvedades, cualquier persona mayor de edad y que no haya sidoincapacitada legalmente para ello puede ser representante.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 19,
+            "question": "La norma que regula la cohesión y calidad del Sistema Nacional deSalud es:",
+            "aAnswer": "La Ley 41/2002, de 14 de noviembre.",
+            "bAnswer": "La LO 15/1999, de 13 de diciembre.",
+            "cAnswer": "La Ley 16/2003, de 28 de mayo.",
+            "dAnswer": "La Ley 44/2003, de 1 de noviembre.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 20,
+            "question": "El Capítulo VII de la norma que regula la cohesión y calidad del Sistema Nacional de Salud trata:",
+            "aAnswer": "Del Sistema de Información Sanitaria.",
+            "bAnswer": "De la Calidad.",
+            "cAnswer": "De los Planes Integrales de Salud.",
+            "dAnswer": "De la Salud Pública.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 21,
+            "question": "No es un principio de la norma que regula la cohesión y calidad delSistema Nacional de Salud:",
+            "aAnswer": "La prestación de los servicios a los/as usuarios/as del Sistema Nacional de Salud en condiciones de igualdad efectiva y calidad.",
+            "bAnswer": "El aseguramiento universal y público por parte del Estado.",
+            "cAnswer": "La coordinación y la cooperación de las Administraciones públicassanitarias para la superación de las desigualdades en salud.",
+            "dAnswer": "La gratuidad de todos los productos farmacéuticos a recetar por elSistema Nacional de Salud.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 22,
+            "question": "De acuerdo con la norma que regula la cohesión y calidad del SistemaNacional de Salud, no son prestaciones de atención sanitaria del SistemaNacional de Salud la:",
+            "aAnswer": "Prestación de salud pública.",
+            "bAnswer": "Prestación de atención primaria.",
+            "cAnswer": "Prestación de atención especializada.",
+            "dAnswer": "Investigación con células madre.\r\n",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 23,
+            "question": "Las prestaciones de salud pública se ejercerán con un carácter de:",
+            "aAnswer": "Unidad.",
+            "bAnswer": "Universalidad.",
+            "cAnswer": "Igualdad.",
+            "dAnswer": "Integralidad.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 24,
+            "question": "La atención primaria comprenderá:",
+            "aAnswer": "La hospitalización en régimen de internamiento.",
+            "bAnswer": "Las actividades de información y vigilancia en la protección de la salud.",
+            "cAnswer": "La hospitalización a domicilio.",
+            "dAnswer": "La asistencia especializada en hospital de día, médico y quirúrgico.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 25,
+            "question": "La atención sanitaria especializada no comprenderá:",
+            "aAnswer": "El apoyo a la atención primaria en el alta hospitalaria precoz y, en sucaso, la hospitalización a domicilio.",
+            "bAnswer": "La indicación o prescripción, y la realización, en su caso, de procedimientos diagnósticos y terapéuticos.",
+            "cAnswer": "La asistencia sanitaria a demanda, programada y urgente tanto en laconsulta como en el domicilio del/de la enfermo/a.",
+            "dAnswer": "La rehabilitación en pacientes con déficit funcional recuperable.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 26,
+            "question": "No se consideran prestaciones complementarias:",
+            "aAnswer": "Las prestaciones ortoprotésicas: prótesis quirúrgicas fijas, prótesis externas, vehículos para inválidos (cuya invalidez así lo aconseje), ortesis yprótesis especiales (entre las que se incluyen audífonos y moldes de audífonos para niños hasta los 16 años afectados de hipoacusia bilateral).",
+            "bAnswer": "El transporte sanitario en situaciones de urgencia que impliquen daño irreparable para la salud o cuando exista imposibilidad física del interesado.",
+            "cAnswer": "Los tratamientos dietoterápicos complejos.",
+            "dAnswer": "Las de atención de urgencia.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 27,
+            "question": "El uso tutelado de determinadas técnicas, tecnologías o procedimientos en el Sistema Nacional de Salud se financiará con cargo al:",
+            "aAnswer": "Fondo Social Europeo.",
+            "bAnswer": "Fondo de Cohesión previsto en el artículo 4 de la Ley 21/2001.",
+            "cAnswer": "Fondo de Suficiencia.",
+            "dAnswer": "Fondo de Compensación Interterritorial.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 28,
+            "question": "La Ley de Cohesión y Calidad del Sistema Nacional de Salud estableceuna serie de garantías, como la:",
+            "aAnswer": "Garantía de cantidad.",
+            "bAnswer": "Garantía de motricidad.",
+            "cAnswer": "Garantía de información.",
+            "dAnswer": "Ninguna de las respuestas anteriores es correcta.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 29,
+            "question": "La fijación del precio de medicamentos y productos sanitarios ladetermina:",
+            "aAnswer": "Directamente el/la titular del Ministerio de Sanidad y Consumo.",
+            "bAnswer": "La Dirección General de Farmacia y Productos Sanitarios.",
+            "cAnswer": "La Agencia Española de Medicamentos y Productos Sanitarios.",
+            "dAnswer": "La Dirección General de Farmacia y Medicamentos.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 30,
+            "question": "Señale la opción incorrecta. Según la Ley de Progtección de datos, losdatos de carácter personal objeto del tratamiento sólo podrán ser comunicados a un tercero para el cumplimiento de fines directamente relacionados con las funciones legítimas del cedente y del cesionario con el previoconsentimiento del interesado. Pero no será preciso este consentimiento:",
+            "aAnswer": "Cuando el tratamiento responda a la libre y legítima aceptación deuna relación jurídica cuyo desarrollo, cumplimiento y control impliquenecesariamente la conexión de dicho tratamiento con ficheros de terceros. En este caso la comunicación sólo será legítima en cuanto selimite a la finalidad que la justifique.",
+            "bAnswer": "Cuando la comunicación que deba efectuarse tenga por destinatario alDefensor del Pueblo, el Ministerio Fiscal o los Jueces o Tribunales o elTribunal de Cuentas, en el ejercicio de las funciones que tiene atribuidas. Tampoco será preciso el consentimiento cuando la comunicacióntenga como destinatario a instituciones autonómicas con funcionesanálogas al Defensor del Pueblo o al Tribunal de Cuentas.",
+            "cAnswer": "Cuando la cesión se produzca entre Administraciones Públicas y tengapor objeto el tratamiento anterior de los datos con fines exclusivamente científicos.",
+            "dAnswer": "Cuando la cesión de datos de carácter personal relativos a la saludsea necesaria para solucionar una urgencia que requiera acceder a unfichero o para realizar los estudios epidemiológicos en los términosestablecidos en la legislación sobre sanidad estatal o autonómica.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 31,
+            "question": "De acuerdo con lo dispuesto en el artículo 59.2 de la norma que regulala cohesión y calidad del Sistema Nacional de Salud, la infraestructura parala mejora de la calidad del Sistema Nacional de Salud estará constituida:",
+            "aAnswer": "Por las normas de calidad y seguridad.",
+            "bAnswer": "Por las guías de práctica de emergencia.",
+            "cAnswer": "Por el registro de buenos indicadores.",
+            "dAnswer": "Ninguna de las respuestas anteriores es correcta.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 32,
+            "question": "La Ordenación de las Profesiones Sanitarias se regula por:",
+            "aAnswer": "La Ley 41/2002, de 21 de noviembre.",
+            "bAnswer": "La Ley 44/2003, de 21 de noviembre.",
+            "cAnswer": "La Ley 16/2003, de 21 de diciembre.",
+            "dAnswer": "La Ley 19/1989, de 19 de noviembre.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 33,
+            "question": "El Título II de la norma que regula la Ordenación de las ProfesionesSanitarias trata:",
+            "aAnswer": "Del desarrollo profesional y su reconocimiento.",
+            "bAnswer": "De la formación de los/as profesionales sanitarios/as.",
+            "cAnswer": "Del ejercicio privado de las profesiones sanitarias.",
+            "dAnswer": "De la participación de los/as profesionales.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 34,
+            "question": "Formará parte de la Comisión Nacional de Especialidad:",
+            "aAnswer": "Un/a vocal propuesto/a por el Ministerio de Educación, Cultura y Deporte, el/la cual deberá ostentar la condición de tutor/a de la formación en la correspondiente especialidad.",
+            "bAnswer": "Un/a vocal de entre los/as especialistas de reconocido prestigio que proponga la Comisión de Recursos Humanos del Sistema Nacional de Salud.",
+            "cAnswer": "Dos vocales en representación de las entidades y sociedades científicas de ámbito estatal legalmente constituidas en el ámbito de laespecialidad.",
+            "dAnswer": "Un/a vocal en representación de los/as especialistas en formación, elegido/a por éstos/as en la forma que se determine reglamentariamente.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 35,
+            "question": "Se exigirá nivel de licenciado/a para:",
+            "aAnswer": "Fisioterapia.",
+            "bAnswer": "Terapia Ocupacional.",
+            "cAnswer": "Odontología.",
+            "dAnswer": "Podología.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 36,
+            "question": "Los Centros sanitarios han de revisar que los/as profesionales sanitarios/as de su plantilla cumplen los requisitos necesarios para ejercer laprofesión cada:",
+            "aAnswer": "Dos años como mínimo.",
+            "bAnswer": "Tres años como mínimo.",
+            "cAnswer": "Cuatro años como mínimo.",
+            "dAnswer": "Cinco años como mínimo.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 37,
+            "question": "Los títulos oficiales y las directrices generales de los correspondientesplanes de estudios se establecen por Real Decreto del Gobierno. Cuando eltítulo corresponda a una profesión sanitaria es preceptivo el informe previoal proyecto de Real Decreto de:",
+            "aAnswer": "La Comisión Nacional de Especialidad.",
+            "bAnswer": "El Consejo Nacional de Especialidades en Ciencias de la Salud.",
+            "cAnswer": "La Comisión de Recursos Humanos del Sistema Nacional de Salud.",
+            "dAnswer": "La Comisión Consultiva Profesional.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 38,
+            "question": "El título de especialista en Ciencias de la Salud lo expide:",
+            "aAnswer": "El Ministerio de Sanidad y Consumo.",
+            "bAnswer": "El Centro de Salud al que va a ser destinado/a el/la interesado/a.",
+            "cAnswer": "El Ministerio de Educación, Cultura y Deporte.",
+            "dAnswer": "El/la Presidente/a del Gobierno.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 39,
+            "question": "Los/as especialistas en Ciencias de la Salud pueden obtener un nuevotítulo de especialista con, al menos:",
+            "aAnswer": "Tres años de ejercicio profesional como tales.",
+            "bAnswer": "Cuatro años de ejercicio profesional como tales.",
+            "cAnswer": "Cinco años de ejercicio profesional como tales.",
+            "dAnswer": "Seis años de ejercicio profesional como tales.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 40,
+            "question": "El Consejo Nacional de Especialidades en Ciencias de la Salud (CNECS)está compuesto por:",
+            "aAnswer": "Los/as Presidentes/as de las Comisiones Nacionales de cada Especialidad en Ciencias de la Salud.",
+            "bAnswer": "Un/a especialista por cada uno de los títulos universitarios que tenganacceso directo a alguna especialidad en Ciencias de la Salud, elegido/a,para un período de dos años.",
+            "cAnswer": "Tres representantes del Ministerio de Educación, Cultura y Deporte.",
+            "dAnswer": "Un/a representante del Ministerio de Sanidad y Consumo.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 41,
+            "question": "\"Uno de los objetivos fundamentales en materia de Educación Sanitaria es ayudar a la gente a alcanzar la salud mediante sus propios actos yesfuerzos\". Esta declaración fue realizada por:",
+            "aAnswer": "Hildegarde Peplau.",
+            "bAnswer": "El Comité de Expertos de la OMS en Educación Sanitaria (1953).",
+            "cAnswer": "La NANDA.",
+            "dAnswer": "Winslow.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 42,
+            "question": "Según el Comité de Expertos de Educación Sanitaria de la OMS, no esun objetivo de la educación sanitaria:",
+            "aAnswer": "Hacer de la salud patrimonio de la colectividad.",
+            "bAnswer": "Capacitar a las personas para el desempeño de las actividades relacionadas con la salud y en la toma de decisiones sobre lo concerniente ala salud de su comunidad.",
+            "cAnswer": "Fomentar el establecimiento y utilización adecuada de los servicios desalud.",
+            "dAnswer": "Reorganizar un calendario vacunal mundial para niños/as en edad escolar.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 43,
+            "question": "Las intervenciones en Educación para la Salud se deben llevar a caboen (indique la incorrecta):",
+            "aAnswer": "La familia.",
+            "bAnswer": "La escuela.",
+            "cAnswer": "Los servicios de salud.",
+            "dAnswer": "Exclusivamente en los centros sanitarios.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 44,
+            "question": "En el caso de la Educación Sanitaria a pacientes, esta se articula através de:",
+            "aAnswer": "Programas de Salud determinados (embarazo, niño sano, etc.).",
+            "bAnswer": "Consultas en centros de medicina especializada.",
+            "cAnswer": "Realización de test de cribaje.",
+            "dAnswer": "Realización de encuestas de satisfacción en hospitales.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 45,
+            "question": "En el contexto de las intervenciones en Educación Sanitaria, las acciones dirigidas a informar y motivar a los/as ciudadanos/as para que abandonen los comportamientos nocivos para la salud pertenecen a la:",
+            "aAnswer": "Prevención primaria.",
+            "bAnswer": "Prevención secundaria.",
+            "cAnswer": "Prevención terciaria.",
+            "dAnswer": "Rehabilitación.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 46,
+            "question": "En el contexto de las intervenciones en Educación Sanitaria, las accionesdirigidas a conseguir que los/as ciudadanos/as se sometan a exámenes sistemáticos de salud para la detección precoz de posibles enfermedades, son:",
+            "aAnswer": "Prevención primaria.",
+            "bAnswer": "Prevención secundaria.",
+            "cAnswer": "Prevención terciaria.",
+            "dAnswer": "Rehabilitación.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 47,
+            "question": "En el contexto de las intervenciones en Educación Sanitaria, las acciones destinadas a informar sobre los primeros signos y síntomas que caracterizan la aparición de enfermedad, orientando hacia los servicios a losque hay que dirigirse en estos casos, son:",
+            "aAnswer": "Prevención primaria.",
+            "bAnswer": "Prevención secundaria.",
+            "cAnswer": "Prevención terciaria.",
+            "dAnswer": "Rehabilitación.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 48,
+            "question": "Los medios utilizados en la Educación para la Salud se podrían definircomo el proceso o técnica mediante el/la cual, el mensaje llega a la población que lo recibe. Según las características de la relación entre la fuentedel mensaje y la población o individuo que lo/la recibe, se clasifican en:",
+            "aAnswer": "Bidireccionales o unidireccionales.",
+            "bAnswer": "Horizontales o transversales.",
+            "cAnswer": "Definidos o indefinidos.",
+            "dAnswer": "Técnicos o populares.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 49,
+            "question": "Los medios utilizados en Educación para la Salud, se podrían definircomo el proceso o técnica mediante el/la cual, el mensaje llega a la población que lo recibe. Según la relación de cercanía o distancia en el tiempo y/oespacio, entre el/la educador/a y el/la educando/a, se pueden clasificar en:",
+            "aAnswer": "Definitivos o indefinidos.",
+            "bAnswer": "Funcionales o específicos.",
+            "cAnswer": "Directos o indirectos.",
+            "dAnswer": "Parciales o totales.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 50,
+            "question": "¿Cual de los siguientes medios en Educación para la Salud es directo?",
+            "aAnswer": "Carteles.",
+            "bAnswer": "Dípticos.",
+            "cAnswer": "Charla.",
+            "dAnswer": "Televisión.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 51,
+            "question": "Las técnicas didácticas en Educación para la Salud pueden utilizarmedios directos o indirectos, ¿cual de los siguientes enunciados no secorresponde con una característica propia de los medios indirectos?",
+            "aAnswer": "Alcanzan a más población.",
+            "bAnswer": "No van dirigidos a un sector de la población sino que se dirigen a todospor igual.",
+            "cAnswer": "No sirven para cambiar las actitudes que se encuentren firmementearraigadas en la población.",
+            "dAnswer": "Incrementan los conocimientos de la población sobre un determinadotema.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 52,
+            "question": "¿Cómo se denomina al conjunto de personas que viven en un mismolugar y que están vinculadas por intereses comunes?",
+            "aAnswer": "Un individuo.",
+            "bAnswer": "Un equipo de trabajo.",
+            "cAnswer": "Una comunidad.",
+            "dAnswer": "Una institución.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 53,
+            "question": "¿Cómo se conocen las actividades de Educación para la Salud dirigidas a prevenir riesgos derivados del medio ambiente, de modo que se reduzcan los riesgos químicos y biológicos?",
+            "aAnswer": "Actividades de evitación de conductas insanas.",
+            "bAnswer": "Actividades de protección de la salud.",
+            "cAnswer": "Actividades de promoción de conductas saludables.",
+            "dAnswer": "Actividades de promoción de estilo de vida saludable.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 54,
+            "question": "Las reuniones de personas afectadas por una misma enfermedad,creadas e impulsadas por los/as propios/as afectados/as y que son un recurso movilizado en la comunidad para la mejora de las personas que padecen la misma enfermedad, se denominan:",
+            "aAnswer": "Reuniones de trabajo.",
+            "bAnswer": "Relaciones terapéuticas.",
+            "cAnswer": "Grupos de autoayuda.",
+            "dAnswer": "Charlas educativas.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 55,
+            "question": "La morfina es un fármaco muy usado en la clínica por sus excepcionales cualidades analgésicas, cardiovasculares y gastrointestinales, entreotras. ¿Cuál de los siguientes efectos no representa alguno de los efectosadversos propios de este fármaco?",
+            "aAnswer": "Diarrea.",
+            "bAnswer": "Náuseas y vómitos.",
+            "cAnswer": "Depresión respiratoria.",
+            "dAnswer": "Diaforesis.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 56,
+            "question": "La Educación para la Salud es una parte esencial de la estrategia depromoción de la salud que tiene como fundamento:",
+            "aAnswer": "Crear grupos de trabajo sobre vacunación infantil.",
+            "bAnswer": "Desarrollar cuidados medioambientales en empresas.",
+            "cAnswer": "Fomentar estilos de vida saludables.",
+            "dAnswer": "Paralizar actitudes salubres.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 57,
+            "question": "Cómo se denomina al modelo de Educación para la Salud que puede definirse como el modelo asistencial tradicional, en el que el/la sanitario/a, esencialmente el/la médico/a, se comporta como experto/a que ostenta toda la responsabilidad por “delegación” de los/as usuarios/as en el sistema sanitario:",
+            "aAnswer": "Modelo biomédico.",
+            "bAnswer": "Modelo primario.",
+            "cAnswer": "Modelo preventivo.",
+            "dAnswer": "Modelo comunitario.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 58,
+            "question": "La primera experiencia de aprendizaje sobre estilos de vida saludable,debe darse en:",
+            "aAnswer": "La escuela.",
+            "bAnswer": "Los servicios de salud.",
+            "cAnswer": "La familia.",
+            "dAnswer": "Los centros de trabajo.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 59,
+            "question": "La educación sanitaria debe darse exclusivamente en:",
+            "aAnswer": "Centros de atención primaria.",
+            "bAnswer": "Hospitales.",
+            "cAnswer": "Centros de rehabilitación.",
+            "dAnswer": "Puede darse en todos los niveles de atención al/a la paciente.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 60,
+            "question": "Las Instituciones Sanitarias contemplan en su cartera de servicios laEducación para la Salud ¿Cuál de los siguientes enunciados no es imprescindible para realizar un programa de salud?",
+            "aAnswer": "Analizar y conocer el contexto social, cultural, económico, educativodonde se quiere aplicar.",
+            "bAnswer": "Establecer prioridades respecto de cuáles son los problemas de saludfundamentales que es necesario abordar.",
+            "cAnswer": "Establecer un calendario de actuaciones.",
+            "dAnswer": "Ponerse en contacto con instituciones sanitarias superiores que denvalidez al grupo. ",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 61,
+            "question": "¿Quién tiene en el Estado Español, las competencias de la educaciónsanitaria en el ámbito de las empresas?",
+            "aAnswer": "Los Servicios de médicos/as de empresa y los Institutos de Seguridade Higiene en el Trabajo.",
+            "bAnswer": "Sindicatos profesionales.",
+            "cAnswer": "Los/as propios/as trabajadores/as de manera individual.",
+            "dAnswer": "Los ayuntamientos donde se instala la empresa.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 62,
+            "question": " ¿Cuál es el fin primordial de la Educación para la Salud comunitaria?",
+            "aAnswer": "Realizar actividades de lucha contra la contaminación.",
+            "bAnswer": "Organizar grupos de trabajo en temas medioambientales.",
+            "cAnswer": "Fomentar y proteger la salud de la población sana en general.",
+            "dAnswer": "Realizar actividades de rehabilitación y tratamiento de individuos enfermos.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 63,
+            "question": "Las acciones y programas de salud comunitarios se desarrollan básicamente a nivel de:",
+            "aAnswer": "Prevención primaria.",
+            "bAnswer": "Prevención secundaria.",
+            "cAnswer": "Prevención terciaria.",
+            "dAnswer": "Todos los niveles de prevención.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 64,
+            "question": "En relación con las técnicas didácticas de Educación para la Salud,cuál de los enunciados se ajusta a la siguiente definición: “aquellos enlos cuales se realiza un intercambio entre el/la docente y el/la discente,de tal forma que puede existir un intercambio de papeles (diálogos, discusión en grupos, charlas...)”:",
+            "aAnswer": "Métodos bidireccionales.",
+            "bAnswer": "Métodos unidireccionales.",
+            "cAnswer": "Medios indirectos.",
+            "dAnswer": "Medios tradicionales horizontales.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 65,
+            "question": "Aquellos métodos empleados en la Educación para la Salud que no permiten la posibilidad de discutir el mensaje entre el/la que lo recibe y el/laeducador/a, se denominan:",
+            "aAnswer": "Bidireccionales.",
+            "bAnswer": "Unidireccionales.",
+            "cAnswer": "Directos.",
+            "dAnswer": "Tradicionales horizontales.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 66,
+            "question": "¿En qué grupo de la clasificación de las técnicas didácticas de Educación para la Salud se pueden incluir la entrevista, la clase y la charla?",
+            "aAnswer": "Medios directos.",
+            "bAnswer": "Medios indirectos.",
+            "cAnswer": "Medios mixtos.",
+            "dAnswer": "Medios trasversales.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 67,
+            "question": "¿En qué grupo de la clasificación de las técnicas didácticas de Educaciónpara la Salud, se pueden incluir la televisión, la radio y el uso de folletos?",
+            "aAnswer": "Medios directos.",
+            "bAnswer": "Medios indirectos.",
+            "cAnswer": "Medios mixtos.",
+            "dAnswer": "Medios trasversales.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 68,
+            "question": "Con respecto a los métodos directos en Educación para la Salud, esincorrecto que:",
+            "aAnswer": "La OMS siempre ha dado preferencia a este tipo de medios frente a losmedios indirectos.",
+            "bAnswer": "Los medios directos hacen posible la aclaración de las dudas o problemas.",
+            "cAnswer": "Alcanzan a menos personas que los indirectos.",
+            "dAnswer": "Alcanzan a más personas que los indirectos.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 69,
+            "question": "Cuando en Educación para la Salud realizamos al mismo tiempo unaexplicación teórica con palabras y la acción que estamos explicando, estamos utilizando la técnica de:",
+            "aAnswer": "Panel.",
+            "bAnswer": "Mesa redonda.",
+            "cAnswer": "Seminario.",
+            "dAnswer": "Demostración.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 70,
+            "question": "La técnica Phillips 66, es una técnica de educación del tipo:",
+            "aAnswer": "Seminario.",
+            "bAnswer": "Mesa redonda.",
+            "cAnswer": "Psicodrama.",
+            "dAnswer": "Dinámica de grupo.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 71,
+            "question": "¿Cómo se denomina el proceso mediante el cual un medicamento estrasladado desde el sitio de administración hasta la sangre?",
+            "aAnswer": "Distribución.",
+            "bAnswer": "Absorción.",
+            "cAnswer": "Biotransformación.",
+            "dAnswer": "Eliminación.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 72,
+            "question": "¿Cómo se denomina el proceso mediante el cual ciertas reaccionesquímicas llevadas a cabo por el organismo convierten un fármaco en uncompuesto distinto al administrado originariamente?",
+            "aAnswer": "Absorción.",
+            "bAnswer": "Eliminación.",
+            "cAnswer": "Distribución.",
+            "dAnswer": "Biotransformación.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 73,
+            "question": "¿Cómo se denomina al mecanismo de transporte de fármacos que secaracteriza por ser el sistema más utilizado, moverse el soluto a favor delgradiente electroquímico (gradiente de concentración) y no necesitar detransportador?",
+            "aAnswer": "Transporte activo.",
+            "bAnswer": "Difusión pasiva.",
+            "cAnswer": "Difusión facilitada.",
+            "dAnswer": "Transporte especializado.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 74,
+            "question": "¿Cuál de los siguientes enunciados no es correcto, en relación con el mecanismo de transporte de fármacos conocido como “Difusión Facilitada”?",
+            "aAnswer": "Consume gran cantidad de energía.",
+            "bAnswer": "La velocidad de difusión depende de la capacidad de fijación a suportador.",
+            "cAnswer": "La fuerza responsable del movimiento a través de la membrana celulares el gradiente de concentración del soluto.",
+            "dAnswer": "La velocidad de difusión está limitada por la disponibilidad del portador (transportador).",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 75,
+            "question": "¿Cuál es la vía por la que mayoritariamente se eliminan (excretan) losfármacos?",
+            "aAnswer": "Biliarentérica.",
+            "bAnswer": "Saliva.",
+            "cAnswer": "Sudor.",
+            "dAnswer": "Renal.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 76,
+            "question": "En relación con la eliminación de fármacos por vía renal, ¿en quéinfluye que un determinado fármaco posea un aclaramiento renal alto?",
+            "aAnswer": "En nada.",
+            "bAnswer": "En que desaparecerá rápidamente del plasma.",
+            "cAnswer": "En que desaparecerá lentamente del plasma.",
+            "dAnswer": "En que su acción se prolongará mucho en el tiempo.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 77,
+            "question": "¿Cómo se denomina a los fármacos que interaccionan con un receptorsin provocar respuesta por sí mismos, pero impidiendo la combinación delreceptor con otro fármaco?",
+            "aAnswer": "Antagonistas.",
+            "bAnswer": "Agonistas.",
+            "cAnswer": "Agonistas competitivos.",
+            "dAnswer": "Agonistas no competitivos.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 78,
+            "question": "¿Cómo se denomina a los fármacos cuya interacción con un receptorconstituye el estímulo de una respuesta biológica?",
+            "aAnswer": "Antagonistas.",
+            "bAnswer": "Agonistas.",
+            "cAnswer": "Antagonistas competitivos.",
+            "dAnswer": "Antagonistas no competitivos.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 79,
+            "question": "Entre los factores que modifican los efectos de los fármacos se encuentra la edad; indicar en qué medida puede influir este parámetro en laacción de los medicamentos:",
+            "aAnswer": "Los ancianos son menos susceptibles a la acción de los medicamentos.",
+            "bAnswer": "Los medicamentos producen efectos contrarios dependiendo de laedad del sujeto.",
+            "cAnswer": "Los niños y los ancianos son más susceptibles a la acción de los medicamentos.",
+            "dAnswer": "La edad no influye en la acción de los medicamentos.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 80,
+            "question": "¿Cuáles son las “5 comprobaciones” que se aconseja realizar de formasistemática, antes de la administración de cualquier medicamento?",
+            "aAnswer": "Fármaco correcto, paciente correcto, dosis correcta, vía correcta, horacorrecta.",
+            "bAnswer": "Consentimiento correcto, fármaco correcto, paciente correcto, dosiscorrecta, hora correcta.",
+            "cAnswer": "Caducidad correcta, paciente correcto, vía correcta, dosis correcta,ámbito correcto.",
+            "dAnswer": "Consentimiento correcto, ámbito correcto, caducidad correcta, dosiscorrecta, hora correcta.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 81,
+            "question": "¿Cuál de las siguientes formas de administrar medicamentos no seconsidera incluida dentro de la vía tópica?",
+            "aAnswer": "Pomadas oculares.",
+            "bAnswer": "Gotas óticas.",
+            "cAnswer": "Supositorios.",
+            "dAnswer": "Gotas nasales.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 82,
+            "question": "¿Cuál de las siguientes vías de administración de medicamentos noestá incluida dentro de la vía parenteral?",
+            "aAnswer": "Vía subcutánea.",
+            "bAnswer": "Vía rectal.",
+            "cAnswer": "Vía intravenosa.",
+            "dAnswer": "Vía intramuscular.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 83,
+            "question": "La vía intramuscular es muy usada para la administración de fármacos, sobre todo en pacientes que no pueden deglutir. ¿Qué volumen máximo de medicamento se puede administrar por esta vía?",
+            "aAnswer": "Hasta 2 cc.",
+            "bAnswer": "Hasta 5 cc.",
+            "cAnswer": "Hasta 10 cc.",
+            "dAnswer": "Hasta 20 cc.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 84,
+            "question": "Cuidamos a un enfermo al que se le está administrando medicaciónintravenosa en perfusión continua mediante un sistema de microgoteo, ypara calcular el ritmo de perfusión necesitamos saber cuántas microgotases el equivalente a 1 mililitro. Indicarlo:",
+            "aAnswer": "20 microgotas.",
+            "bAnswer": "40 microgotas.",
+            "cAnswer": "60 microgotas.",
+            "dAnswer": "80 microgotas.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 85,
+            "question": "¿Cuál de los siguientes de los fármacos enunciados no se correspondecon un fármaco simpaticomimético?",
+            "aAnswer": "Adrenalina.",
+            "bAnswer": "Dopamina.",
+            "cAnswer": "Acetilcolina.",
+            "dAnswer": "Noradrenalina.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 86,
+            "question": "¿Cuál de los siguientes fármacos enunciados no se corresponde con unfármaco parasimpaticomimético?",
+            "aAnswer": "Betanecol.",
+            "bAnswer": "Acetilcolina.",
+            "cAnswer": "Pilocarpina.",
+            "dAnswer": "Dopamina.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 87,
+            "question": "¿Con qué otro nombre se conoce a los fármacos parasimpaticomiméticos?",
+            "aAnswer": "Agonistas colinérgicos.",
+            "bAnswer": "Antagonistas colinergicos.",
+            "cAnswer": "Adrenérgicos.",
+            "dAnswer": "Bloqueantes de la placa motora.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 88,
+            "question": "¿Con qué otro nombre se conocen los fármacos parasimpaticolíticos?",
+            "aAnswer": "Bloqueantes adrenérgicos.",
+            "bAnswer": "Antagonistas muscarínicos.",
+            "cAnswer": "Agonistas colinérgicos.",
+            "dAnswer": "Simpaticomiméticos.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 89,
+            "question": "¿Cuál de los siguientes enunciados no se corresponde con un efectofarmacológico propio de la adrenalina?",
+            "aAnswer": "Incremento de la frecuencia cardiaca sinusal.",
+            "bAnswer": "Dilatación de los vasos sanguíneos.",
+            "cAnswer": "Broncodilatación intensa en el árbol bronquial.",
+            "dAnswer": "Midriasis.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 90,
+            "question": "¿Cuál de las siguientes situaciones no se corresponde con un efectofarmacológico propio de los fármacos parasimpaticomiméticos?",
+            "aAnswer": "Broncoconstricción.",
+            "bAnswer": "Midriasis.",
+            "cAnswer": "Reducción de la frecuencia cardiaca.",
+            "dAnswer": "Aumento de la motilidad intestinal.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 91,
+            "question": "¿Cuál de los siguientes principios activos no se corresponde con unfármaco antiepiléptico o anticonvulsionante?",
+            "aAnswer": "Fenitoína.",
+            "bAnswer": "Carbamazepina.",
+            "cAnswer": "Quinidina.",
+            "dAnswer": "Fenobarbital.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 92,
+            "question": "¿Cuál de los siguientes enunciados no se corresponde con un fármacoantiparkinsoniano?",
+            "aAnswer": "Activadores dopaminérgicos.",
+            "bAnswer": "Inhibidores de la MAO.",
+            "cAnswer": "Valproato sódico.",
+            "dAnswer": "Levodopa.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 93,
+            "question": "¿Cuál de los siguientes efectos farmacológicos no es característico delas benzodiazepinas?",
+            "aAnswer": "Relajante muscular.",
+            "bAnswer": "Ansiolítico.",
+            "cAnswer": "Anticonvulsivo.",
+            "dAnswer": "Analgésico.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 94,
+            "question": "¿Cuál de los siguientes síntomas o signos no se corresponde con unode los posibles efectos adversos de las benzodiazepinas?",
+            "aAnswer": "Verborrea.",
+            "bAnswer": "Depresión respiratoria.",
+            "cAnswer": "Somnolencia.",
+            "dAnswer": "Hipotensión.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 95,
+            "question": "¿Cuál de los siguientes fármacos es el más eficaz en el tratamiento dela enfermedad de Parkinson?",
+            "aAnswer": "Activadores dopaminérgicos.",
+            "bAnswer": "Inhibidores de la MAO.",
+            "cAnswer": "Agonistas dopaminérgicos.",
+            "dAnswer": "Levodopa.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 96,
+            "question": "Los antidepresivos triciclitos al tener una acción anticolinérgica provocan numerosos efectos adversos; ¿cuál de los siguientes enunciados noes uno de ellos?",
+            "aAnswer": "Estreñimiento.",
+            "bAnswer": "Visión borrosa.",
+            "cAnswer": "Poliuria.",
+            "dAnswer": "Sequedad de boca.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 97,
+            "question": "En la farmacología del Sistema Nervioso Central, hay un grupo de fármacos denominados neurolépticos; ¿con qué otro nombre se los conoce?",
+            "aAnswer": "Fármacos antiparkinsonianos.",
+            "bAnswer": "Fármacos antipsicóticos.",
+            "cAnswer": "Analgésicos narcóticos.",
+            "dAnswer": "Fármacos anticonvulsivos.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 98,
+            "question": "¿En cuál de los siguientes grupos farmacológicos incluiría a la morfina, la codeína y la meperidina?",
+            "aAnswer": "Cada uno de estos fármacos pertenece a un grupo farmacológico distinto.",
+            "bAnswer": "Analgésicos opiáceos.",
+            "cAnswer": "Hipnóticos.",
+            "dAnswer": "Antipsicóticos.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 99,
+            "question": "Cuál de los enunciados se ajusta a la siguiente definición elaborada por laOMS en 1998: “conjunto de oportunidades de aprendizaje elaboradas conscientemente que suponen una forma de comunicación destinada a mejorarel conocimiento sobre la salud y el desarrollo de habilidades para la vida quepuedan conducir tanto a la salud individual como colectiva”:",
+            "aAnswer": "Salud Pública.",
+            "bAnswer": "Educación para la Salud.",
+            "cAnswer": "Fomento de la salud.",
+            "dAnswer": "Actitudes de salud.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 4,
+            "number": 100,
+            "question": "Existe un fármaco que es un antagonista puro de los opiáceos y presenta especial utilidad terapéutica en la sobredosis de opioides en pacientes drogodependientes; ¿a qué fármaco nos referimos?",
+            "aAnswer": "Propacetamol.",
+            "bAnswer": "Oxacepan.",
+            "cAnswer": "Naloxona.",
+            "dAnswer": "Pirazolona.",
+            "correctAnswer": "C"
+        }
+    }
+]

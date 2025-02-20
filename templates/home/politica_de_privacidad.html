@@ -1,0 +1,125 @@
+{% extends 'home/base.html' %}
+
+{% load static %}
+{% load i18n %}
+{% block head %}
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM6GBKCS3R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZM6GBKCS3R');
+</script>
+
+
+
+{% endblock %}
+
+{% block contenido %}
+
+
+
+<div class="container">
+  <h1>{% trans 'Política de Privacidad' %}</h1>
+  <p>
+    {% trans 'En Testosakidetza, nos tomamos muy en serio la privacidad de nuestros usuarios. Esta política de privacidad describe cómo recopilamos, utilizamos y protegemos su información personal.' %}
+  </p>
+
+
+
+
+  <h2>{% trans '1. Información que recopilamos' %}</h2>
+  <p>
+    {% trans 'Recopilamos varios tipos de información para diversos fines, incluyendo:' %}
+    <ul>
+      <li>
+        {% trans 'Información de identificación personal (como nombre, dirección de correo electrónico, número de teléfono, etc.).' %}
+      </li>
+      <li>
+        {% trans 'Datos de uso (como la dirección IP, tipo de navegador, las páginas que visita en nuestro sitio web, y la fecha y hora de su visita).' %}
+      </li>
+    </ul>
+
+    <h2>{% trans '2. Uso de la información' %}</h2>
+    <p>
+      {% trans 'Utilizamos la información recopilada para los siguientes propósitos:' %}
+      <ul>
+        <li>{% trans 'Proporcionar y mantener nuestro servicio.' %}</li>
+        <li>{% trans 'Notificarle sobre cambios en nuestro servicio.' %}</li>
+        <li>{% trans 'Proporcionar soporte al cliente.' %}</li>
+        <li>
+          {% trans 'Recopilar análisis o información valiosa para mejorar nuestro servicio.' %}
+        </li>
+
+        <li>{% trans 'Monitorear el uso de nuestro servicio.' %}</li>
+        <li>{% trans 'Detectar, prevenir y abordar problemas técnicos.' %}</li>
+      </ul>
+
+      <h2>{% trans '3. Protección de la información' %}</h2>
+      <p>
+        {% trans 'Implementamos medidas de seguridad técnicas y organizativas para proteger su información personal contra el acceso no autorizado, la alteración, la divulgación o la destrucción.' %}
+      </p>
+
+
+
+      <h2>{% trans '4. Compartir información' %}</h2>
+      <p>
+        {% trans 'No compartimos su información personal con terceros, excepto en las siguientes circunstancias:' %}
+      </p>
+
+      <ul>
+        <li>{% trans 'Con su consentimiento previo.' %}</li>
+        <li>{% trans 'Para cumplir con una obligación legal.' %}</li>
+        <li>
+          {% trans 'Para proteger y defender los derechos o propiedad de Testosakidetza.' %}
+        </li>
+        <li>
+          {% trans 'Para prevenir o investigar posibles irregularidades en relación con el servicio.' %}
+        </li>
+
+        <li>
+          {% trans 'Para proteger la seguridad personal de los usuarios del servicio o del público.' %}
+        </li>
+
+      </ul>
+
+      <h2>{% trans '5. Sus derecho' %}</h2>
+      <p>{% trans 'Usted tiene derecho a' %}</p>
+      <ul>
+        <li>{% trans 'Acceder a sus datos personales que almacenamos' %}</li>
+        <li>{% trans 'Rectificar cualquier dato personal inexacto o incompleto' %}</li>
+        <li>{% trans 'Solicitar la eliminación de sus datos personales' %}</li>
+        <li>{% trans 'Restringir el procesamiento de sus datos personales' %}</li>
+        <li>{% trans 'Oponerse al procesamiento de sus datos personales' %}</li>
+        <li>{% trans 'Portabilidad de los datos' %}</li>
+      </ul>
+
+      <h2>{% trans '6. Cambios en esta política de privacida' %}</h2>
+      <p>
+        {% trans 'Podemos actualizar nuestra política de privacidad de vez en cuando. Le notificaremos cualquier cambio publicando la nueva política de privacidad en esta página' %}
+      </p>
+
+
+
+      <p>{% trans 'Fecha de la última actualización: 14 de mayo de 202' %}</p>
+
+      <h2>{% trans '7. Contact' %}</h2>
+      <p>
+        {% trans 'Si tiene alguna pregunta sobre esta política de privacidad, por favor contáctenos' %}
+      </p>
+
+      <p>
+        {% trans 'Correo electrónico' %}
+        <a href="mailto:info@testosakidetza.com">info@testosakidetza.com</a>
+      </p>
+      <p>{% trans 'Dirección: Calle Falsa 123, Ciudad Ejemplo, Paí' %}</p>
+</div>
+
+
+{% endblock %}

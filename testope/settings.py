@@ -11,6 +11,13 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
+from django.utils.translation import gettext_lazy as _
+import json
+import getpass
+from django.urls import reverse, reverse_lazy
+import tempfile
+from django.conf import global_settings
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +32,7 @@ SECRET_KEY = 'django-insecure-f&w(w!!zuontbinw7=m--*ymy$mc^o_&^-%tqoaodb=s@_mom0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,7 +44,36 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'applications.home',
+    'applications.learning',
+    'applications.social',
+    'allauth_ui',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount', 
+    'allauth.socialaccount.providers.google',
+    'widget_tweaks',
+    'slippers',
+    'rosetta',
+    'normalize',
+    'channels',
+    'applications.assistant',
 ]
+
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'SCOPE': [
+            'profile',
+            'email',
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        },
+        'OAUTH_PKCE_ENABLED': True,
+    }
+}
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -47,6 +83,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'testope.urls'
@@ -54,7 +92,7 @@ ROOT_URLCONF = 'testope.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -103,13 +141,37 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-ES'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Madrid'
 
 USE_I18N = True
 
 USE_TZ = True
+LANGUAGES = (
+    ('es', _('Spanish')),
+    #('en', _('English')),
+    #('ca', _('Catalan')),
+    ('eu', _('Basque')),
+
+)
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'es', },  # Spanish
+        #{'code': 'en', },  # English
+        #{'code': 'ca', },  # Catalan
+        {'code': 'eu', },  # Basque
+    ),
+    'default': {
+        'fallbacks': ['es'],
+        'hide_untranslated': False,
+    }
+}
+
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'project_locale'),
+]
 
 
 # Static files (CSS, JavaScript, Images)
@@ -121,3 +183,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+LOGOUT_REDIRECT_URL = 'home_app:home'
+LOGIN_REDIRECT_URL = 'home_app:home'

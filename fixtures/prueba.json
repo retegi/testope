@@ -1,0 +1,16 @@
+[
+    {
+        "model": "applications.learning.test",
+        "pk": 1,
+        "fields": {
+            "category": 1,
+            "number": 1,
+            "question": "Pregunta de ejemplo",
+            "aAnswer": "Respuesta A",
+            "bAnswer": "Respuesta B",
+            "cAnswer": "Respuesta C",
+            "dAnswer": "Respuesta D",
+            "correctAnswer": "A"
+        }
+    }
+]

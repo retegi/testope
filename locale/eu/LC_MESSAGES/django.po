@@ -1,0 +1,554 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-22 22:10+0100\n"
+"PO-Revision-Date: 2024-12-22 22:13+0100\n"
+"Last-Translator:   <retegi84@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: templates/home/base.html:59
+msgid "Home"
+msgstr "Hasiera"
+
+#: templates/home/base.html:65
+msgid "Sobre nosotros"
+msgstr "Gu"
+
+#: templates/home/base.html:71
+msgid "Contactar"
+msgstr "Kontaktatu"
+
+#: templates/home/base.html:132
+msgid "Cerrar sesión"
+msgstr "Saioa itxi"
+
+#: templates/home/base.html:146 templates/home/iniciar sesion.html:52
+msgid "Iniciar sesión"
+msgstr "Saioa hasi"
+
+#: templates/home/base.html:154 templates/home/registrarse.html:55
+msgid "Registrarse"
+msgstr "Kontua sortu"
+
+#: templates/home/base.html:188
+msgid "¡Eskerrik asko!"
+msgstr "Eskerrik asko!"
+
+#: templates/home/base.html:191
+msgid "Política de privacidad"
+msgstr "Pribatutasun politika"
+
+#: templates/home/base.html:192
+msgid "Aviso legal"
+msgstr "Lege oharra"
+
+#: templates/home/base.html:194
+msgid "politica de cookies"
+msgstr "Cookieen politika"
+
+#: templates/home/contactar.html:34
+msgid "Contacto"
+msgstr ""
+
+#: templates/home/contactar.html:43
+msgid "Escriba un Correo Electrónico"
+msgstr ""
+
+#: templates/home/contactar.html:45
+msgid "Escriba su email"
+msgstr ""
+
+#: templates/home/contactar.html:47
+msgid "Escriba un nombre de Usuario"
+msgstr ""
+
+#: templates/home/contactar.html:50
+msgid "Escriba un nomsbre de usuario"
+msgstr ""
+
+#: templates/home/contactar.html:55
+msgid "Escribe tu mensaje"
+msgstr ""
+
+#: templates/home/contactar.html:57
+msgid "Escribe aquí"
+msgstr ""
+
+#: templates/home/contactar.html:61
+msgid "enviar"
+msgstr ""
+
+#: templates/home/contactar.html:76 templates/home/index copy 2.html:190
+#: copy.html:429 templates/home/index.html:190 templates/home/iniciar
+#: sesion.html:132 templates/home/preguntas copy.html:45
+#: templates/home/preguntas_avanzacorrectociclico.html:34
+#: templates/home/recuperar-contrasena.html:131
+#: templates/home/registrarse.html:117 templates/home/sobrenosotros.html:75
+msgid "Donar"
+msgstr ""
+
+#: templates/home/donativos.html:35
+msgid "donativos"
+msgstr ""
+
+#: templates/home/index copy 2.html:51 copy.html:51
+#: templates/home/index.html:51
+msgid "First slide label"
+msgstr ""
+
+#: templates/home/index copy 2.html:53 copy.html:53
+#: templates/home/index.html:53
+msgid "Some representative placeholder content for the first slide."
+msgstr ""
+
+#: templates/home/index copy 2.html:60 copy.html:60
+#: templates/home/index.html:60
+msgid "Second slide label"
+msgstr ""
+
+#: templates/home/index copy 2.html:62 copy.html:62
+#: templates/home/index.html:62
+msgid "Some representative placeholder content for the second slide."
+msgstr ""
+
+#: templates/home/index copy 2.html:69 copy.html:69
+#: templates/home/index.html:69
+msgid "Third slide label"
+msgstr ""
+
+#: templates/home/index copy 2.html:71 copy.html:71
+#: templates/home/index.html:71
+msgid "Some representative placeholder content for the third slide."
+msgstr ""
+
+#: templates/home/index copy 2.html:97 copy.html:97
+#: templates/home/index.html:97
+msgid ""
+"¡Bienvenido a TestOsakidetza! Tu plataforma ideal para preparar oposiciones."
+" Ofrecemos una experiencia de aprendizaje cómoda, amena y eficiente, "
+"diseñada para ayudarte a alcanzar tus metas. Conéctate con otros aspirantes,"
+" comparte experiencias y accede a recursos exclusivos. Únete a nuestra "
+"comunidad y comienza tu camino hacia el éxito hoy mismo. ¡Prepárate con "
+"TestOsakidetza!"
+msgstr ""
+
+#: templates/home/index copy 2.html:108 copy.html:108
+#: templates/home/index.html:108
+msgid "Registrate"
+msgstr ""
+
+#: templates/home/index copy 2.html:168 copy.html:407
+#: templates/home/index.html:168
+msgid "USUARIOS HACIENDO TEST"
+msgstr ""
+
+#: templates/home/index copy 2.html:178 copy.html:417
+#: templates/home/index.html:178
+msgid "Último Donativo"
+msgstr ""
+
+#: templates/home/iniciar sesion.html:68
+#: templates/home/recuperar-contrasena.html:72
+#: templates/home/registrarse.html:66
+msgid "Usuario"
+msgstr ""
+
+#: templates/home/iniciar sesion.html:72 templates/home/registrarse.html:70
+msgid "Contraseña"
+msgstr ""
+
+#: templates/home/iniciar sesion.html:95
+msgid "Aceptar"
+msgstr ""
+
+#: templates/home/iniciar sesion.html:115 templates/home/registrarse.html:102
+msgid "Iniciar con gmail"
+msgstr ""
+
+#: templates/home/iniciar sesion.html:120
+#: templates/home/recuperar-contrasena.html:51
+msgid "Recuperar Contraseña"
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:30
+msgid "Política de Cookies"
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:33
+msgid ""
+"En Osakidetza, utilizamos cookies para mejorar la experiencia de nuestros "
+"usuarios en nuestro sitio web. A continuación, explicamos qué son las "
+"cookies, cómo las utilizamos y cómo puede controlarlas."
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:37
+msgid "1. ¿Qué son las cookies?"
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:39
+msgid ""
+"Las cookies son pequeños archivos de texto que se almacenan en su "
+"dispositivo (ordenador, tablet, smartphone, etc.) cuando visita un sitio "
+"web. Estas permiten que el sitio web recuerde sus acciones y preferencias "
+"(como inicio de sesión, idioma, tamaño de fuente y otras preferencias de "
+"visualización) durante un periodo de tiempo."
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:44
+msgid "2. ¿Cómo utilizamos las cookies?"
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:45
+msgid "Utilizamos cookies para los siguientes propósitos:"
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:47
+msgid "Cookies necesarias:"
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:48
+msgid ""
+"Estas cookies son esenciales para que nuestro sitio web funcione "
+"correctamente. Permiten la navegación por el sitio y el uso de sus "
+"funciones."
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:54
+msgid ""
+"Estas cookies recopilan información sobre cómo los visitantes utilizan "
+"nuestro sitio web, como las páginas que visitan con más frecuencia y si "
+"reciben mensajes de error de  las páginas web."
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:59
+msgid "Cookies de funcionalidad:"
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:60
+msgid ""
+"Estas cookies permiten que nuestro sitio web recuerde las elecciones que "
+"hace (como su nombre de usuario, idioma o la región en la que se encuentra) "
+"y ofrecen funciones mejoradas y más personales."
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:66
+msgid "Cookies de publicidad:"
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:67
+msgid ""
+"Estas cookies se utilizan para ofrecer anuncios más relevantes para usted y "
+"sus intereses. También se utilizan para limitar el número de veces que ve un"
+" anuncio y para medir la   efectividad de las campañas publicitarias."
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:74
+msgid "3. Gestión de las cookies"
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:76
+msgid ""
+"Puede controlar y/o eliminar las cookies como desee. Para más información "
+"sobre cómo hacerlo, puede visitar"
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:78
+msgid ""
+"Puede eliminar todas las cookies que ya están en su ordenador y configurar "
+"la mayoría de los navegadores para que no se coloquen cookies. Sin embargo, "
+"si hace esto, es posible que tenga que ajustar manualmente algunas "
+"preferencias cada vez que visite un sitio y que algunos servicios y "
+"funcionalidades no funcionen."
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:84
+msgid "4. Cambios en nuestra política de cookies"
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:86
+msgid ""
+"Podemos actualizar nuestra política de cookies de vez en cuando. Le "
+"notificaremos cualquier cambio publicando la nueva política de cookies en "
+"esta página."
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:90
+msgid "Fecha de la última actualización: 14 de mayo de 2024"
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:92
+msgid "5. Contacto"
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:93
+msgid ""
+"Si tiene alguna pregunta sobre esta política de cookies, por favor "
+"contáctenos:"
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:94
+msgid "Correo electrónico: "
+msgstr ""
+
+#: templates/home/politica_de_cookies.html:95
+msgid "Dirección: Calle Falsa 123, Ciudad Ejemplo, País"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:29
+msgid "Política de Privacidad"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:31
+msgid ""
+"En Testosakidetza, nos tomamos muy en serio la privacidad de nuestros "
+"usuarios. Esta política de privacidad describe cómo recopilamos, utilizamos "
+"y protegemos su información personal."
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:37
+msgid "1. Información que recopilamos"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:39
+msgid ""
+"Recopilamos varios tipos de información para diversos fines, incluyendo:"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:42
+msgid ""
+"Información de identificación personal (como nombre, dirección de correo "
+"electrónico, número de teléfono, etc.)."
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:45
+msgid ""
+"Datos de uso (como la dirección IP, tipo de navegador, las páginas que "
+"visita en nuestro sitio web, y la fecha y hora de su visita)."
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:49
+msgid "2. Uso de la información"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:51
+msgid "Utilizamos la información recopilada para los siguientes propósitos:"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:53
+msgid "Proporcionar y mantener nuestro servicio."
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:54
+msgid "Notificarle sobre cambios en nuestro servicio."
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:55
+msgid "Proporcionar soporte al cliente."
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:57
+msgid ""
+"Recopilar análisis o información valiosa para mejorar nuestro servicio."
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:60
+msgid "Monitorear el uso de nuestro servicio."
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:61
+msgid "Detectar, prevenir y abordar problemas técnicos."
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:64
+msgid "3. Protección de la información"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:66
+msgid ""
+"Implementamos medidas de seguridad técnicas y organizativas para proteger su"
+" información personal contra el acceso no autorizado, la alteración, la "
+"divulgación o la destrucción."
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:71
+msgid "4. Compartir información"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:73
+msgid ""
+"No compartimos su información personal con terceros, excepto en las "
+"siguientes circunstancias:"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:77
+msgid "Con su consentimiento previo."
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:78
+msgid "Para cumplir con una obligación legal."
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:80
+msgid "Para proteger y defender los derechos o propiedad de Testosakidetza."
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:83
+msgid ""
+"Para prevenir o investigar posibles irregularidades en relación con el "
+"servicio."
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:87
+msgid ""
+"Para proteger la seguridad personal de los usuarios del servicio o del "
+"público."
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:92
+msgid "5. Sus derecho"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:93
+msgid "Usted tiene derecho a"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:95
+msgid "Acceder a sus datos personales que almacenamos"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:96
+msgid "Rectificar cualquier dato personal inexacto o incompleto"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:97
+msgid "Solicitar la eliminación de sus datos personales"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:98
+msgid "Restringir el procesamiento de sus datos personales"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:99
+msgid "Oponerse al procesamiento de sus datos personales"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:100
+msgid "Portabilidad de los datos"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:103
+msgid "6. Cambios en esta política de privacida"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:105
+msgid ""
+"Podemos actualizar nuestra política de privacidad de vez en cuando. Le "
+"notificaremos cualquier cambio publicando la nueva política de privacidad en"
+" esta página"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:110
+msgid "Fecha de la última actualización: 14 de mayo de 202"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:112
+msgid "7. Contact"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:114
+msgid ""
+"Si tiene alguna pregunta sobre esta política de privacidad, por favor "
+"contáctenos"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:118
+#: templates/home/recuperar-contrasena.html:76
+#: templates/home/registrarse.html:59
+msgid "Correo electrónico"
+msgstr ""
+
+#: templates/home/politica_de_privacidad.html:121
+msgid "Dirección: Calle Falsa 123, Ciudad Ejemplo, Paí"
+msgstr ""
+
+#: templates/home/recuperar-contrasena.html:81
+msgid ".Nunca compartiremos su correo electrónico con nadie más."
+msgstr ""
+
+#: templates/home/recuperar-contrasena.html:119
+msgid "Aceptar "
+msgstr ""
+
+#: templates/home/registrarse.html:62
+msgid "Nunca compartiremos su correo electrónico con nadie más."
+msgstr ""
+
+#: templates/home/registrarse.html:73
+msgid "Nombre"
+msgstr ""
+
+#: templates/home/registrarse.html:87
+msgid "Enviar"
+msgstr ""
+
+#: templates/home/registrarse.html:94
+msgid "Verificado"
+msgstr ""
+
+#: templates/home/sobrenosotros.html:32
+msgid "Sobre Nosotros"
+msgstr ""
+
+#: templates/home/sobrenosotros.html:43
+msgid ""
+"\"En Euskodev, nos enorgullecemos de ser una empresa de desarrollo web en el"
+" País Vasco. Fundada por desarrolladores y rediseñadores web, Iñaki Retegi y"
+" Olvin Duarte, nuestra misión es crear experiencias excepcionales que "
+"impulsen el éxito de nuestros clientes."
+msgstr ""
+
+#: templates/home/sobrenosotros.html:49
+msgid ""
+"Con una combinación única de creatividad, experiencia técnica y pasión por "
+"la innovación, en Euskodev nos esforzamos por superar las expectativas en "
+"cada proyecto que emprendemos. Ya sea que estemos creando un nuevo sitio web"
+" desde cero o revitalizando una presencia en línea existente, nuestro "
+"enfoque centrado en el cliente garantiza resultados sobresalientes y "
+"duraderos."
+msgstr ""
+
+#: templates/home/sobrenosotros.html:52
+msgid ""
+"En Euskodev, creemos en la colaboración, la transparencia y la excelencia en"
+" todo lo que hacemos. Estamos comprometidos a brindar soluciones "
+"personalizadas y de alta calidad que impulsen el crecimiento de nuestros "
+"clientes y los ayuden a destacarse en un mercado digital cada vez más "
+"competitivo."
+msgstr ""
+
+#: templates/home/sobrenosotros.html:56
+msgid ""
+"¡Confía en Euskodev para llevar tu presencia en línea al siguiente nivel y "
+"descubre lo que podemos lograr juntos!\""
+msgstr ""
+
+#: testosakidetza/settings.py:121
+msgid "Spanish"
+msgstr ""
+
+#: testosakidetza/settings.py:124
+msgid "Basque"
+msgstr ""

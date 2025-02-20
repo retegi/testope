@@ -1,0 +1,85 @@
+{% extends 'home/base_sin_menu_sin_footer.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block head %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM6GBKCS3R"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-ZM6GBKCS3R');
+</script>
+{% endblock %}
+
+{% block contenido %}
+<div class="container-fluid">
+    <div class="row">
+        <!-- Preguntas y Respuestas -->
+        <div class="col-10 p-5" style="position:relative;">
+            <a href="{% url 'home_app:home' %}" class="" style="position:fixed;"><button class="btn bg-light">Volver</button></a>
+            <h1 class="text-center display-6 col-lg-12 col-md-12">{{ test.category }}</h1>
+
+            <!-- Botón de Donativos -->
+            <div class="text-center">
+                <a href="https://www.paypal.com/donate/?hosted_button_id=REM3EZBPZBPMW">
+                    <button class="btn" style="background-color: pink;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                        </svg>
+                        {% trans 'Donar' %}
+                    </button>
+                </a>
+            </div>
+
+            <h3 class="text-center">{{ currentQuestion }}/{{ totalQuestions }}</h3>
+            <div>
+                <p class="display-6 col-lg-12 col-md-12">{{ test.number }}.- {{ test.question }}</p>
+            </div>
+
+            <!-- Formulario para Responder -->
+            <form method="POST" action="{% url 'learning_app:submit_answer' category.id currentQuestion %}">
+                {% csrf_token %}
+                <button class="btn btn-secondary w-25 m-3" type="submit" name="answer" value="A">{{ test.aAnswer }}</button>
+                <button class="btn btn-secondary w-25 m-3" type="submit" name="answer" value="B">{{ test.bAnswer }}</button>
+                <button class="btn btn-secondary w-25 m-3" type="submit" name="answer" value="C">{{ test.cAnswer }}</button>
+                <button class="btn btn-secondary w-25 m-3" type="submit" name="answer" value="D">{{ test.dAnswer }}</button>
+            </form>
+
+            <!-- Panel de Progreso -->
+            <div class="w-100 p-5 bg-light" style="position:absolute;bottom:0;">
+                <h4>Tu progresión</h4>
+                <div>
+                    {% for i in progressRange %}
+                        <span style="display: inline-block; width: 30px; height: 30px; text-align: center;
+                                     border: 1px solid #ccc; margin-right: 5px;
+                                     background-color: {% if currentQuestion == i %}#250f64{% else %}white{% endif %};">
+                            {{ i }}
+                        </span>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel Social -->
+        <div class="col-2 bg-light border pl-1 pr-1" style="height:100vh;">
+            <h3 class="text-center">Social</h3>
+            <p style="color: black; background-color:pink;" class="m-0 p-0"><b>Último donativo:<br>Olvin Daniel (Donostia): </b>¡Mucha suerte y ánimo a todos!</p>
+            {% for comment in comments %}
+                <p class="m-0 p-0"><b style="color: #250f64;">{{ comment.user }}: </b>{{ comment.text }}</p>
+            {% endfor %}
+            <form class="" method="post" style="position:absolute;bottom:0;">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+                </div>
+                <button type="submit" class="btn btn-primary w-100" style="background-color: #250f64;">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,100 @@
+{% extends 'home/base.html' %}
+
+{% load static %}
+{% load i18n %}
+{% block head %}
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM6GBKCS3R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZM6GBKCS3R');
+</script>
+
+
+
+{% endblock %}
+
+{% block contenido %}
+
+
+
+
+<div class="container">
+  <h1>{% trans 'Política de Cookies' %}</h1>
+
+  <p>
+    {% trans 'En Osakidetza, utilizamos cookies para mejorar la experiencia de nuestros usuarios en nuestro sitio web. A continuación, explicamos qué son las cookies, cómo las utilizamos y cómo puede controlarlas.' %}
+  </p>
+
+
+  <h2>{% trans '1. ¿Qué son las cookies?' %}</h2>
+  <p>
+    {% trans 'Las cookies son pequeños archivos de texto que se almacenan en su dispositivo (ordenador, tablet, smartphone, etc.) cuando visita un sitio web. Estas permiten que el sitio web recuerde sus acciones y preferencias (como inicio de sesión, idioma, tamaño de fuente y otras preferencias de visualización) durante un periodo de tiempo.' %}
+  </p>
+
+
+
+  <h2>{% trans '2. ¿Cómo utilizamos las cookies?' %}</h2>
+  <p>{% trans 'Utilizamos cookies para los siguientes propósitos:' %}</p>
+  <ul>
+    <li><strong>{% trans 'Cookies necesarias:' %}</strong>
+      {% trans 'Estas cookies son esenciales para que nuestro sitio web funcione correctamente. Permiten la navegación por el sitio y el uso de sus funciones.' %}
+    </li>
+
+
+
+    <li><strong>Cookies de
+        rendimiento:</strong>{% trans 'Estas cookies recopilan información sobre cómo los visitantes utilizan nuestro sitio web, como las páginas que visitan con más frecuencia y si reciben mensajes de error de  las páginas web.' %}
+    </li>
+
+
+
+    <li><strong>{% trans 'Cookies de funcionalidad:' %}</strong>
+      {% trans 'Estas cookies permiten que nuestro sitio web recuerde las elecciones que hace (como su nombre de usuario, idioma o la región en la que se encuentra) y ofrecen funciones mejoradas y más personales.' %}
+    </li>
+
+
+
+
+    <li><strong>{% trans 'Cookies de publicidad:' %}</strong>
+      {% trans 'Estas cookies se utilizan para ofrecer anuncios más relevantes para usted y sus intereses. También se utilizan para limitar el número de veces que ve un anuncio y para medir la   efectividad de las campañas publicitarias.' %}
+    </li>
+  </ul>
+
+
+
+
+  <h2>{% trans '3. Gestión de las cookies' %}</h2>
+  <p>
+    {% trans 'Puede controlar y/o eliminar las cookies como desee. Para más información sobre cómo hacerlo, puede visitar' %}
+    <a
+      href="https://www.aboutcookies.org">www.aboutcookies.org</a>.{% trans 'Puede eliminar todas las cookies que ya están en su ordenador y configurar la mayoría de los navegadores para que no se coloquen cookies. Sin embargo, si hace esto, es posible que tenga que ajustar manualmente algunas preferencias cada vez que visite un sitio y que algunos servicios y funcionalidades no funcionen.' %}
+  </p>
+
+
+
+
+  <h2>{% trans '4. Cambios en nuestra política de cookies' %}</h2>
+  <p>
+    {% trans 'Podemos actualizar nuestra política de cookies de vez en cuando. Le notificaremos cualquier cambio publicando la nueva política de cookies en esta página.' %}
+  </p>
+
+
+  <p>{% trans 'Fecha de la última actualización: 14 de mayo de 2024' %}</p>
+
+  <h2>{% trans '5. Contacto' %}</h2>
+  <p>{% trans 'Si tiene alguna pregunta sobre esta política de cookies, por favor contáctenos:' %}</p>
+  <p>{% trans 'Correo electrónico: ' %}<a href="mailto:info@testosakidetza.com">info@testosakidetza.com</a></p>
+  <p>{% trans 'Dirección: Calle Falsa 123, Ciudad Ejemplo, País' %}</p>
+</div>
+<!--aca terminan las politicas-->
+
+
+{% endblock %}

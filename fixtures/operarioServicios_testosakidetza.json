@@ -1,0 +1,4916 @@
+[
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 1,
+            "question": "¿A cuál de los siguientes tejidos nos referimos señalando que sus principales características son la resistencia, la absorbencia y la facilidad conque se lava y se tiñe y en el que la generalización de su uso se debe sobretodo a la facilidad con que su fibra se puede trenzar en hilos?",
+            "aAnswer": "A la lana.",
+            "bAnswer": "Al hilo.",
+            "cAnswer": "Al algodón.",
+            "dAnswer": "A la seda.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 2,
+            "question": "La cal grasa es aquella que contiene:",
+            "aAnswer": "Como máximo un 5% de óxido magnésico.",
+            "bAnswer": "Como máximo un 10% de sulfato sódico.",
+            "cAnswer": "Como máximo un 15% de ácido nítrico.",
+            "dAnswer": "Como máximo un 15 % de dióxido de carbono.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 3,
+            "question": "Los diversos métodos de tejido hacen posible producir muchas telas diferentes. ¿En qué método se entrelazan dos hilos de la urdimbre con un hilode la trama en filas alternas?\r\n",
+            "aAnswer": "Tejido cruzado.",
+            "bAnswer": "Tejido liso o de tafetán.",
+            "cAnswer": "Tejido de pelo.",
+            "dAnswer": "Tejido de satén.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 4,
+            "question": "¿Qué sistema de planchado es más adecuado en el caso de tener que planchar cortinas, visillos o estores?",
+            "aAnswer": "Máquina de prensa.",
+            "bAnswer": "Calandra.",
+            "cAnswer": "Planchado por difusión de vapor.",
+            "dAnswer": "Manguitos de planchado.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 5,
+            "question": "La forma correcta de planchar una prenda de tejido elástico será la siguiente:",
+            "aAnswer": "Se planchará sólo por el derecho y con la prenda muy húmeda.",
+            "bAnswer": "Primero el derecho y luego el revés, protegiendo la prenda con un pañohúmedo.",
+            "cAnswer": "Los tejidos elásticos no se planchan.",
+            "dAnswer": "Humedecida la prenda se cuelga de una percha y se plancha al airesólo por el interior.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 6,
+            "question": "Señale, de entre los siguientes, qué tipo de punto es utilizado en el cosido a mano:",
+            "aAnswer": "Punto derecho.",
+            "bAnswer": "Punto zigzag.",
+            "cAnswer": "Punto escapulario.",
+            "dAnswer": "Punto bobo.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 7,
+            "question": "Indique cuál de las siguientes opciones establece la forma correcta de proceder para eliminar una mancha de mercurocromo sobre una prenda de algodón blanco:",
+            "aAnswer": "Tamponar con agua caliente.",
+            "bAnswer": "Dejar secar y después rascar.",
+            "cAnswer": "Dejar en remojo toda la noche en agua caliente con sal.",
+            "dAnswer": "Lavar con una fuerte concentración de lejía.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 8,
+            "question": "¿Qué datos llevará inscritos, como mínimo, el carnet de manipulador/a de alimentos?",
+            "aAnswer": "Nombre y número de su documento nacional de identidad.",
+            "bAnswer": "Nombre, número de su documento nacional de identidad y nombre delentro de trabajo.",
+            "cAnswer": "Nombre, número de su documento nacional de identidad y categoríaprofesional.",
+            "dAnswer": "Nombre y apellidos, número de su documento nacional de identidad yactividad a la que se dedique.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 9,
+            "question": "¿Cuál de las siguientes no es una característica de la pintura al temple?",
+            "aAnswer": "Aspecto mate.",
+            "bAnswer": "Acabado liso, rugoso o goteado.",
+            "cAnswer": "Muy resistente al agua y al roce.",
+            "dAnswer": "Coloraciones pálidas, porosas y permeables.\r\n",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 10,
+            "question": "La temperatura de conservación de las comidas refrigeradas por un periodo de duración superior a 24 horas será:",
+            "aAnswer": "Una temperatura de 8 oC.",
+            "bAnswer": "Una temperatura de 4 oC.",
+            "cAnswer": "Una temperatura de 65 oC",
+            "dAnswer": "Una temperatura de -18 oC.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 11,
+            "question": "En un goniómetro, cómo se denomina el círculo o semicírculo en elque se realizan las lecturas del valor del ángulo objeto de medición:",
+            "aAnswer": "Limbo.",
+            "bAnswer": "Combo.",
+            "cAnswer": "Nonius.",
+            "dAnswer": "Megger.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 12,
+            "question": "En el momento de emplatar se extremarán las condiciones higiénicas con respecto a las personas que hayan de participar en esta labor, ¿qué debe utilizarse obligatoriamente?",
+            "aAnswer": "Además de la uniformidad reglamentaria deben usar guantes.",
+            "bAnswer": "Además de la uniformidad reglamentaria deben usar guantes y mascarilla.",
+            "cAnswer": "Sólo deben usar la uniformidad reglamentaria.",
+            "dAnswer": "Sólo deben usar guantes de protección.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 13,
+            "question": "Nos disponemos a realizar el montaje de una mesa en un comedor, señale cuál sería la primera operación a realizar:",
+            "aAnswer": "Colocación del mantel.",
+            "bAnswer": "Colocación del cubremantel.",
+            "cAnswer": "Calzado de las mesas.",
+            "dAnswer": "Colocación del muletón.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 14,
+            "question": "Atendiendo a su peligrosidad, los productos que no siendo corrosivos, por contacto breve, prolongado o repetido con la piel o las mucosas, pueden provocar una reacción inflamatoria. Nos estamos refiriendo a los:",
+            "aAnswer": "Irritantes.",
+            "bAnswer": "Comburentes.",
+            "cAnswer": "Sensibilizantes.",
+            "dAnswer": "Nocivos.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 15,
+            "question": "La etiqueta de un producto proporciona información al/a la usuario/a, como el nombre de la sustancia y de los datos del fabricante, los pictogramas, las frases R y las frases S. Señale cuál de las siguientes sería la definición de frases S:",
+            "aAnswer": "Indican el riesgo específico del preparado.",
+            "bAnswer": "Son dibujos o símbolos que tienen un significado.",
+            "cAnswer": "Son consejos de seguridad que hacen referencia a la manipulación yalmacenamiento de los productos.",
+            "dAnswer": "Indican que siempre hay que seguir la información de la etiqueta.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 16,
+            "question": "¿Cuál de las siguientes es la solución correcta de la siguiente resta defracciones: 3/42/51/3?",
+            "aAnswer": "5/20.",
+            "bAnswer": "2/60.",
+            "cAnswer": "1/60.",
+            "dAnswer": "5/30.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 17,
+            "question": "¿A qué equivalen los 2/7 de 7/9?",
+            "aAnswer": "7/2.",
+            "bAnswer": "2/9.",
+            "cAnswer": "9/7.",
+            "dAnswer": "9/2.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 18,
+            "question": "Señale la opción correcta:",
+            "aAnswer": "La tonelada métrica pesa 10 kilogramos.",
+            "bAnswer": "El hectogramo pesa 10 gramos.",
+            "cAnswer": "El miriagramo pesa 1000 gramos.",
+            "dAnswer": "El quintal métrico pesa 100 kilogramos.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 19,
+            "question": "¿Cuál es la equivalencia de la centiárea, ca?",
+            "aAnswer": "La centiárea, ca, equivale a 10 metros cuadrados.",
+            "bAnswer": "La centiárea, ca, equivale a 1 metro cuadrado.",
+            "cAnswer": "La centiárea, ca, equivale a 10000 metros cuadrados.",
+            "dAnswer": "La centiárea, ca, equivale a 100 metros cuadrados.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 20,
+            "question": "En una empresa hay 220 empleados/as. De ellos 77 son mujeres.¿Qué porcentaje de mujeres y hombres hay?",
+            "aAnswer": "Mujeres 30%; Hombres 70%.",
+            "bAnswer": "Mujeres 38%; Hombres 62%.",
+            "cAnswer": "Mujeres 35%; Hombres 65%.",
+            "dAnswer": "Mujeres 58%; Hombres 42%.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 21,
+            "question": "Un/a trabajador/a gana 120,2 euros por 5 días de trabajo. ¿Cuánto ga-nará por trabajar 7 días?",
+            "aAnswer": "165,30.",
+            "bAnswer": "168,28.",
+            "cAnswer": "190,20.",
+            "dAnswer": "250,25.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 22,
+            "question": "7 obreros/as tardarán 30 días en hacer una obra. ¿Cuánto tardarían sihubiera 3 obreros/as más?",
+            "aAnswer": "19 días.",
+            "bAnswer": "21 días.",
+            "cAnswer": "20 días.",
+            "dAnswer": "22 días.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 23,
+            "question": "¿Qué es el clínker?",
+            "aAnswer": "Un tipo de cemento.",
+            "bAnswer": "Una herramienta de carpintería.",
+            "cAnswer": "Un producto disolvente.",
+            "dAnswer": "Un componente para la producción de cemento.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 24,
+            "question": "La cal dolomítica se caracteriza por su alto contenido en:",
+            "aAnswer": "Manganeso.",
+            "bAnswer": "Hierro.",
+            "cAnswer": "Magnesio.",
+            "dAnswer": "Aluminio.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 25,
+            "question": "¿Cuál de los siguientes no es un componente habitual en la elabora-ión de un mortero?",
+            "aAnswer": "Hierro.",
+            "bAnswer": "Cemento.",
+            "cAnswer": "Agua.",
+            "dAnswer": "Arena.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 26,
+            "question": "¿Cuál de los siguientes tipos de yesos es el más adecuado para pastade agarre en la ejecución de tabicados?",
+            "aAnswer": "El yeso fino.",
+            "bAnswer": "El yeso grueso.",
+            "cAnswer": "El yeso de prefabricados.",
+            "dAnswer": "El fosfoyeso.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 27,
+            "question": "La piedra natural del yeso es:",
+            "aAnswer": "El granito.",
+            "bAnswer": "La puzolana.",
+            "cAnswer": "El aljez.",
+            "dAnswer": "El mármol.\r\n",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 28,
+            "question": "La cara menor de un ladrillo se denomina:",
+            "aAnswer": "Soga.",
+            "bAnswer": "Tabla.",
+            "cAnswer": "Canto.",
+            "dAnswer": "Testa.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 29,
+            "question": "¿Cuál de los siguientes betunes se obtiene de la destilación de alqui-trán de hulla?",
+            "aAnswer": "Betún asfáltico.",
+            "bAnswer": "Asfalto.",
+            "cAnswer": "Alquitrán.",
+            "dAnswer": "Creosota.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 30,
+            "question": "Las gravas son rocas de tipo:",
+            "aAnswer": "Metamórfico.",
+            "bAnswer": "Volcánico.",
+            "cAnswer": "Plutónico.",
+            "dAnswer": "Sedimentario.\r\n",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 31,
+            "question": "La teja 'Alicante' es la más característica dentro de las tejas con geometría:",
+            "aAnswer": "Plana.",
+            "bAnswer": "Curva.",
+            "cAnswer": "Cóncava.",
+            "dAnswer": "Redonda.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 32,
+            "question": "El engobe de una baldosa cerámica es:",
+            "aAnswer": "Una cubierta a base de arcilla.",
+            "bAnswer": "El grosor de la baldosa.",
+            "cAnswer": "Un sistema de impermeabilización.",
+            "dAnswer": "Una operación de molienda.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 33,
+            "question": "Se denominan morteros bastardos aquellos que:",
+            "aAnswer": "Necesitan del agua para ser amasados.",
+            "bAnswer": "Se elaboran con más de un conglomerante.",
+            "cAnswer": "Se elaboran con cal hidráulica.",
+            "dAnswer": "No se elaboran a pie de obra.\r\n",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 34,
+            "question": "Para hacer un buen mortero:",
+            "aAnswer": "Hay que prepararlo más fuerte que el material sobre el que se va aaplicar.",
+            "bAnswer": "Ha de dejarse fraguar más de dos horas.",
+            "cAnswer": "Ha de utilizarse arena limpia.",
+            "dAnswer": "Se utilizará agua que contenga materias orgánicas.\r\n",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 35,
+            "question": "¿Cuál de las siguientes herramientas se utiliza en albañilería como ele-mento de sujeción?",
+            "aAnswer": "La talocha.",
+            "bAnswer": "EL pie de rey.",
+            "cAnswer": "El sargento.",
+            "dAnswer": "La cizalla.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 36,
+            "question": "¿Cuál de los siguientes instrumentos se utiliza en albañilería para me-dir ángulos?",
+            "aAnswer": "La plomada.",
+            "bAnswer": "El nivel de burbuja.",
+            "cAnswer": "El tendel.",
+            "dAnswer": "El goniómetro.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 37,
+            "question": "En una obra, para el amasado de una no demasiado grande cantidadde mortero cola, en lugar de hormigonera, utilizaremos:",
+            "aAnswer": "La pastera.",
+            "bAnswer": "El volquete.",
+            "cAnswer": "La rasqueta.",
+            "dAnswer": "El cedazo.\r\n",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 38,
+            "question": "La pintura a la celulosa se conoce vulgarmente como:",
+            "aAnswer": "Pintura al óleo.",
+            "bAnswer": "Pintura plástica.",
+            "cAnswer": "Esmalte.",
+            "dAnswer": "Pintura al duco.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 39,
+            "question": "¿Cuál de las siguientes características no es propia de la pintura al si-licato?",
+            "aAnswer": "Es resistente a la intemperie.",
+            "bAnswer": "Se adhiere bien a las pinturas plásticas.",
+            "cAnswer": "Es una pintura al agua.",
+            "dAnswer": "Gran adherencia al vidrio y al hierro.\r\n",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 40,
+            "question": "En las instalaciones eléctricas, el cable de toma a tierra es de color:",
+            "aAnswer": "Negro.",
+            "bAnswer": "Azul.",
+            "cAnswer": "Amarillo, con frenja verde",
+            "dAnswer": "Gris",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 41,
+            "question": "¿Cuál de las siguientes maderas es más dura?",
+            "aAnswer": "Encina.",
+            "bAnswer": "Pino.",
+            "cAnswer": "Castaño.",
+            "dAnswer": "Haya.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 42,
+            "question": "¿Cuál de las siguientes es una madera blanda?",
+            "aAnswer": "Acacia.",
+            "bAnswer": "Boj.",
+            "cAnswer": "Roble.",
+            "dAnswer": "Abedul.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 43,
+            "question": "¿Cuál de las siguientes es una madera exótica?",
+            "aAnswer": "Ciprés.",
+            "bAnswer": "Teka.",
+            "cAnswer": "Tilo.",
+            "dAnswer": "Boj.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 44,
+            "question": "La soldadura fuerte se realiza con aglutinantes que funden a más de:",
+            "aAnswer": "350 oC.",
+            "bAnswer": "500 oC.",
+            "cAnswer": "700 oC.",
+            "dAnswer": "100 oC.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 45,
+            "question": "Cómo se llama la arandela de plástico semirrígido cuya misión es ha-er de válvula que bloquee el paso del agua cuando cerramos el grifo:",
+            "aAnswer": "Junta tórica.",
+            "bAnswer": "Junta Grower.",
+            "cAnswer": "Zapatilla o zapata.",
+            "dAnswer": "Ventosa.\r\n",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 46,
+            "question": "Los elementos que actúan de filtro para evitar que pasen los residuossólidos a través de las tuberías (al tiempo que con su forma específica en Po en S realizan el trabajo de un tapón acuoso que cierra el paso a los malosolores), se denominan de otra forma:",
+            "aAnswer": "Brazing.",
+            "bAnswer": "Fosas asépticas.",
+            "cAnswer": "Válvulas antirretorno.",
+            "dAnswer": "Sifones.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 47,
+            "question": "La herramienta que se emplea para sacar de su alojamiento los rema-hes, después de haber cortado su cabeza, se denomina:",
+            "aAnswer": "Granete.",
+            "bAnswer": "Cortafríos.",
+            "cAnswer": "Buril.",
+            "dAnswer": "Botador.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 48,
+            "question": "La herramienta que se utiliza junto con el martillo para señalar el cen-tro de los taladros que se hayan de hacer y evitar así que resbale la brocaal iniciar el trabajo, se denomina:",
+            "aAnswer": "Gramil.",
+            "bAnswer": "Botador.",
+            "cAnswer": "Punzón.",
+            "dAnswer": "Cortafríos.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 49,
+            "question": "Qué herramienta utilizaremos para impulsar útiles como cinceles, bo-tadores y punzones?",
+            "aAnswer": "Maceta española.",
+            "bAnswer": "Alcotana.",
+            "cAnswer": "Raedera.",
+            "dAnswer": "Martillo.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 50,
+            "question": "Las herramientas que se usan para montar o desmontar piezas rosca-das, tuercas y tornillos con cabeza sin ranura, se denominan:",
+            "aAnswer": "Martillo.",
+            "bAnswer": "Destornilladores.",
+            "cAnswer": "Botadores.",
+            "dAnswer": "Llaves.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 51,
+            "question": "¿Cuál es la llave más corriente para el trabajo con tuberías y redondos?",
+            "aAnswer": "Llave Allen.",
+            "bAnswer": "Llave Torx.",
+            "cAnswer": "Llave Stillson.",
+            "dAnswer": "Llave inglesa.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 52,
+            "question": "Qué herramienta está dotada de dos mordazas dentadas, una fija almango y otra que puede separarse más o menos de ésta, mediante meca-nismo de tuerca y cremallera:",
+            "aAnswer": "Llave Grip.",
+            "bAnswer": "Llave inglesa.",
+            "cAnswer": "Llave Stillson.",
+            "dAnswer": "Llave Dullan.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 53,
+            "question": "El instrumento de medida, que consiste en una cinta metálica gra-duada en centímetros y milímetros, enrollada en el interior de una caja, sedenomina:",
+            "aAnswer": "Metro de carpintero.",
+            "bAnswer": "Cinta métrica.",
+            "cAnswer": "Metro flexible.",
+            "dAnswer": "Vara telescópica.\r\n",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 54,
+            "question": "Cuál de los siguientes instrumentos es utilizado para la medición delongitudes pequeñas pero con gran precisión:",
+            "aAnswer": "Varas telescópicas.",
+            "bAnswer": "Flexómetro.",
+            "cAnswer": "Regla.",
+            "dAnswer": "Pie de rey.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 55,
+            "question": "Para lograr cortes limpios y con ángulos rectos en tubos para roscar.¿Qué herramienta utilizaremos?",
+            "aAnswer": "Cortatubos.",
+            "bAnswer": "Paicker.",
+            "cAnswer": "Mandril.",
+            "dAnswer": "Segueta.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 56,
+            "question": "La herramienta que se conoce también como ensanchador de tubos,ya que es una herramienta concebida para ampliar la boca de los tubos,se denomina:",
+            "aAnswer": "Escariador.",
+            "bAnswer": "Abocardador.",
+            "cAnswer": "Terraja.",
+            "dAnswer": "Fresa.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 57,
+            "question": "La herramienta conocida también como recalcador de tubo, que sirvepara expansionar el tubo de manera que pueda encajar en otro tramo, sedenomina (NO SE SABE LA RESPUESTA CON CERTEZA):",
+            "aAnswer": "Escariador.",
+            "bAnswer": "Abocardador.",
+            "cAnswer": "Terraja.",
+            "dAnswer": "Abocinador.",
+            "correctAnswer": ""
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 58,
+            "question": "La herramienta que es utilizada para dar diversas formas a las bocasde los tubos de metal, en especial a las tuberías de cobre, se denomina:",
+            "aAnswer": "Escariador.",
+            "bAnswer": "Abocardador.",
+            "cAnswer": "Terraja.",
+            "dAnswer": "Abocinador.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 59,
+            "question": "Cómo se denominan las aristas de un ladrillo:",
+            "aAnswer": "Sogatizóngrueso.",
+            "bAnswer": "Soga tizóntesta.",
+            "cAnswer": "Tablatizóntesta",
+            "dAnswer": "Tablacantotesta.\r\n",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 60,
+            "question": "Cómo se de nominan las caras de un ladrillo:",
+            "aAnswer": "Tabla- testa canto.",
+            "bAnswer": "Soga tizóntesta.",
+            "cAnswer": "Tablatizón testa.",
+            "dAnswer": "Tablatesta.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 61,
+            "question": "Cómo se llama la cara mayor de un ladrillo:",
+            "aAnswer": "Tabla.",
+            "bAnswer": "Testa.",
+            "cAnswer": "Canto.",
+            "dAnswer": "Soga.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 62,
+            "question": "Árido que sus granos pasan por un tamiz de 5 mm de diámetro y sonretenidos por otro de 2,5 mm. ¿Cómo lo clasificamos?",
+            "aAnswer": "Arena fina.",
+            "bAnswer": "Arena media.",
+            "cAnswer": "Arena gruesa.",
+            "dAnswer": "Graba.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 63,
+            "question": "Cuál de los siguientes materiales se adhiere mal a los componentespétreos, oxida el hierro y no puede utilizarse en el exterior porque el aguay la humedad lo reblandecen:",
+            "aAnswer": "Hormigón.",
+            "bAnswer": "Cemento.",
+            "cAnswer": "Mortero de cemento.",
+            "dAnswer": "Yeso.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 64,
+            "question": "Señale cuál de los siguientes morteros (expresado según su relaciónemento-arena) es menos resistente:",
+            "aAnswer": "1:2.",
+            "bAnswer": "1:4.",
+            "cAnswer": "1:6.",
+            "dAnswer": "1:8.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 65,
+            "question": "El hormigón esta compuesto de:",
+            "aAnswer": "Agua, yeso y arena.",
+            "bAnswer": "Agua y cementohierro.",
+            "cAnswer": "Cemento, grava y aglomerante.",
+            "dAnswer": "Agua, cementoarena y grava.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 66,
+            "question": "¿Cuál de los siguientes hormigones contiene grandes piedras en su masa?",
+            "aAnswer": "Hormigón armado.",
+            "bAnswer": "Hormigón ciclópeo.",
+            "cAnswer": "Hormigón masa.",
+            "dAnswer": "Hormigón pretensado",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 67,
+            "question": "Los principales componentes del mortero son:",
+            "aAnswer": "Agua y escayola.",
+            "bAnswer": "Agua, cementoarena y grava.",
+            "cAnswer": "Agua y cemento.",
+            "dAnswer": "Aguaconglomerante y arena.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 68,
+            "question": "Un mortero bastardo está compuesto de:",
+            "aAnswer": "Cemento, cal y arenaagua.",
+            "bAnswer": "Cemento, escayola, agua y grava.",
+            "cAnswer": "Cemento, arena, agua y grava.",
+            "dAnswer": "Cemento, vermiculita, agua y arena.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 69,
+            "question": "La herramienta de albañil que consta de una hoja de acero rectangulary tiene un asa central para su sujeción, se denomina:",
+            "aAnswer": "Paletín.",
+            "bAnswer": "Artesa.",
+            "cAnswer": "Raedera.",
+            "dAnswer": "Llana.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 70,
+            "question": "Cómo se denomina el instrumento de medida que consta de una reglagraduada, que en un extremo tiene una escuadra denominada boca fija, yque dispone de un cursor que corre por dicha regla:",
+            "aAnswer": "Goniómetro.",
+            "bAnswer": "Falsa escuadra.",
+            "cAnswer": "Metro articulado.",
+            "dAnswer": "Pie de rey.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 71,
+            "question": "Qué tipo de mediciones podemos realizar con el calibre pie de rey:",
+            "aAnswer": "Dimensiones exteriores, espesores o diámetros �anchuras de huecos o diámetros interiores�, medidas de profundidades.",
+            "bAnswer": "Dimensiones interiores, espesores o diámetros, medidas de profundidades.",
+            "cAnswer": "Dimensiones exteriores, espesores o diámetros, anchuras de huecos o diámetros interiores.",
+            "dAnswer": "Dimensiones interiores, espesores o diámetros.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 72,
+            "question": "Indique el motivo por el cual un tubo fluorescente parpadea:",
+            "aAnswer": "Es un problema del cebador.",
+            "bAnswer": "Es un problema del gas del tubo.",
+            "cAnswer": "Es problema de la tensión del edificio.",
+            "dAnswer": "Es problema de un ambiente cargado.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 73,
+            "question": "Señale cuál de las siguientes no es una característica de la creosota:",
+            "aAnswer": "Se obtiene de la destilación del alquitrán de la hulla.",
+            "bAnswer": "Es una mezcla de betún asfáltico con una materia mineral inerte.",
+            "cAnswer": "Se usa para fabricar pigmentos.",
+            "dAnswer": "Se usa para la conservación de la madera, evitando el ataque de hongos.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 74,
+            "question": "Cuál de los siguientes combustibles es sólido:",
+            "aAnswer": "Gas butano.",
+            "bAnswer": "Gasóleo C.",
+            "cAnswer": "Gas propano.",
+            "dAnswer": "Hulla.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 75,
+            "question": "Las calderas de combustible sólido, pueden quemar:",
+            "aAnswer": "Leña o carbón.",
+            "bAnswer": "Gasolina o gas.",
+            "cAnswer": "Gas butano o carbón.",
+            "dAnswer": "Gas propano o carbón.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 76,
+            "question": "Qué tipo de radiadores son los que aportan la máxima calidad en cuanto a resistencia a la corrosión, siendo su duración prácticamente ilimitada,no comparable a ningún otro material:",
+            "aAnswer": "Radiadores de hierro fundido.",
+            "bAnswer": "Radiadores de chapa de acero.",
+            "cAnswer": "Radiadores de aluminio.",
+            "dAnswer": "Paneles de chapa de acero.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 77,
+            "question": "Qué elemento emisor de calor aporta soluciones acordes a la edificación de hoy, ofreciendo líneas más planas y menos voluminosas, pero de mayor superficie de radiación:",
+            "aAnswer": "Radiadores de hierro fundido.",
+            "bAnswer": "Radiadores de chapa de acero.",
+            "cAnswer": "Radiadores de aluminio.",
+            "dAnswer": "Paneles de chapa de acero.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 78,
+            "question": "Los aparatos que se instalan donde interesa conocer en un momento determinado la presión del agua, se denominan:",
+            "aAnswer": "Termómetros.",
+            "bAnswer": "Manómetros.",
+            "cAnswer": "Barómetros.",
+            "dAnswer": "Fluxómetros.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 79,
+            "question": "Los elementos que se instalan para evitar que las burbujas de aire hagan que las tuberías pierdan sección de paso y que se produzcan fenómenos de sobrepresión, se denominan:",
+            "aAnswer": "Dilatadores.",
+            "bAnswer": "Válvulas.",
+            "cAnswer": "Llaves de corte.",
+            "dAnswer": "Purgadores.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 80,
+            "question": "Cómo se llaman los elementos que se intercalan en las tuberías y conductos de la red de agua caliente para cortar y/o regular el paso de los caudales:",
+            "aAnswer": "Purgadores.",
+            "bAnswer": "Dilatadores.",
+            "cAnswer": "Válvulas.",
+            "dAnswer": "Termo-manómetros.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 81,
+            "question": "La válvula que permite que el caudal circule en un único sentido, impidiendo el retorno del mismo, se denomina:",
+            "aAnswer": "Válvula de compuerta.",
+            "bAnswer": "Válvula de mariposa.",
+            "cAnswer": "Válvula del tipo macho.",
+            "dAnswer": "Válvula de retención o antirretorno.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 82,
+            "question": "La bomba de calor está formada por los siguientes elementos:",
+            "aAnswer": "Evaporador-compresor-condensador-válvula de expansión (expansor).",
+            "bAnswer": "Evaporador-dilatador-purgador-válvula de expansión (expansor).",
+            "cAnswer": "Caldera-dilatador-condensador-válvula de expansión (expansor).",
+            "dAnswer": "Caldera-condensador-válvula de expansión (expansor).",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 83,
+            "question": "En la madera, la resistencia a la acción de dos fuerzas de signo contrario, que tienden a romper la pieza de madera, alargando su longitud y reduciendo su sección transversal, es conocida como:",
+            "aAnswer": "Tracción.",
+            "bAnswer": "Compresión.",
+            "cAnswer": "Flexión.",
+            "dAnswer": "Cortadura.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 84,
+            "question": "El esfuerzo al que está sometida una pieza de madera, que descansa sobre dos apoyos situados en sus extremos, sobre un punto de la misma,varios puntos o uniformemente repartido en su longitud, se denomina:",
+            "aAnswer": "Tracción.",
+            "bAnswer": "Compresión.",
+            "cAnswer": "Flexión.",
+            "dAnswer": "Cortadura.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 85,
+            "question": "El cortocircuito con fusible tiene la ventaja de no necesitar reposición:",
+            "aAnswer": "Falso.",
+            "bAnswer": "Depende del tipo de cortocircuito.",
+            "cAnswer": "Depende del calibre del fusible.",
+            "dAnswer": "Verdadero.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 86,
+            "question": "La máquina eléctrica que utiliza una hoja corta y estrecha que se mueve arriba y abajo y se emplea para hacer cortes rectos y curvos en maderas delgadas, se denomina:",
+            "aAnswer": "Trasdós.",
+            "bAnswer": "Bastre.",
+            "cAnswer": "Engalletadora.",
+            "dAnswer": "Sierra de calar.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 87,
+            "question": "¿Qué forma tiene la hoja del escoplo?",
+            "aAnswer": "Redonda.",
+            "bAnswer": "Rectangular.",
+            "cAnswer": "Triangular.",
+            "dAnswer": "En U.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 88,
+            "question": "Con el flexómetro podemos:",
+            "aAnswer": "Trazar líneas.",
+            "bAnswer": "Trazar diagonales.",
+            "cAnswer": "Medir longitudes.",
+            "dAnswer": "Medir volúmenes.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 89,
+            "question": "Las escuadras de tacón se utilizan para:",
+            "aAnswer": "Comprobar y trazar ángulos rectos.",
+            "bAnswer": "Medir circunferencias.",
+            "cAnswer": "Medir ángulos.",
+            "dAnswer": "Medir tacos.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 90,
+            "question": "Qué instrumento sirve para trazar y medir cualquier ángulo:",
+            "aAnswer": "Flexómetro.",
+            "bAnswer": "Escuadra de tacón.",
+            "cAnswer": "Guillamen.",
+            "dAnswer": "Falsa escuadra.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 91,
+            "question": "Qué instrumento está diseñado para trazar líneas paralelas a los bordes de la pieza, especialmente al marcar las juntas y ranuras:",
+            "aAnswer": "Escuadra de tacón.",
+            "bAnswer": "Granete.",
+            "cAnswer": "Gramil.",
+            "dAnswer": "Bigotera.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 92,
+            "question": "El martillo llamado de peña, es conocido también como:",
+            "aAnswer": "Martillo de bola.",
+            "bAnswer": "Martillo de ebanista.",
+            "cAnswer": "Martillo encofrador.",
+            "dAnswer": "Martillo de uña.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 93,
+            "question": "El útil de madera utilizado para golpear gubias, se denomina:",
+            "aAnswer": "Bastren.",
+            "bAnswer": "Mazo.",
+            "cAnswer": "Escantillón.",
+            "dAnswer": "Raedera.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 94,
+            "question": "La herramienta para extraer clavos y a veces cortarlos, se denomina:",
+            "aAnswer": "Pata de cabra.",
+            "bAnswer": "Barra desencofradora.",
+            "cAnswer": "Alicate de bocas redondas.",
+            "dAnswer": "Tenaza.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 95,
+            "question": "La herramienta que se utiliza, generalmente en el trabajo de la madera, para dar forma a piezas irregulares donde no pueda utilizarse el cepillo,se denomina:",
+            "aAnswer": "Bastren.",
+            "bAnswer": "Gramil.",
+            "cAnswer": "Escofina.",
+            "dAnswer": "Trasdós.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 96,
+            "question": "La herramienta realizada con una varilla de acero, afilada por el extremo, sin que llegue a estar aguzada, y que se utiliza para embutir clavos,se denomina:",
+            "aAnswer": "Granete.",
+            "bAnswer": "Botador.",
+            "cAnswer": "Sacabocados.",
+            "dAnswer": "Lezna.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 97,
+            "question": "Los cables en las instalaciones eléctricas tienen colores los cuales nos indican fase, neutro y tierra. Lo correcto en las instalaciones eléctricas sería lo siguiente:",
+            "aAnswer": "La fase (L) será de color negro, marrón o gris. El neutro (N) es de colorazul, para el retorno. La toma a tierra (bicolor) tiene color amarillo confranja verde.",
+            "bAnswer": "La fase (L) será de color azul. El neutro (N) es de color negro, marróno gris para el retorno. La toma a tierra (bicolor) tiene color amarillo con franja verde.",
+            "cAnswer": "La fase (L) será de color negro, marrón o gris. El neutro (N) (bicolor)tiene color amarillo con franja verde, para el retorno. La toma a tierra tiene el color azul.",
+            "dAnswer": "La fase (L)) tiene color amarillo con franja verde. El neutro (N) es de color azul, para el retorno. La toma a tierra será de color negro, marrón o gris.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 98,
+            "question": "El fusible en el circuito eléctrico es un elemento de:",
+            "aAnswer": "Seguridad.",
+            "bAnswer": "Maniobra.",
+            "cAnswer": "Detección.",
+            "dAnswer": "Alumbrado.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 99,
+            "question": "De los siguientes instrumentos de medida para electricidad, cuál podemos considerar como múltiple:",
+            "aAnswer": "Pinza amperimétrica.",
+            "bAnswer": "Voltímetro.",
+            "cAnswer": "Polímetro.",
+            "dAnswer": "Buscapolos.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 100,
+            "question": "La tensión en corriente continua y alterna, ¿en qué unidad se mide?",
+            "aAnswer": "Amperios.",
+            "bAnswer": "Vatios.",
+            "cAnswer": "Voltios.",
+            "dAnswer": "Hercios.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 101,
+            "question": "El vatímetro es un instrumento que realiza las funciones combinadas de dos instrumentos de medida, como son:",
+            "aAnswer": "Amperímetro y frecuencímetro.",
+            "bAnswer": "Voltímetro y óhmetro.",
+            "cAnswer": "Amperímetro y óhmetro.",
+            "dAnswer": "Amperímetro y del voltímetro",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 102,
+            "question": " ¿Cómo se conecta el voltímetro con los elementos a medir?",
+            "aAnswer": "En serie.",
+            "bAnswer": "En shunt.",
+            "cAnswer": "En paralelo.",
+            "dAnswer": "En serie y paralelo.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 103,
+            "question": "¿De cuántos bornes está compuesto un vatímetro?",
+            "aAnswer": "1.",
+            "bAnswer": "2.",
+            "cAnswer": "3.",
+            "dAnswer": "4.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 104,
+            "question": "Qué dispositivos sirven para proteger las líneas de sobreintensidades y los aparatos eléctricos en caso de derivación a tierra:",
+            "aAnswer": "Fusibles.",
+            "bAnswer": "Magnetotérmicos.",
+            "cAnswer": "ICP.",
+            "dAnswer": "Diferenciales.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 105,
+            "question": "Qué dispositivos protegen la línea de cortocircuitos y de sobrecargas:",
+            "aAnswer": "Relés.",
+            "bAnswer": "Magnetotérmicos.",
+            "cAnswer": "ICP.",
+            "dAnswer": "Diferenciales.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 106,
+            "question": "Cuál de los siguientes no es un aparato de seguridad en los circuitos eléctricos, sino de control de potencia:",
+            "aAnswer": "Fusibles.",
+            "bAnswer": "Magnetotérmicos.",
+            "cAnswer": "ICP.",
+            "dAnswer": "Diferenciales.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 107,
+            "question": "Cómo se denomina el elemento encargado de proteger de sobrecargas o cortocircuitos la instalación completa de locales:",
+            "aAnswer": "Interruptor general automático.",
+            "bAnswer": "Selectores.",
+            "cAnswer": "ICP.",
+            "dAnswer": "Diferenciales.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 108,
+            "question": "Cuál es el tipo de mecanismos que evitan el paso de la corriente peligrosa por el cuerpo humano:",
+            "aAnswer": "Interruptor General Automático.",
+            "bAnswer": "Magnetotérmicos.",
+            "cAnswer": "Interruptor de Control de Potencia.",
+            "dAnswer": "Interruptor Automático Diferencial.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 109,
+            "question": "El mecanismo de protección de circuitos y personas, que tiene incorporado un pulsador, que cuando pulsamos lo que realiza es un cortocircuito en las dos fases, por lo que provoca un desequilibrio entre estas fases que determina la desconexión del mismo, se denomina:",
+            "aAnswer": "Interruptor General Automático.",
+            "bAnswer": "Pequeños Interruptores Automáticos.",
+            "cAnswer": "Interruptor de Control de Potencia.",
+            "dAnswer": "Interruptor Diferencial.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 110,
+            "question": "Los pequeños interruptores automáticos (PIA) protegen a las instalaciones de:",
+            "aAnswer": "Sobrecargas.",
+            "bAnswer": "Cortocircuitos.",
+            "cAnswer": "Caídas de tensión.",
+            "dAnswer": "Sobrecargas y cortocircuitos.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 111,
+            "question": "Los principales elementos de una instalación de alumbrado con luz fluorescente son:",
+            "aAnswer": "Tubo fluorescente e incandescente.",
+            "bAnswer": "Tubo fluorescente y cebador.",
+            "cAnswer": "Tubo de mercurio y cebador.",
+            "dAnswer": "Tubo fluorescente, reactancia, cebador y la pantalla.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 112,
+            "question": "Su funcionamiento se basa en la emisión de luz por el paso de corriente por un filamento, normalmente de tungsteno, dentro de una ampolla de vacío. ¿De qué elemento estamos hablando?",
+            "aAnswer": "Tubo fluorescente.",
+            "bAnswer": "Bombilla.",
+            "cAnswer": "Diodo.",
+            "dAnswer": "Tubo de neón.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 113,
+            "question": "Las lámparas de vapor de sodio suelen utilizarse para la iluminación en:",
+            "aAnswer": "Salas de lectura.",
+            "bAnswer": "Fachadas de edificios.",
+            "cAnswer": "Museos.",
+            "dAnswer": "Cocinas industriales.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 114,
+            "question": "La mayoría de las paredes de oficinas están enyesadas, por lo que generalmente suelen pintarse con:",
+            "aAnswer": "Esmalte.",
+            "bAnswer": "Cal.",
+            "cAnswer": "Barniz.",
+            "dAnswer": "Pintura plástica.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 115,
+            "question": "La pintura al temple o a la cola suele aplicarse por su naturaleza en interiores y de forma especial sobre:",
+            "aAnswer": "Revocos de yeso de techos y paredes.",
+            "bAnswer": "Madera y aglomerados.",
+            "cAnswer": "Metales.",
+            "dAnswer": "Plásticos.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 116,
+            "question": "Cuál de las siguientes pinturas está compuesta por una resina sintética (vinílica o acrílica) que se ha emulsionado en agua:",
+            "aAnswer": "Esmalte sintético.",
+            "bAnswer": "Barniz sintético.",
+            "cAnswer": "Creosota.",
+            "dAnswer": "Pintura plástica.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 117,
+            "question": "Nunca utilizaremos pinturas plásticas cuando la temperatura ambiente esté por debajo de:",
+            "aAnswer": "Entre 15o y 20 oC.",
+            "bAnswer": "Entre 10o y 15 oC.",
+            "cAnswer": "Por debajo de 5 oC.",
+            "dAnswer": "Por encima de 30 oC.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 118,
+            "question": "Qué pintura de las siguientes es la idónea para el enjalbegado de casas de campo y ambientes rústicos:",
+            "aAnswer": "Barniz.",
+            "bAnswer": "Cal.",
+            "cAnswer": "Temple.",
+            "dAnswer": "Martelé.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 119,
+            "question": "Qué diluyente y disolvente utilizaremos para trabajar con pinturas plásticas y esmaltes acrílicos:",
+            "aAnswer": "Aguarrás.",
+            "bAnswer": "Xileno.",
+            "cAnswer": "Tolueno.",
+            "dAnswer": "Agua.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 120,
+            "question": "El disolvente white spirit, se utiliza con pintura:",
+            "aAnswer": "Plástica.",
+            "bAnswer": "Al cemento.",
+            "cAnswer": "Silicato.",
+            "dAnswer": "Esmalte sintético.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 121,
+            "question": "¿Qué es el decapado?",
+            "aAnswer": "Una técnica de escultura.",
+            "bAnswer": "Una forma de eliminar la pintura.",
+            "cAnswer": "Una pintura.",
+            "dAnswer": "Un abrasivo.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 122,
+            "question": "Qué decapantes químicos resultan especialmente adecuados para superficies verticales:",
+            "aAnswer": "Decapantes líquidos.",
+            "bAnswer": "Decapantes en gel.",
+            "cAnswer": "Sopletes.",
+            "dAnswer": "Pistolas de calor.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 123,
+            "question": "¿Cuál suele ser la sección de un cable eléctrico que suministra corriente a enchufes de fuerza?",
+            "aAnswer": "10 mm2.",
+            "bAnswer": "6 mm2.",
+            "cAnswer": "2,5 mm2.",
+            "dAnswer": "1 mm2.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 124,
+            "question": "Las herramientas que están diseñadas para extender las pinturas en los lugares de difícil acceso, por ejemplo, los marcos interiores de las puertas y ventanas, las paredes que se encuentran detrás de un radiador, etc.¿Cómo se llaman?",
+            "aAnswer": "Almohadillas rectas.",
+            "bAnswer": "Rodillos.",
+            "cAnswer": "Pistolas.",
+            "dAnswer": "Paletinas.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 125,
+            "question": "Las tirantas para puertas:",
+            "aAnswer": "Impiden que la puerta se abra más de 90o.",
+            "bAnswer": "Hacen sufrir a las bisagras, pues no alivian la presión.",
+            "cAnswer": "Permiten que la puerta se abra más de 90o.",
+            "dAnswer": "No se podrán utilizar para sujetar puertas de arcas y baúles.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 126,
+            "question": "Qué herramienta de las siguientes sirve para limpiar las superficiesantes de pintar, así como para extender emplastes que tapen agujeros o defectos de la superficie:",
+            "aAnswer": "Llana.",
+            "bAnswer": "Fratás.",
+            "cAnswer": "Espátula.",
+            "dAnswer": "Cincel.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 127,
+            "question": "Cuál es el elemento flexible apto para alisar y suavizar las superficies, eliminando pequeños defectos o deformaciones:",
+            "aAnswer": "Escofina.",
+            "bAnswer": "Lija.",
+            "cAnswer": "Piedra pómez.",
+            "dAnswer": "Carda.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 128,
+            "question": "Los botes de pintura que deseemos conservar deben cerrarse herméticamente para evitar que el aire pueda entrar en ellos y secar la pintura del interior. Igualmente, se deben almacenar en posición:",
+            "aAnswer": "Invertida (boca hacia abajo).",
+            "bAnswer": "Vertical (boca hacia arriba).",
+            "cAnswer": "Tumbados.",
+            "dAnswer": "Es indiferente la postura.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 129,
+            "question": "Cómo se denomina el mecanismo situado junto al cuadro de protección, justo delante de éste, en un mueble independiente y precintado por la compañía suministradora:",
+            "aAnswer": "Fusibles.",
+            "bAnswer": "Magnetotérmicos.",
+            "cAnswer": "Interruptor de Control de Potencia.",
+            "dAnswer": "Diferenciales.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 130,
+            "question": "¿Cómo se llama la parte viva del tronco de un árbol donde circula la savia bruta?",
+            "aAnswer": "Duramen.",
+            "bAnswer": "Corteza.",
+            "cAnswer": "Albura.",
+            "dAnswer": "Apeo.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 131,
+            "question": "¿Qué se entiende por dureza de un material?",
+            "aAnswer": "La resistencia que presenta a los choques o esfuerzos bruscos.",
+            "bAnswer": "La resistencia que presenta a ser rayada o penetrada.",
+            "cAnswer": "La resistencia que opone a su rotura cuando está sometido a esfuerzos lentos de deformación.",
+            "dAnswer": "La capacidad para conservar su nueva forma una vez deformado.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 132,
+            "question": "El cemento Portland está formado de...",
+            "aAnswer": "Clinker combinado con un poco de agua.",
+            "bAnswer": "Caliza y arcilla, exclusivamente.",
+            "cAnswer": "Aljez o sulfato cálcico deshidratado.",
+            "dAnswer": "Clinker combinado con un poco de aljez.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 133,
+            "question": "El hormigón pretensado es un tipo de hormigón armado en el que las armaduras están sometidas a procesos de...",
+            "aAnswer": "Compresión que hacen tensionar al hormigón.",
+            "bAnswer": "Tracción que hacen comprimir al hormigón.",
+            "cAnswer": "Tracción que hacen traccionar al hormigón.",
+            "dAnswer": "Flexión que hacen comprimir al hormigón.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 134,
+            "question": "Uno de los usos más importantes del vidrio armado suele ser en aquellos casos...",
+            "aAnswer": "Donde hay posibilidad de una fácil rotura que pueda ser peligrosa.",
+            "bAnswer": "De acristalamiento corriente de ventanas.",
+            "cAnswer": "De lunas de automóviles corrientes.",
+            "dAnswer": "Como sustituto del cobre en telecomunicaciones.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 135,
+            "question": "El triscado de una sierra permite que los dientes de la hoja rocen lateralmente y se atasque en la madera.",
+            "aAnswer": "Verdadero.",
+            "bAnswer": "Falso.",
+            "cAnswer": "Depende de la hoja de la sierra.",
+            "dAnswer": "Depende de los dientes de la hoja de la sierra.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 136,
+            "question": "El calibrador o pie de rey permite la medición de...",
+            "aAnswer": "Interiores y exteriores, exclusivamente.",
+            "bAnswer": "Exteriores, exclusivamente.",
+            "cAnswer": "Interiores, exteriores y profundidades.",
+            "dAnswer": "Interiores y profundidades.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 137,
+            "question": "Al producto formado por la unión de fibras de amianto entre sí mediante mortero u hormigón se le llama...",
+            "aAnswer": "Aminoso.",
+            "bAnswer": "Pretensado.",
+            "cAnswer": "Aglomerado.",
+            "dAnswer": "Fibrocemento.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 138,
+            "question": "Indique la siguiente respuesta falsa sobre el rascado o decapado.",
+            "aAnswer": "En ambas operaciones se persigue eliminar los restos o capa de un antiguo recubrimiento que se halla en mal estado.",
+            "bAnswer": "El rascado apela a acciones mecánicas (por ejemplo, con una espátula).",
+            "cAnswer": "El decapado se puede hacer por medio de calor.",
+            "dAnswer": "El decapado no se puede llevar a cabo por medio de acciones químicas.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 139,
+            "question": "Después de la operación del emplastecido y enmasillado es necesario realizar...",
+            "aAnswer": "El decapado de la superficie, cuando se haya secado el emplaste o masilla.",
+            "bAnswer": "El lijado y alisado, cuando se haya secado el emplaste o masilla.",
+            "cAnswer": "El decapado de la superficie, sin esperar a que se haya secado el emplaste o masilla.",
+            "dAnswer": "El lijado y alisado, sin esperar a que se haya secado el emplaste o masilla.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 140,
+            "question": "¿Cómo se le suele llamar a la pintura a la cola?",
+            "aAnswer": "Pintura al temple.",
+            "bAnswer": "Pintura al aceite.",
+            "cAnswer": "Pintura al óleo.",
+            "dAnswer": "Pintura a la celulosa.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 141,
+            "question": "¿Con qué se suelen diluir las pinturas plásticas?",
+            "aAnswer": "Con resina sintética vinílica.",
+            "bAnswer": "Con celulosa.",
+            "cAnswer": "Con resina sintética acrílica.",
+            "dAnswer": "Con agua.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 142,
+            "question": "Los rodillos de piel de cordero se suelen utilizar para...",
+            "aAnswer": "Acabados de gotelé.",
+            "bAnswer": "Pinturas al temple o al agua.",
+            "cAnswer": "Revocos de grietas.",
+            "dAnswer": "Pinturas al aceite.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 143,
+            "question": "A la herramienta formada por una espuma de poliuretano en una cara y una superficie de pelos cortos y rígidos en la otra cara se le llama...",
+            "aAnswer": "Pistola.",
+            "bAnswer": "Raedera.",
+            "cAnswer": "Tampón.",
+            "dAnswer": "Espátula biuso.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 144,
+            "question": "¿Es conveniente conservar los botes de pintura en posición invertida, es decir, con la tapadera como base?",
+            "aAnswer": "No. Se formaría una película endurecida en la superficie que dejaría inservible una parte de la pintura almacenada.",
+            "bAnswer": "Depende de la cantidad que quede en el bote.",
+            "cAnswer": "Depende de la pintura.",
+            "dAnswer": "Sí. Se debe evitar que se forme una película endurecida en la superficie que dejaría inservible una parte de la pintura almacenada.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 145,
+            "question": "Si se desea una gran protección contra la humedad, se usará una pintura...",
+            "aAnswer": "Al aceite.",
+            "bAnswer": "Al óleo.",
+            "cAnswer": "Plástica.",
+            "dAnswer": "Granulada.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 146,
+            "question": "La pintura que, vulgarmente, se conoce como \"al duco\", es la pintura...",
+            "aAnswer": "Al temple.",
+            "bAnswer": "Al agua.",
+            "cAnswer": "A la esponja.",
+            "dAnswer": "A la celulosa.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 147,
+            "question": "Los rodillos de pintura de pelo sintético suelen ser de...",
+            "aAnswer": "Fibra de carbono.",
+            "bAnswer": "Fibra de poliamida.",
+            "cAnswer": "Fibra de cordero.",
+            "dAnswer": "Fibra de gomaespuma.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 148,
+            "question": "En trabajos largos, cuando se produzca una interrupción de varias horas o días, puede evitarse el secado de la pintura sobre los útiles...",
+            "aAnswer": "Sumergiéndolos en agua.",
+            "bAnswer": "Sumergiéndolos en alcohol.",
+            "cAnswer": "Sumergiéndolos en aceite de oliva.",
+            "dAnswer": "Sumergiéndolos en aceite de girasol.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 149,
+            "question": "¿Cuál es la función del fusible en un circuito eléctrico?",
+            "aAnswer": "Sirve como elemento decorativo en las instalaciones eléctricas.",
+            "bAnswer": "Se rompe en caso de sobrecarga de la instalación y ésta queda a salvo.",
+            "cAnswer": "Se activa cuando pasa poca intensidad de corriente y busca otra instalación eléctrica alternativa para derivarla.",
+            "dAnswer": "Cerrar el circuito eléctrico cuando hay una sobrecarga en la instalación.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 150,
+            "question": "¿Qué permite hacer el instrumento buscapolos de un electricista?",
+            "aAnswer": "Medir la tensión que tiene un conductor.",
+            "bAnswer": "Detectar el color del cable medido.",
+            "cAnswer": "Identificar los polos de las baterías.",
+            "dAnswer": "Saber si un conductor tiene tensión.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 151,
+            "question": "¿De qué color suele ser el neutro en las instalaciones eléctricas de baja tensión?",
+            "aAnswer": "Negro.",
+            "bAnswer": "Marrón.",
+            "cAnswer": "Amarillo y verde.",
+            "dAnswer": "Azul.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 152,
+            "question": "¿Qué permite hacer el instrumento comprobador de tensión o puntas de prueba?",
+            "aAnswer": "Permite leer la tensión en un circuito, de forma rápida y cómoda, pero sin demasiada precisión.",
+            "bAnswer": "Permite medir la tensión de un circuito de forma precisa.",
+            "cAnswer": "Permite hacer exactamente igual que lo que hacen los buscapolos.",
+            "dAnswer": "Permite medir la iluminación de un circuito con lámparas.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 153,
+            "question": "¿Qué mide el luxómetro?",
+            "aAnswer": "La resistencia eléctrica de las lámparas.",
+            "bAnswer": "El flujo luminoso.",
+            "cAnswer": "El nivel de iluminación.",
+            "dAnswer": "La existencia de tensión eléctrica en un punto de la instalación.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 154,
+            "question": "¿Qué es un lux?",
+            "aAnswer": "Una candela por metro cuadrado.",
+            "bAnswer": "Un lumen por estereorradián.",
+            "cAnswer": "Un lumen por metro cuadrado.",
+            "dAnswer": "Un lumen por candela.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 155,
+            "question": "¿Necesita un óhmetro común una fuente de tensión propia para poder realizar la medida?",
+            "aAnswer": "Sí. Sobre todo si no es muy sofisticado y exacto el instrumento.",
+            "bAnswer": "No. Depende de la tensión que sufra el instrumento.",
+            "cAnswer": "A veces. Sobre todo depende del tamaño del instrumento.",
+            "dAnswer": "Depende de la intensidad a medir.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 156,
+            "question": "¿Qué mide un óhmetro?",
+            "aAnswer": "La potencia eléctrica.",
+            "bAnswer": "La intensidad de corriente.",
+            "cAnswer": "La tensión eléctrica.",
+            "dAnswer": "La resistencia eléctrica.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 157,
+            "question": "¿Se puede medir con un polímetro las intensidades de corriente?",
+            "aAnswer": "No, tan sólo la resistencia eléctrica.",
+            "bAnswer": "Depende de la escala elegida.",
+            "cAnswer": "Sí.",
+            "dAnswer": "Depende de si es digital o analógico.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 158,
+            "question": "¿Qué mide un vatímetro?",
+            "aAnswer": "Potencia eléctrica.",
+            "bAnswer": "Intensidad de corriente.",
+            "cAnswer": "Tensión eléctrica.",
+            "dAnswer": "Resistencia eléctrica.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 159,
+            "question": "Los interruptores magnetotérmicos...",
+            "aAnswer": "Tienen que cambiarse de la instalación cada vez que se rearman, como los fusibles.",
+            "bAnswer": "No se deben instalar por cada una de las líneas o zonas que se deseen proteger.",
+            "cAnswer": "No son dispositivos de protección automáticos.",
+            "dAnswer": "Pueden ser monopolares, bipolares, tripolares y tetrapolares.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 160,
+            "question": "Señalar la respuesta verdadera sobre los interruptores.",
+            "aAnswer": "Son aparatos de corte con dos posiciones: apertura y cierre.",
+            "bAnswer": "Cierran su contacto cuando se está produciendo la acción sobre ellos, pero lo abren cuando cesa dicha acción, sin tener que volverlos a accionar.",
+            "cAnswer": "La mayoría de ellos son conmutadores.",
+            "dAnswer": "No se usan en circuitos monofásicos.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 161,
+            "question": "Si se quiere apagar o encender una o varias lámparas desde dos puntos indistintamente, se utiliza...",
+            "aAnswer": "El interruptor simple.",
+            "bAnswer": "El interruptor conmutado.",
+            "cAnswer": "El interruptor de cruce.",
+            "dAnswer": "El pulsador.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 162,
+            "question": "Si se quiere apagar o encender varias lámparas desde tres o más sitios indistintamente, se utiliza...",
+            "aAnswer": "El interruptor simple.",
+            "bAnswer": "El interruptor diferencial.",
+            "cAnswer": "El interruptor de cruce.",
+            "dAnswer": "El pulsador.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 163,
+            "question": "¿Qué significan las siglas ICP?",
+            "aAnswer": "Interruptor del cuadro de potencia.",
+            "bAnswer": "Interruptor del cuadro principal.",
+            "cAnswer": "Interruptor de control principal.",
+            "dAnswer": "Interruptor de control de potencia.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 164,
+            "question": "¿El ICP está precintado por la compañía suministradora?",
+            "aAnswer": "No.",
+            "bAnswer": "Sí.",
+            "cAnswer": "Cuando la intensidad es superior a 25 mA.",
+            "dAnswer": "Únicamente en el caso de ENDESA.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 165,
+            "question": "Señale la afirmación falsa sobre el Interruptor General Automático (IGA):",
+            "aAnswer": "Protege de sobrecargas las instalaciones.",
+            "bAnswer": "Protege de cortocircuitos las instalaciones.",
+            "cAnswer": "Se dispara cuando la potencia es superior a la contratada.",
+            "dAnswer": "Es un elemento que pertenece al cuadro general de protección.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 166,
+            "question": "Señale la afirmación falsa sobre las características generales de los interruptores diferenciales.",
+            "aAnswer": "Están provistos de una intensidad nominal o corriente de corte, en Amperios.",
+            "bAnswer": "Están provistos de una sensibilidad para reaccionar ante una corriente de fuga.",
+            "cAnswer": "Están provistos de un pulsador de prueba que permite saber si el circuito de disparo funciona adecuadamente cuando el aparato está alimentado.",
+            "dAnswer": "Existen modelos pentapolares para ciertos tipos de instalaciones.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 167,
+            "question": "Los PIAs son interruptores formados por dos circuitos: uno magnético, para la protección contra cortocircuitos, y otro térmico, para la protección contra sobrecargas.",
+            "aAnswer": "Verdadero.",
+            "bAnswer": "Falso.",
+            "cAnswer": "Tan sólo tienen el circuito térmico.",
+            "dAnswer": "Tan sólo tienen el circuito magnético.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 168,
+            "question": "¿Qué significan las siglas PIA?",
+            "aAnswer": "Potencia de los interruptores de acción.",
+            "bAnswer": "Pequeños interruptores de acción.",
+            "cAnswer": "Potencia de los interruptores automáticos.",
+            "dAnswer": "Pequeños interruptores automáticos.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 169,
+            "question": "El aumento del grosor de los cables eléctricos está en relación inversa con la potencia de los dispositivos eléctricos conectados a él.",
+            "aAnswer": "No, está en relación directa.",
+            "bAnswer": "Depende de si son aparatos de gran potencia.",
+            "cAnswer": "Sí.",
+            "dAnswer": "Depende de qué enchufes de fuerza se utilicen.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 170,
+            "question": "Señale la afirmación correcta sobre las regletas de conexión.",
+            "aAnswer": "No se realiza un buen empalme de la conexión.",
+            "bAnswer": "Están totalmente fabricadas de material conductor.",
+            "cAnswer": "No tienen orificios de alojamiento de conductor.",
+            "dAnswer": "Se fijan los conectores mediante tornillos.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 171,
+            "question": "¿El cebador es igual a la reactancia en un tubo fluorescente?",
+            "aAnswer": "No.",
+            "bAnswer": "Sí.",
+            "cAnswer": "Depende de la marca del tubo.",
+            "dAnswer": "No existen reactancia en los tubos fluorescentes comunes.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 172,
+            "question": "Las lámparas de vapor de mercurio no necesitan reactancia.",
+            "aAnswer": "Verdadero. Están formadas por un filamento por el que pasa la corriente.",
+            "bAnswer": "Falso. Ya que tienen un funcionamiento muy similar al del tubo fluorescente.",
+            "cAnswer": "Verdadero. Las halógenas son tan sólo las que necesitan reactancia.",
+            "dAnswer": "Falso. Aunque se pueden sustituir por un transformador de baja tensión.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 173,
+            "question": "El operario suele unir las tuberías de cobre...",
+            "aAnswer": "Con cinta aislante.",
+            "bAnswer": "Soldándolas entre sí.",
+            "cAnswer": "Roscándolas entre sí.",
+            "dAnswer": "Con disolvente de gran adherencia.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 174,
+            "question": "¿La zapata de un grifo suele ser de goma?",
+            "aAnswer": "Depende del grifo.",
+            "bAnswer": "No. Es metálica.",
+            "cAnswer": "Sí. Además debe reponerse fácilmente.",
+            "dAnswer": "El grifo no contiene zapata.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 175,
+            "question": "¿Qué instrumento usa el operario para ensanchar tubos?",
+            "aAnswer": "El abocardador.",
+            "bAnswer": "El escariador.",
+            "cAnswer": "El curvador.",
+            "dAnswer": "El pie de rey.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 176,
+            "question": "Los sifones evitan...",
+            "aAnswer": "El paso de agua a través de las tuberías.",
+            "bAnswer": "Que reviertan a las tuberías.",
+            "cAnswer": "Malos olores procedentes de las instalaciones de agua.",
+            "dAnswer": "Las goteras de las tuberías.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 177,
+            "question": "¿Cada cuánto tiempo se recomienda limpiar los sifones?",
+            "aAnswer": "Cada dos años, al menos.",
+            "bAnswer": "Cada cinco años, al menos.",
+            "cAnswer": "Al menos, cada 18 meses.",
+            "dAnswer": "Al menos, cada seis meses.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 178,
+            "question": "Si se unen dos tuberías de cobre con un material de aportación de tal forma que la fuerza de atracción capilar del tubo de cobre es tal que hace que la soldadura penetre en toda la superficie de unión, se está hablando de...",
+            "aAnswer": "Soldadura en frío.",
+            "bAnswer": "Soldadura por capilaridad.",
+            "cAnswer": "Soldadura con disolvente de gran adherencia.",
+            "dAnswer": "Soldadura a presión.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 179,
+            "question": "Para conseguir una buena estanqueidad en las tuberías unidas por rosca, se suele usar...",
+            "aAnswer": "Disolvente de gran adherencia.",
+            "bAnswer": "Trapos bien atados.",
+            "cAnswer": "Diversos sistemas de soldadura.",
+            "dAnswer": "Cinta de teflón.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 180,
+            "question": "El cámbium es la parte del árbol que se encuentra entre...",
+            "aAnswer": "El duramen y la albura.",
+            "bAnswer": "La albura y la médula.",
+            "cAnswer": "La corteza y la albura.",
+            "dAnswer": "La médula y el duramen.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 181,
+            "question": "¿Es más dura la madera del nogal que la del abeto?",
+            "aAnswer": "Depende de si el nogal es joven.",
+            "bAnswer": "Sí.",
+            "cAnswer": "No, al contrario.",
+            "dAnswer": "Depende de si el abeto es joven.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 182,
+            "question": "¿Depende la densidad de la madera de la humedad?",
+            "aAnswer": "No.",
+            "bAnswer": "Depende del olor de la madera.",
+            "cAnswer": "Depende del veteado de la madera.",
+            "dAnswer": "Sí.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 183,
+            "question": "Señalar la siguiente respuesta falsa.",
+            "aAnswer": "Los nudos son defectos artificiales de la madera.",
+            "bAnswer": "El pandeo es un defecto que puede ocasionarse por el secado de la madera.",
+            "cAnswer": "Las grietas son defectos de las maderas.",
+            "dAnswer": "Los insectos pueden ocasionar defectos a las maderas.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 184,
+            "question": "A la operación de corte del árbol, ramas, e incluso corteza, se le llama...",
+            "aAnswer": "Corte y aserrado.",
+            "bAnswer": "Apeo y corte.",
+            "cAnswer": "Secado y corte.",
+            "dAnswer": "Apeo y secado.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 185,
+            "question": "¿Es conveniente hacer el secado de la madera al aire libre en contacto directo con el sol?",
+            "aAnswer": "Depende del mes del año.",
+            "bAnswer": "Sí.",
+            "cAnswer": "No.",
+            "dAnswer": "Depende del año de lluvias que se haya tenido.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 186,
+            "question": "Con el contrachapado se suele recubrir una madera de alta calidad con una chapa delgada de madera de peor calidad.",
+            "aAnswer": "Verdadero.",
+            "bAnswer": "Falso.",
+            "cAnswer": "Depende de la madera de alta calidad.",
+            "dAnswer": "Depende de la madera de baja calidad.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 187,
+            "question": "¿Existe algún tipo de martillo denominado \"martillo de electricista\"?",
+            "aAnswer": "No. No hay martillos de profesionales.",
+            "bAnswer": "No. Los electricistas usan únicamente el \"martillo de cabeza blanda\".",
+            "cAnswer": "No. Los electricistas usan únicamente el \"martillo de remaches\".",
+            "dAnswer": "Ninguna de las respuestas anteriores es correcta.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 188,
+            "question": "Cuando se lija una madera es conveniente hacerlo...",
+            "aAnswer": "En la dirección de la veta de la madera.",
+            "bAnswer": "En la dirección perpendicular a la veta de la madera.",
+            "cAnswer": "De pie.",
+            "dAnswer": "Sentado.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 189,
+            "question": "El componente principal útil de la madera se llama...",
+            "aAnswer": "Lignina.",
+            "bAnswer": "Tanino.",
+            "cAnswer": "Papel.",
+            "dAnswer": "Celulosa.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 190,
+            "question": "Si la madera tiene facilidad para partirse en el sentido de las fibras se dice que es...",
+            "aAnswer": "Densa.",
+            "bAnswer": "Hendible.",
+            "cAnswer": "Flexible.",
+            "dAnswer": "Higroscópica.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 191,
+            "question": "A la capacidad de la madera para absorber o exhalar humedad, según el medio donde se encuentre, se le llama...",
+            "aAnswer": "Higroscopicidad.",
+            "bAnswer": "Porosidad.",
+            "cAnswer": "Homogeneidad.",
+            "dAnswer": "Hendibilidad.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 192,
+            "question": "A mayor humedad en la madera...",
+            "aAnswer": "Se aumenta el carácter de aislante eléctrico.",
+            "bAnswer": "Se disminuye su conductividad eléctrica.",
+            "cAnswer": "Se mantiene constante su conductividad eléctrica.",
+            "dAnswer": "Se reduce el carácter de aislante eléctrico.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 193,
+            "question": "El papel de lija consiste en pequeños trozos de material abrasivo pegados en un soporte de papel. Cuando menor sea el número de granos, y por tanto el del papel...",
+            "aAnswer": "Más bonita será la lija.",
+            "bAnswer": "Más papel habrá que usar para lijar algo.",
+            "cAnswer": "Más basta será la lija.",
+            "dAnswer": "Más fina será la lija.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 194,
+            "question": "La gubia se diferencia del escoplo en que...",
+            "aAnswer": "Su hoja es recta.",
+            "bAnswer": "Su hoja es curvada.",
+            "cAnswer": "No tiene mango.",
+            "dAnswer": "Es biselada.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 195,
+            "question": "El quemador de las calderas murales de gas suele ser de tipo atmosférico.",
+            "aAnswer": "Verdadero.",
+            "bAnswer": "Falso.",
+            "cAnswer": "Depende del gas.",
+            "dAnswer": "Depende del mural.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 196,
+            "question": "¿Qué aparato introduce en la caldera el combustible?",
+            "aAnswer": "La bomba.",
+            "bAnswer": "El ventilador.",
+            "cAnswer": "La chimenea.",
+            "dAnswer": "El quemador.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 197,
+            "question": "Los quemadores para combustibles gaseosos...",
+            "aAnswer": "Sirven para combustibles líquidos.",
+            "bAnswer": "No usan aire para la combustión.",
+            "cAnswer": "Están dotados de un ventilador de tipo centrífugo, o flotante, que impulsa a presión el aire preciso para la combustión.",
+            "dAnswer": "Tienen un sistema de pulverización mecánico.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 198,
+            "question": "Indique el parámetro fundamental de las bombas.",
+            "aAnswer": "La temperatura.",
+            "bAnswer": "El caudal.",
+            "cAnswer": "La altura.",
+            "dAnswer": "Las válvulas.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 199,
+            "question": "Señale cuál de las siguientes, no es una característica de las tuberías de acero:",
+            "aAnswer": "No pueden ir con elementos roscados.",
+            "bAnswer": "Son fácilmente atacables por la oxidación.",
+            "cAnswer": "Son muy resistentes a las roturas.",
+            "dAnswer": "Al soldar, se quema el galvanizado, eliminando el efecto de protección.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 200,
+            "question": "Al sistema de tuberías en calefacción formado por una tubería principal en el sótano que actúa como colector y a partir del cual se alimentan las columnas ascendentes, se le llama...",
+            "aAnswer": "Sistema de distribución superior.",
+            "bAnswer": "Sistema de distribución inferior.",
+            "cAnswer": "Sistema de distribución de sótano.",
+            "dAnswer": "Sistema de distribución de desván.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 201,
+            "question": "Las purgas de aire tratan de...",
+            "aAnswer": "Conocer la presión del agua de la tubería.",
+            "bAnswer": "Conocer la temperatura a la presión de tubería del agua.",
+            "cAnswer": "Insertar las burbujas de aire en las tuberías.",
+            "dAnswer": "Eliminar las burbujas de aire en las tuberías.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 202,
+            "question": "La gran ventaja de los radiadores de paneles de chapa de acero sebasa en...",
+            "aAnswer": "La menor superficie de radiación.",
+            "bAnswer": "Su gran volumen.",
+            "cAnswer": "La mayor superficie de radiación.",
+            "dAnswer": "Su forma poco plana.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 203,
+            "question": "El aparato que mide la presión del agua en las tuberías recibe elnombre de...",
+            "aAnswer": "Termómetro.",
+            "bAnswer": "Manómetro.",
+            "cAnswer": "Válvula.",
+            "dAnswer": "Bomba.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 204,
+            "question": "El aerotermo es un aparato que...",
+            "aAnswer": "Está formado por un termo convencional de líquidos.",
+            "bAnswer": "Suministra calor vía radiación.",
+            "cAnswer": "Aísla a las tuberías de las posibles fugas de calor.",
+            "dAnswer": "Suministra calor mediante una batería y un ventilador.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 205,
+            "question": "El problema medioambiental más grave que se encuentra en el usodel carbón como combustible sólido radica en...",
+            "aAnswer": "Su olor.",
+            "bAnswer": "El color.",
+            "cAnswer": "El azufre.",
+            "dAnswer": "El poder calorífico.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 206,
+            "question": "El combustible líquido más utilizado en calefacción es...",
+            "aAnswer": "El gasóleo C.",
+            "bAnswer": "La gasolina.",
+            "cAnswer": "El queroseno.",
+            "dAnswer": "El butano licuado.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 207,
+            "question": "Indique la respuesta falsa sobre la bomba de calor.",
+            "aAnswer": "No puede aportar calor a un recinto desde un foco de temperaturainferior.",
+            "bAnswer": "Necesita aporte de trabajo en su funcionamiento para producir calor.",
+            "cAnswer": "Está provista de un compresor.",
+            "dAnswer": "Necesita un refrigerante para transportar el calor.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 208,
+            "question": "El aparato que detecta variaciones de temperatura y las transformaen otro tipo de señal (por ejemplo, eléctrica) que afecta a otros componen-tes del sistema de calefacción, se llama...",
+            "aAnswer": "Presostato.",
+            "bAnswer": "Termostato.",
+            "cAnswer": "Manómetro.",
+            "dAnswer": "Termómetro.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 209,
+            "question": "Para limpiar las manchas de humedad en ropa de algodón, hilo, linoo lana usted deberá:",
+            "aAnswer": "Disolver en alcohol o bien frotar con un algodón mojado con alcohol,poniendo un paño debajo de la prenda.",
+            "bAnswer": "Mojar la mancha en agua fría y colocar sobre ella un poco de glicerina,dejar pasar una hora y luego lavar con detergente y agua.",
+            "cAnswer": "Frotar con jabón seco y enjuagar con agua oxigenada.",
+            "dAnswer": "Mojar la prenda en agua con solución de amoniaco, luego lavar.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 210,
+            "question": "En general, no necesitan tareas de planchado:",
+            "aAnswer": "Los tejidos elásticos.",
+            "bAnswer": "El algodón tejido fino.",
+            "cAnswer": "El algodón sarga, crepé.",
+            "dAnswer": "El lino.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 211,
+            "question": "En el servicio de lavandería de un medio hospitalario, y respecto a lalimpieza de la ropa de alto riesgo y la ropa de áreas especiales, que esténsujetas a tratamiento especial:",
+            "aAnswer": "Será el propio personal de lavandería quien decida el sistema a seguir.",
+            "bAnswer": "Será el/la Jefe/a del lavandería quien decida el sistema a seguir.",
+            "cAnswer": "Será el médico quien decida el sistema a seguir.",
+            "dAnswer": "El sistema a seguir será el normalizado.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 212,
+            "question": "El Real Decreto 3484/2000:",
+            "aAnswer": "Regula determinadas condiciones de aplicación de las disposicionesomunitarias en materia de higiene, de la producción y comercializa-ión de los productos alimenticios.",
+            "bAnswer": "Establece las normas generales de higiene de los manipuladores dealimentos, las responsabilidades de las empresas y las modalidadespara la verificación de la observancia de dichas normas.",
+            "cAnswer": "Establece normas específicas de higiene de los alimentos de origenanimal.",
+            "dAnswer": "Define y establece las normas de higiene de elaboración, envasado,almacenamiento, transporte, distribución, manipulación, venta, sumi-nistro y servicio de comidas preparadas.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 213,
+            "question": "Por norma general las salas de manipulación y envasado de produc-tos alimenticios no podrán tener una temperatura superior a:",
+            "aAnswer": "18 oC",
+            "bAnswer": "22 oC",
+            "cAnswer": "25 oC",
+            "dAnswer": "28 oC",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 214,
+            "question": "Si clasificamos los alimentos en función de su susceptibilidad de su-frir alteraciones, ¿en qué grupo incluiría las conservas y semiconservas?",
+            "aAnswer": "Alimentos perecederos.",
+            "bAnswer": "Alimentos semiperecederos.",
+            "cAnswer": "Alimentos no perecederos.",
+            "dAnswer": "Alimentos estables.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 215,
+            "question": "¿Cuál/es es/son vehículo/s transmisor/es del o de los gérmenes másimportantes de nuestro cuerpo en el medio hospitalario?",
+            "aAnswer": "La respiración.",
+            "bAnswer": "Las manos.",
+            "cAnswer": "El cabello.",
+            "dAnswer": "La ropa.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 216,
+            "question": "La actual Constitución Española se promulgó el:",
+            "aAnswer": "6 de diciembre de 1978.",
+            "bAnswer": "27 de diciembre de 1978.",
+            "cAnswer": "29 de diciembre de 1978.",
+            "dAnswer": "8 de diciembre de 1978.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 217,
+            "question": "Indique la respuesta correcta de las que se le plantean:",
+            "aAnswer": "El Poder Legislativo, elegido directamente por el pueblo, aprueba lasleyes.",
+            "bAnswer": "El Poder Ejecutivo, elegido directamente por el pueblo, aprueba las leyes.",
+            "cAnswer": "El Poder Judicial aprueba las leyes.",
+            "dAnswer": "El Rey aprueba las leyes.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 218,
+            "question": "La norma suprema del Ordenamiento Jurídico del Estado es:",
+            "aAnswer": "El Real Decreto Ley.",
+            "bAnswer": "El conjunto de las Leyes aprobadas por el Parlamento.",
+            "cAnswer": "La Constitución.",
+            "dAnswer": "El conjunto de las Leyes Orgánicas aprobadas por el Parlamento.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 219,
+            "question": "La Constitución Española consta de un total de:",
+            "aAnswer": "169 artículos.",
+            "bAnswer": "179 artículos.",
+            "cAnswer": "159 artículos.",
+            "dAnswer": "189 artículos.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 220,
+            "question": "Forman parte de la Constitución una serie de Disposiciones Adicio-nales, Transitorias, Derogatorias y Final. ¿Podría indicar cuántas Disposi-iones Transitorias tiene?",
+            "aAnswer": "4.",
+            "bAnswer": "1.",
+            "cAnswer": "9.",
+            "dAnswer": "5.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 221,
+            "question": "La Constitución Española se estructura en:",
+            "aAnswer": "Un Preámbulo, un Título Preliminar y diez Títulos.",
+            "bAnswer": "Un Preámbulo, dos Títulos Preliminares y diez Títulos.",
+            "cAnswer": "Un Preámbulo, dos Títulos Preliminares y once Títulos.",
+            "dAnswer": "Un Preámbulo, un Título Preliminar y doce Títulos.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 222,
+            "question": "El Título I de la Constitución recibe el nombre de:",
+            "aAnswer": "De los Derechos y Deberes Fundamentales.",
+            "bAnswer": "De la Organización Territorial del Estado.",
+            "cAnswer": "De las Cortes Generales.",
+            "dAnswer": "De la Corona.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 223,
+            "question": "¿Cuántos Capítulos forman el Título I de la Constitución Española?",
+            "aAnswer": "2.",
+            "bAnswer": "3.",
+            "cAnswer": "4.",
+            "dAnswer": "5.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 224,
+            "question": "Economía y Hacienda es el nombre que en la Constitución Españo-la recibe:",
+            "aAnswer": "El Título VII.",
+            "bAnswer": "El Título VI.",
+            "cAnswer": "El Título V.",
+            "dAnswer": "El Título IV.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 225,
+            "question": "Si nos referimos a los Capítulos de la Constitución Española denomi-nados “Principios Generales”, “De la Administración Local” y “De las Comuni-dades Autónomas”, estamos aludiendo al contenido del Título:",
+            "aAnswer": "Tercero.",
+            "bAnswer": "Octavo.",
+            "cAnswer": "Preliminar.",
+            "dAnswer": "Noveno.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 226,
+            "question": "Si nos referimos a la “Protección a la Familia”, “Régimen público de laSeguridad Social”, “Protección del Patrimonio Histórico, Cultural y Artístico”,o del “Derecho a la Protección de la salud”, estamos aludiendo a:",
+            "aAnswer": "Derechos Fundamentales y Libertades Públicas.",
+            "bAnswer": "Derechos y Deberes de los ciudadanos.",
+            "cAnswer": "Principios rectores de la Política Social y Económica.",
+            "dAnswer": "La parte Orgánica de la Constitución.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 227,
+            "question": "La Constitución Española recoge la figura del Defensor del Puebloen su artículo:",
+            "aAnswer": "45.",
+            "bAnswer": "54.",
+            "cAnswer": "53.",
+            "dAnswer": "55.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 228,
+            "question": "El Defensor del Pueblo depende:",
+            "aAnswer": "Del Congreso.",
+            "bAnswer": "Del Senado.",
+            "cAnswer": "De las Cortes Generales.",
+            "dAnswer": "Del Poder Judicial.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 229,
+            "question": "El artículo 20 de la Constitución alude a la libertad de expresión, li-bertad de prensa y libertad de cátedra, entre otros. Estas libertades tienensu límite en el respeto (señale la opción incorrecta):",
+            "aAnswer": "Al derecho al honor y a la intimidad.",
+            "bAnswer": "Al derecho a la propia imagen.",
+            "cAnswer": "Al derecho a la protección de la juventud y de la infancia.",
+            "dAnswer": "Al principio de autoridad.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 230,
+            "question": "La Ley General de Sanidad es la:",
+            "aAnswer": "24/1986, de 25 de abril.",
+            "bAnswer": "14/1986, de 25 de abril.",
+            "cAnswer": "14/1976, de 25 de abril.",
+            "dAnswer": "24/1976, de 25 de abril.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 231,
+            "question": " Indique el/los principio/s inspirador/es de la formulación de la LeyGeneral de Sanidad:",
+            "aAnswer": "Protección de la salud e institucionalización.",
+            "bAnswer": "Medicina pública para todos los/as ciudadanos/as, salvo los/as no co-tizantes.",
+            "cAnswer": "Discrecionalidad.",
+            "dAnswer": "Responsabilidad solidaria.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 232,
+            "question": "Los Servicios Públicos de Salud se organizarán de modo que se arti-ule una participación comunitaria en la formulación de la política sanita-ria en el control de su ejecución, a través de:",
+            "aAnswer": "Las Corporaciones Territoriales, las Organizaciones Empresariales ylas Organizaciones Sindicales.",
+            "bAnswer": "Las Organizaciones vecinales y mancomunidades.",
+            "cAnswer": "Los Consejos Territoriales y Demarcaciones Municipales.",
+            "dAnswer": "Ninguna es correcta.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 233,
+            "question": "Las Áreas de Salud contarán, como mínimo, con tres órganos: el Con-sejo de Salud, el Consejo de Dirección y el Gerente de Área. Indique el quesea Órgano de Participación:",
+            "aAnswer": "El Consejo de Salud de Área.",
+            "bAnswer": "El Consejo de Dirección de Área.",
+            "cAnswer": "El/la Gerente de Área.",
+            "dAnswer": "Ninguno es órgano de participación.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 234,
+            "question": "El/la Gerente del Área de Salud será nombrado/a y cesado/a por:",
+            "aAnswer": "El/la Director/a del Servicio de Salud de la Comunidad Autónoma.",
+            "bAnswer": "La Dirección del Servicio de Salud de la Comunidad Autónoma.",
+            "cAnswer": "El/la Ministro/a de Sanidad.",
+            "dAnswer": "Ninguno de los anteriores.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 235,
+            "question": "La “sienita” es un material utilizado en construcción compuesto por:",
+            "aAnswer": "Silicio, berilio y aluminio.",
+            "bAnswer": "Feldespato y mica.",
+            "cAnswer": "Cuarzo y olivino.",
+            "dAnswer": "Silicatos, hierro y magnesio.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 236,
+            "question": "La mezcla natural en la que el betún se encuentra asociado a unamateria inerte, es decir, que no reacciona químicamente, se conoce conel nombre de:",
+            "aAnswer": "Creosota.",
+            "bAnswer": "Betún asfáltico.",
+            "cAnswer": "Asfalto.",
+            "dAnswer": "Alquitrán.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 237,
+            "question": "La “arista media” de un ladrillo recibe el nombre de:",
+            "aAnswer": "Soga.",
+            "bAnswer": "Tabla.",
+            "cAnswer": "Canto.",
+            "dAnswer": "Tizón.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 238,
+            "question": "Al cemento resistente a las aguas selenitosas capaz de resistir la ac-ión del sulfato cálcico, se le designa como:",
+            "aAnswer": "PHA.",
+            "bAnswer": "PAS.",
+            "cAnswer": "PUZ.",
+            "dAnswer": "SF.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 239,
+            "question": "Cuando nos referimos a una herramienta de uso general de hierroacerado y con boca de corte en bisel, usada, básicamente, para labrar lapiedra, nos estamos refiriendo:",
+            "aAnswer": "A la raedera.",
+            "bAnswer": "Al escoplo.",
+            "cAnswer": "A la fresadora.",
+            "dAnswer": "A la bujarda.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 240,
+            "question": "La herramienta usada para localizar la “fase” que tiene corrienteeléctrica se conoce con el nombre de:",
+            "aAnswer": "Buscapolos.",
+            "bAnswer": "Comprobador de tensión.",
+            "cAnswer": "Megger.",
+            "dAnswer": "Óhmetro.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 241,
+            "question": "La herramienta usada para medir la “resistencia de aislamiento” dedispositivos eléctricos se conoce con el nombre de:",
+            "aAnswer": "Buscapolos.",
+            "bAnswer": "Comprobador de tensión.",
+            "cAnswer": "Megger.",
+            "dAnswer": "Óhmetro.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 242,
+            "question": "La herramienta que puede medir “tensión, intensidad, resistencia ypotencia” se conoce con el nombre de:",
+            "aAnswer": "Vatímetro.",
+            "bAnswer": "Polímetro.",
+            "cAnswer": "Voltímetro.",
+            "dAnswer": "Megger.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 243,
+            "question": "La soldadura que se realiza con aglutinantes que se funden sobre lajunta, a altas temperaturas, formando una unión metalúrgica con el mate-rial base se conoce con el nombre de:",
+            "aAnswer": "Soldadura blanda.",
+            "bAnswer": "Soldadura fuerte.",
+            "cAnswer": "Soldadura por capilaridad.",
+            "dAnswer": "Soldadura en frío.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 244,
+            "question": "La herramienta utilizada para dar diversas formas a las bocas de los tubosde metal, en especial a las tuberías de cobre, se conoce con el nombre de:",
+            "aAnswer": "Abocinador.",
+            "bAnswer": "Curvadora.",
+            "cAnswer": "Escariador.",
+            "dAnswer": "Abocardador.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 245,
+            "question": "La herramienta concebida para ampliar la boca de los tubos, se co-noce con el nombre de:",
+            "aAnswer": "Abocinador.",
+            "bAnswer": "Curvadora.",
+            "cAnswer": "Escariador.",
+            "dAnswer": "Abocardador.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 246,
+            "question": "Si hablamos de una madera de color blanco amarillo, o amarillo ver-doso, con estructura fina, dura, flexible y de fibras gruesas, que resiste ala carcoma y de crecimiento rápido que se endurece en el agua, nos esta-mos refiriendo a:",
+            "aAnswer": "La acacia.",
+            "bAnswer": "El castaño.",
+            "cAnswer": "El eucalipto.",
+            "dAnswer": "El nogal.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 247,
+            "question": "La facilidad que tiene la madera de partirse en el sentido de las fi-bras, se conoce con el nombre de:",
+            "aAnswer": "Flexibilidad.",
+            "bAnswer": "Hendibilidad.",
+            "cAnswer": "Plasticidad.",
+            "dAnswer": "Homogeneidad.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 248,
+            "question": "El instrumento diseñado para trazar líneas paralelas a los bordes dela pieza, especialmente al marcar las juntas y ranuras, es:",
+            "aAnswer": "La regla de acero.",
+            "bAnswer": "El escantillón.",
+            "cAnswer": "El gramil.",
+            "dAnswer": "El bisel móvil.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 249,
+            "question": "Los herrajes que se utilizan para cerrar y asegurar ventanas y bal-ones y constan de una varilla de hierro, cuyos extremos acodillados ase-guran las hojas entre sí y con el marco; estando sostenidas por puentes yhaciendo el movimiento de rotación por medio de una manija o pomo, re-iben el nombre de:",
+            "aAnswer": "Cerrojos.",
+            "bAnswer": "Fallebas.",
+            "cAnswer": "Bisagras.",
+            "dAnswer": "Ninguna respuesta es correcta.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 250,
+            "question": "La canalización, generalmente vertical, que se encuentra entre la de-rivación y la llave de reglaje, se conoce con el nombre de:",
+            "aAnswer": "Caudal de acometida.",
+            "bAnswer": "Retorno invertido.",
+            "cAnswer": "Sistema de distribución superior.",
+            "dAnswer": "Sistema de distribución vertical.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 251,
+            "question": "Los elementos complementarios que tienen por objeto absorber losincrementos de volumen producidos por el agua del circuito de calefacciónal calentarse, se conocen con el nombre de:",
+            "aAnswer": "Soportes.",
+            "bAnswer": "Vasos de expansión.",
+            "cAnswer": "Bombas.",
+            "dAnswer": "Válvulas.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 252,
+            "question": "La pieza formada por un “evaporador, un compresor, un condensador yuna válvula de expansión” se conoce con el nombre de:",
+            "aAnswer": "Bomba de calor.",
+            "bAnswer": "Manómetro.",
+            "cAnswer": "Vaso de expansión.",
+            "dAnswer": "Termostato.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 253,
+            "question": "El elemento que posibilita la regulación exacta de la temperatu-ra del fluido al controlar el caudal en función de ésta, se conoce con elnombre de:",
+            "aAnswer": "Soportes.",
+            "bAnswer": "Vasos de expansión.",
+            "cAnswer": "Bombas.",
+            "dAnswer": "Válvulas.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 254,
+            "question": "Las calderas murales de gas suelen tener una potencia calorífica,aproximada, comprendida entre:",
+            "aAnswer": "Las 4000 y las 6000 kcal/h.",
+            "bAnswer": "Las 5000 y las 7000 kcal/h.",
+            "cAnswer": "Las 6000 y las 8000 kcal/h.",
+            "dAnswer": "Las 8000 y las 20.000 kcal/h.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 255,
+            "question": "Las calderas de pie con quemador atmosférico suelen tener una po-tencia, aproximada, comprendida entre:",
+            "aAnswer": "Las 15.000 y las 40.000 kcal/h.",
+            "bAnswer": "Las 15.000 y las 20.000 kcal/h.",
+            "cAnswer": "Las 5000 y las 10.000 kcal/h.",
+            "dAnswer": "Las 8000 y las 15.000 kcal/h.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 256,
+            "question": "El hormigón puede ser clasificado atendiendo a razones de densidad,omposición o en función de su tipo de armadura. La densidad de los hor-migones denominados “normales” estará comprendida entre:",
+            "aAnswer": "600/1100 kg/m3.",
+            "bAnswer": "1100/2000 kg/m3.",
+            "cAnswer": "2000/2800 kg/m3.",
+            "dAnswer": "Mayor de 1600 kg/m3.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 257,
+            "question": "Para eliminar las pinturas viejas que no resistan un nuevo repinta-do se usan:",
+            "aAnswer": "Los disolventes.",
+            "bAnswer": "Los diluyentes.",
+            "cAnswer": "Los decapantes.",
+            "dAnswer": "Ninguno de los anteriores.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 258,
+            "question": "El funcionamiento de un tubo fluorescente se basa en:",
+            "aAnswer": "La alimentación a través de una reactancia que estabiliza la corrientey emite luz al excitarse el gas por el paso de la corriente.",
+            "bAnswer": "El paso de la corriente por un filamento.",
+            "cAnswer": "Un transformador que reduce la tensión de 230 V a un valor de 12 V.",
+            "dAnswer": "El principio de funcionamiento de las lámparas halógenas.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 259,
+            "question": "El uso de tubos de hierro galvanizado está permitido en las redes detuberías de calefacción que no sobrepasen la temperatura de:",
+            "aAnswer": "33 oC.",
+            "bAnswer": "43 oC.",
+            "cAnswer": "53 oC.",
+            "dAnswer": "No está permitido su uso a ninguna temperatura.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 260,
+            "question": "¿Cuál de las siguientes afirmaciones es correcta?",
+            "aAnswer": "En general, las maderas duras tienen un color más oscuro que lasmaderas blandas.",
+            "bAnswer": "Las maderas blandas son más fibrosas que las maderas duras.",
+            "cAnswer": "La madera seca es más hendible que la madera verde.",
+            "dAnswer": "El árbol es más duro en el exterior que en su interior.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 261,
+            "question": "Señale la opción correcta:",
+            "aAnswer": "Las maderas duras, densas y compactas son las más aislantes del calor.",
+            "bAnswer": "La resistencia al desgaste de la madera es mayor en las seccionesradiales que en las testeras.",
+            "cAnswer": "La madera seca es buena conductora del calor y de la electricidad.",
+            "dAnswer": "La madera de encina es menos inflamable que la de pino.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 262,
+            "question": "¿Cuál de las siguientes opciones es correcta?",
+            "aAnswer": "Las maderas más fáciles de hendir son las que tienen muchos nudosy fibras cortas.",
+            "bAnswer": "La conductibilidad de la madera es mayor en el sentido longitudinalde sus fibras que en el radial.",
+            "cAnswer": "La resistencia al choque de la madera es mayor en el sentido transver-sal que en el sentido axial de sus fibras.",
+            "dAnswer": "A partir del punto de saturación de agua, la madera aumenta notable-mente de volumen según va absorbiendo agua.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 263,
+            "question": "¿Qué defecto se produce por un mal aserrado de la madera, en elque el grano de los tablones se dispone paralelamente al sentido longitu-dinal de las piezas?",
+            "aAnswer": "Grano inclinado.",
+            "bAnswer": "Pandeo.",
+            "cAnswer": "Fendas.",
+            "dAnswer": "Ojo de perdiz.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 264,
+            "question": "El residuo que queda después de la destilación fraccionada del al-quitrán se conoce como:",
+            "aAnswer": "Betún.",
+            "bAnswer": "Brea.",
+            "cAnswer": "Asfalto.",
+            "dAnswer": "Barniz.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 265,
+            "question": "Las hojas de lija cuyo número de grano está entre 100 y 120, sonde tipo:",
+            "aAnswer": "Muy grueso.",
+            "bAnswer": "Medio.",
+            "cAnswer": "Fino.",
+            "dAnswer": "Muy fino.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 266,
+            "question": "Para restaurar las hojas de las sierras, además del afilado, se les rea-liza una tarea consistente en disponer los dientes alternativamente a dere-ha y a izquierda para que el surco del serrado sea más ancho que la hoja,y así esta se deslice mejor. Esta tarea es el:",
+            "aAnswer": "Cepillado.",
+            "bAnswer": "Desbastado.",
+            "cAnswer": "Tronzado.",
+            "dAnswer": "Triscado.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 267,
+            "question": "El formón cuya hoja tiene una sección curva, se llama:",
+            "aAnswer": "Gubia.",
+            "bAnswer": "Bisel.",
+            "cAnswer": "Escoplo.",
+            "dAnswer": "Virola.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 268,
+            "question": "En carpintería, para trazar líneas paralelas a los bordes de una pie-za, se utiliza:",
+            "aAnswer": "El cartabón.",
+            "bAnswer": "El escantillón.",
+            "cAnswer": "El gramil.",
+            "dAnswer": "La garlopa.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 269,
+            "question": "Para realizar una primera incisión en la madera, que permita luegointroducir un tornillo, se utiliza preferentemente:",
+            "aAnswer": "El buril.",
+            "bAnswer": "El gramil.",
+            "cAnswer": "El triscador.",
+            "dAnswer": "El sargento.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 270,
+            "question": "Señalar cuál de las siguientes afirmaciones no es correcta:",
+            "aAnswer": "La calidad de corte de una escofina viene determinada por el númerode dientes por centímetro cuadrado.",
+            "bAnswer": "Cuanto más juntas estén las líneas de dientes, más fina es la lima.",
+            "cAnswer": "Para desbastar usaremos la lima, mientras que para pulir utilizaremospreferiblemente la escofina.",
+            "dAnswer": "Las escofinas sólo se utilizan en maderas.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 271,
+            "question": "La galga de un tornillo se refiere a:",
+            "aAnswer": "La longitud del tornillo.",
+            "bAnswer": "La cabeza del tornillo.",
+            "cAnswer": "La ranura del tornillo.",
+            "dAnswer": "El diámetro nominal del tornillo.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 272,
+            "question": "El/la operario/a usa el escariador para:",
+            "aAnswer": "Doblar un tubo cortado.",
+            "bAnswer": "Ensanchar un tubo cortado.",
+            "cAnswer": "Quitar las rebabas interiores de un tubo cortado.",
+            "dAnswer": "Dar formas diversas a las bocas de los tubos.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 273,
+            "question": "El/la operario/a usa la curvadora de tubos para combar tubos. Señalela afirmación correcta sobre la curvadora:",
+            "aAnswer": "Una curvadora sirve para varios diámetros de tubos.",
+            "bAnswer": "A cada diámetro de tubo le corresponde una curvadora.",
+            "cAnswer": "Una curvadora también puede soldar tubos.",
+            "dAnswer": "Hay ciertas aplicaciones de abocardado que se suelen hacer con laurvadora.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 274,
+            "question": "Una de las actividades relacionadas con el trabajo de fontanería esla soldadura de los tubos de cobre. Si el/la operario/a emplea estaño comomaterial aglutinante, se estará hablando de:",
+            "aAnswer": "Soldadura blanda.",
+            "bAnswer": "Soldadura fuerte.",
+            "cAnswer": "Soldadura en frío.",
+            "dAnswer": "Soldadura de PVC.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 275,
+            "question": "Una de las características de la soldadura fuerte o dura es:",
+            "aAnswer": "Suele emplearse plomo como material aglutinante.",
+            "bAnswer": "El material aglutinante funde a baja temperatura.",
+            "cAnswer": "Suele emplearse plata como material aglutinante.",
+            "dAnswer": "Suelen emplearse masillas sintéticas duras como material aglutinante.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 276,
+            "question": "Si se produce un atasco en una tubería y se procede al uso de vento-sas, indique la respuesta falsa sobre este método:",
+            "aAnswer": "Es preciso llenar el lavabo de agua para bombear con la ventosa.",
+            "bAnswer": "Es un procedimiento alternativo a los desatascadores mecánicos o quí-micos.",
+            "cAnswer": "Es preciso bombear con la ventosa sin llenar el lavabo de agua.",
+            "dAnswer": "Es preciso tapar el rebosadero o respiradero con trapos.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 277,
+            "question": "Si se tiene una cisterna con fugas, y se detecta que hay salida conti-nua de agua por el desagüe y el flotador no parece ser la causa, probable-mente se deba a:",
+            "aAnswer": "La arandela o junta que sella el sifón a la base del depósito.",
+            "bAnswer": "Un atasco en la tubería del desagüe.",
+            "cAnswer": "Un problema de la tapa de la taza.",
+            "dAnswer": "Una subida de presión de la tubería de alimentación.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 278,
+            "question": "Indique la ventaja que tienen las arenas de granos gruesos frente alas de granos finos en los trabajos de albañilería:",
+            "aAnswer": "Producen morteros que fraguan antes.",
+            "bAnswer": "Producen morteros sin aluminosis.",
+            "cAnswer": "Producen morteros bastardos.",
+            "dAnswer": "Producen morteros más resistentes.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 279,
+            "question": "Los morteros toman el nombre atendiendo:",
+            "aAnswer": "A la dosificación de componentes.",
+            "bAnswer": "Al conglomerante utilizado.",
+            "cAnswer": "Al tipo de arena usada.",
+            "dAnswer": "A la forma de elaboración.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 280,
+            "question": "Si un mortero tiene una mayor cantidad de material base (arena ypoco conglomerante), se dice que es:",
+            "aAnswer": "Graso.",
+            "bAnswer": "Magro.",
+            "cAnswer": "Bastardo.",
+            "dAnswer": "Aluminoso.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 281,
+            "question": "Las categorías de los cementos se establecen en función de sus re-sistencias mecánicas y se fijan según la resistencia mínima a compresiónexigida en mortero normal a la edad de:",
+            "aAnswer": "2 horas.",
+            "bAnswer": "7 días.",
+            "cAnswer": "28 días.",
+            "dAnswer": "24 horas.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 282,
+            "question": "¿Qué proceso se ha de hacer para conseguir cal apagada si tenemosal viva?",
+            "aAnswer": "Quitar agua.",
+            "bAnswer": "Introducirla en el horno.",
+            "cAnswer": "Sacarla del horno.",
+            "dAnswer": "Añadir agua.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 283,
+            "question": "¿Cuál es la diferencia entre hilo y cable eléctrico?",
+            "aAnswer": "El hilo es un conjunto de cables.",
+            "bAnswer": "El cable es un conjunto de hilos.",
+            "cAnswer": "No hay diferencia.",
+            "dAnswer": "La diferencia se encuentra en los colores de sus aislantes.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 284,
+            "question": "¿Qué función tiene el corcho en los trabajos de albañilería?",
+            "aAnswer": "Conglomerante.",
+            "bAnswer": "Aislante térmico.",
+            "cAnswer": "El mismo que los materiales cerámicos.",
+            "dAnswer": "Para limpiar los restos de cemento.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 285,
+            "question": "Si se quiere usar una pintura con muy buenas propiedades microbicidasy bactericidas en las paredes de un local, es necesario comprar una pintura:",
+            "aAnswer": "Al temple.",
+            "bAnswer": "Al óleo.",
+            "cAnswer": "Al esmalte.",
+            "dAnswer": "A la cal.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 286,
+            "question": "El/la albañil utiliza una herramienta denominada desencofrador. In-dique la respuesta falsa sobre dicho útil:",
+            "aAnswer": "Sirve para extraer los clavos de las tablas.",
+            "bAnswer": "Se utiliza en las labores de desencofrado de madera.",
+            "cAnswer": "La mayoría de ellos tienen los dientes triscados.",
+            "dAnswer": "Es una barra.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 287,
+            "question": "Indique la herramienta que tiene una forma similar a la llana:",
+            "aAnswer": "La criba.",
+            "bAnswer": "La bujarda.",
+            "cAnswer": "El cedazo.",
+            "dAnswer": "La talocha.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 288,
+            "question": "Indique el nombre del recipiente metálico, en forma de arco de cir-unferencia similar a una bañera, que se usa para el amasado de morterosola o determinadas pastas de revestimiento:",
+            "aAnswer": "Pastera.",
+            "bAnswer": "Pestera.",
+            "cAnswer": "Pastara.",
+            "dAnswer": "Pestara.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 289,
+            "question": "Los contadores eléctricos tienen la misión de medir:",
+            "aAnswer": "La potencia eléctrica contratada.",
+            "bAnswer": "El precio, en euros, del gasto energético.",
+            "cAnswer": "El grado de protección eléctrica.",
+            "dAnswer": "La energía eléctrica consumida.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 290,
+            "question": "Indique la característica principal del destornillador de electricista:",
+            "aAnswer": "El mango no debe ser ergonómico.",
+            "bAnswer": "Lleva el vástago de acero inoxidable sin recubrir.",
+            "cAnswer": "Lleva el vástago de plástico recubierto de acero.",
+            "dAnswer": "Lleva el vástago de acero recubierto de una funda de plástico.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 291,
+            "question": "Indique la afirmación falsa sobre las lámparas incandescentes:",
+            "aAnswer": "Poseen un filamento de tungsteno.",
+            "bAnswer": "Si el filamento está cortado, la lámpara no funciona.",
+            "cAnswer": "El paso de la corriente eléctrica dentro del filamento es lo que producela emisión de luz.",
+            "dAnswer": "El filamento funciona gracias a un cebador y una reactancia.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 292,
+            "question": "Indique el procedimiento más apropiado para cambiar una lámparahalógena:",
+            "aAnswer": "Se debe cambiar cogiendo la nueva lámpara con los dedos limpios.",
+            "bAnswer": "Se debe cambiar cogiendo la nueva lámpara con las uñas.",
+            "cAnswer": "La debe cambiar un/a profesional de la empresa fabricante de la lámpara.",
+            "dAnswer": "Se debe cambiar cogiendo la nueva lámpara sin tocarla directamenteon los dedos. Por ejemplo, con un trapo.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 293,
+            "question": "Indique la afirmación correcta sobre las lámparas incandescentes y halógenas:",
+            "aAnswer": "La vida media de una lámpara halógena es inferior a una incandescente.",
+            "bAnswer": "La vida media de una lámpara halógena es superior a una incandes-ente.",
+            "cAnswer": "La vida media de una lámpara halógena es igual a una incandescente.",
+            "dAnswer": "Ninguna de las respuestas anteriores es correcta.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 294,
+            "question": "El Consejo de dirección del área de salud estará formado:",
+            "aAnswer": "Por la representación de la Comunidad Autónoma, que supondrá el60% de los miembros de dicho Consejo.",
+            "bAnswer": "Por los/as representantes empresariales, que supondrá el 70% de losmiembros de dicho Consejo.",
+            "cAnswer": "Por los/as representantes de las Corporaciones Locales, que supondráel 70% de los miembros de dicho Consejo.",
+            "dAnswer": "Por los/as representantes empresariales y sindicales, que supondrá el65% de los miembros de dicho Consejo.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 295,
+            "question": "Cómo se denominan las estructuras fundamentales del sistema sanita-rio, responsables de la gestión unitaria de los centros y establecimientos delservicio de salud de la Comunidad Autónoma en su demarcación territorial yde las prestaciones sanitarias y programas sanitarios por ellos desarrollados:",
+            "aAnswer": "Áreas de salud.",
+            "bAnswer": "Distritos Sanitarios.",
+            "cAnswer": "Centros Sanitarios.",
+            "dAnswer": "Hospitales.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 296,
+            "question": "Uno de los órganos con los que debe de contar toda Área de Salud es:",
+            "aAnswer": "De gestión: el Consejo de salud de área.",
+            "bAnswer": "De participación: la Gerencia de área.",
+            "cAnswer": "De dirección: el Consejo de dirección de área.",
+            "dAnswer": "Todas las respuestas son correctas.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 297,
+            "question": "A qué Administración corresponde valorar la idoneidad sanitaria delos medicamentos y demás productos y artículos sanitarios, tanto para au-torizar su circulación y uso como para controlar su calidad:",
+            "aAnswer": "A la Administración Sanitaria del Estado.",
+            "bAnswer": "A la Administración Sanitaria de las Comunidades Autónomas.",
+            "cAnswer": "A la Administración Sanitaria de las Corporaciones Locales.",
+            "dAnswer": "Todas las respuestas son correctas.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 298,
+            "question": "Como regla general, y sin perjuicio de las excepciones a que hubiera lu-gar, atendidos los factores geográficos, socioeconómicos, demográficos, labo-rales, epidemiológicos, culturales, climatológicos y de dotación de vías y me-dios de comunicación, el área de salud extenderá su acción a una población:",
+            "aAnswer": "No inferior a 100.000 habitantes ni superior a 150.000.",
+            "bAnswer": "No inferior a 150.000 habitantes ni superior a 200.000.",
+            "cAnswer": "No inferior a 200.000 habitantes ni superior a 250.000.",
+            "dAnswer": "No inferior a 250.000 habitantes ni superior a 300.000.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 299,
+            "question": "Los Consejos de Salud de Área estarán constituidos por:",
+            "aAnswer": "La Administración sanitaria del área de salud.",
+            "bAnswer": "Las organizaciones sindicales más representativas, en una proporción noinferior al 20%, a través de los/as profesionales sanitarios/as titulados/as.",
+            "cAnswer": "La representación de los/as ciudadanos/as a través de las Corporacio-nes Locales comprendidas en su demarcación, que supondrá el 40%de sus miembros.",
+            "dAnswer": "Todas las respuestas son correctas.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 300,
+            "question": "A quién corresponde la aprobación del proyecto del Plan de Saluddel área, dentro de las normas, directrices y programas generales estable-idos por la Comunidad Autónoma:",
+            "aAnswer": "Al Consejo de salud.",
+            "bAnswer": "Al Consejo de dirección.",
+            "cAnswer": "Al/a la Gerente del área.",
+            "dAnswer": "Al Consejo médico.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 301,
+            "question": "Quién es el/la encargado/a de la ejecución de las directrices estableci-das por el Consejo de dirección, de las propias del Plan de Salud del área yde las normas correspondientes a la Administración autonómica y del Estado:",
+            "aAnswer": "El/la Gerente del área de salud.",
+            "bAnswer": "El/la director/a técnico/a del área de salud.",
+            "cAnswer": "El/la director/a médico/a del área de salud.",
+            "dAnswer": "El/la Secretario/a del área de salud.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 302,
+            "question": "Qué principio establecido en la Ley 21/2001 garantiza que las Comuni-dades Autónomas puedan prestar sus servicios en condiciones equivalentes,on independencia de las distintas capacidades de obtención de recursos tri-butarios, mediante la determinación de las necesidades totales de financia-ión y mediante la implantación del denominado Fondo de Suficiencia:",
+            "aAnswer": "El principio de igualdad.",
+            "bAnswer": "El principio de solidaridad.",
+            "cAnswer": "El principio de equidad.",
+            "dAnswer": "El principio de justicia.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 303,
+            "question": "El Consejo Interterritorial del Sistema Nacional de Salud está consti-tuido por el/la Ministro/a de Sanidad y Consumo, que ostentará su presiden-ia, y por los/as Consejeros/as competentes en materia de sanidad de las Co-munidades Autónomas. La vicepresidencia de este órgano la desempeñará:",
+            "aAnswer": "Uno/a de los/as Consejeros/as competentes en materia de sanidad delas Comunidades Autónomas, elegido/a por el/la Ministro/a de Sanidady Consumo.",
+            "bAnswer": "El/la Consejero/a en materia de sanidad de la Comunidad Autónomaon mayor número de habitantes.",
+            "cAnswer": "Se irá rotando cada dos años entre los/as Consejeros/as competentesen materia de sanidad de las Comunidades Autónomas.",
+            "dAnswer": "Uno/a de los/as Consejeros/as competentes en materia de sanidad de lasComunidades Autónomas, elegido/a por todos/as los/as Consejeros/asque lo integran.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 304,
+            "question": "El personal estatutario de los servicios de salud ostenta el/los si-guiente/s derecho/s individual/es:",
+            "aAnswer": "A la actividad sindical.",
+            "bAnswer": "A la huelga, garantizándose en todo caso el mantenimiento de los servi-ios que resulten esenciales para la atención sanitaria a la población.",
+            "cAnswer": "A ser informado de las funciones, tareas, cometidos, programación fun-ional y objetivos asignados a su unidad, centro o institución, y de los sis-temas establecidos para la evaluación del cumplimiento",
+            "dAnswer": "Todas las respuestas son correctas.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 305,
+            "question": "Siempre que la duración de una jornada exceda de seis horas conti-nuadas, deberá establecerse un período de descanso durante la misma deduración no inferior a:",
+            "aAnswer": "30 minutos.",
+            "bAnswer": "20 minutos.",
+            "cAnswer": "15 minutos.",
+            "dAnswer": "10 minutos.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 306,
+            "question": "Cuándo la suspensión firme de funciones acarreará la pérdida delpuesto de trabajo:",
+            "aAnswer": "Cuando exceda de tres meses.",
+            "bAnswer": "Cuando exceda de seis meses.",
+            "cAnswer": "Cuando exceda de nueve meses.",
+            "dAnswer": "Cuando exceda de un año.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 307,
+            "question": "La falta de asistencia del personal estatutario de los servicios desalud durante más de cinco días continuados o la acumulación de sie-te faltas en dos meses sin autorización ni causa justificada, supondráuna falta:",
+            "aAnswer": "Muy grave.",
+            "bAnswer": "Grave.",
+            "cAnswer": "Menos grave.",
+            "dAnswer": "Leve.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 308,
+            "question": "El personal estatutario de los servicios de salud incurrirá en falta gra-ve en el siguiente supuesto:",
+            "aAnswer": "Por exceso arbitrario en el uso de autoridad que cause perjuicio graveal personal subordinado o al servicio.",
+            "bAnswer": "Por abandono del servicio.",
+            "cAnswer": "Por acoso sexual, cuando el sujeto activo del acoso cree con su con-ducta un entorno laboral intimidatorio, hostil o humillante para la per-sona que es objeto del mismo.",
+            "dAnswer": "Por la incorrección con los/as superiores/as, compañeros/as, subordi-nados/as o usuarios/as.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 309,
+            "question": "La sanción de traslado forzoso con cambio de localidad, sin dere-ho a indemnización y con prohibición temporal de participar en proce-dimientos de movilidad para reincorporarse a la localidad de proceden-ia hasta un máximo de cuatro años, es consecuencia de la comisión deuna falta:",
+            "aAnswer": "Muy grave.",
+            "bAnswer": "Grave.",
+            "cAnswer": "Leve.",
+            "dAnswer": "No existe tal sanción.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 310,
+            "question": "Las sanciones disciplinarias firmes que se impongan al personal es-tatutario se anotarán en su expediente personal. Las anotaciones se can-elarán de oficio conforme al siguiente período, computado desde el cum-plimiento de la sanción:",
+            "aAnswer": "Cinco años para las sanciones impuestas por faltas muy graves.",
+            "bAnswer": "Un año para las sanciones impuestas por faltas graves.",
+            "cAnswer": "Tres meses para las sanciones impuestas por faltas leves.",
+            "dAnswer": "Seis meses para las sanciones impuestas por faltas leves.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 311,
+            "question": "Cuando la suspensión provisional se produzca como consecuencia deexpediente disciplinario:",
+            "aAnswer": "No podrá exceder de seis meses, salvo paralización del procedimientoimputable al/a la interesado/a.",
+            "bAnswer": "No podrá exceder de cuatro meses, salvo paralización del procedi-miento imputable al/a la interesado/a.",
+            "cAnswer": "No podrá exceder de nueve meses, salvo paralización del procedimien-to imputable al/a la interesado/a.",
+            "dAnswer": "No podrá exceder de cinco meses, salvo paralización del procedimien-to imputable al/a la interesado/a.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 312,
+            "question": "La normativa de riesgos laborales será de aplicación:",
+            "aAnswer": "A los servicios operativos de protección civil y peritaje forense en losasos de grave riesgo, catástrofe y calamidad pública.",
+            "bAnswer": "A la relación laboral de carácter especial del servicio del hogar fa-miliar.",
+            "cAnswer": "A los establecimientos penitenciarios.",
+            "dAnswer": "Ninguna respuesta es correcta.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 313,
+            "question": "La labor de velar “por la seguridad e higiene en el trabajo”, confiadaa los poderes públicos, es un principio rector de la política social y econó-mica, que establece la Constitución española en su artículo:",
+            "aAnswer": "36.",
+            "bAnswer": "38.1.",
+            "cAnswer": "40.2.",
+            "dAnswer": "40.3.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 314,
+            "question": "Cómo se denomina el órgano científico-técnico especializado de laAdministración General del Estado que tiene como misión el análisis y es-tudio de las condiciones de seguridad y salud en el trabajo, así como lapromoción y apoyo a la mejora de las mismas:",
+            "aAnswer": "Inspección de Trabajo y Seguridad Social.",
+            "bAnswer": "Instituto Nacional de Seguridad e Higiene en el Trabajo.",
+            "cAnswer": "Consejo Nacional de Calidad, Seguridad e Higiene en el Trabajo.",
+            "dAnswer": "Comisión Nacional de Seguridad y Salud en el Trabajo.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 315,
+            "question": "Cuál es el órgano colegiado asesor de las Administraciones Públicasen la formulación de las políticas de prevención y participación institucio-nal en materia de seguridad y salud en el trabajo:",
+            "aAnswer": "La Comisión Nacional de Seguridad y Salud en el Trabajo.",
+            "bAnswer": "El Instituto Nacional de Seguridad e Higiene en el Trabajo.",
+            "cAnswer": "El Consejo Nacional de Calidad, Seguridad e Higiene en el Trabajo.",
+            "dAnswer": "La Inspección Nacional de Trabajo y Seguridad Social.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 316,
+            "question": "De qué nivel de protección en materia de seguridad y salud disfru-tarán los/as trabajadores/as con relaciones de trabajo temporales o de du-ración determinada, así como aquellos/as contratados/as por una empresade trabajo temporal:",
+            "aAnswer": "De mayor nivel de protección que los/as restantes trabajadores/as dela empresa debido a su especial relación de trabajo.",
+            "bAnswer": "De igual nivel de protección que los/as restantes trabajadores/as de laempresa.",
+            "cAnswer": "De menor nivel de protección que los restantes trabajadores/as de laempresa debido a la temporalidad de su puesto de trabajo.",
+            "dAnswer": "Ninguna respuesta es correcta.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 317,
+            "question": "El incumplimiento de la obligación de atender los servicios esencia-les establecidos en caso de huelga, será considerado como:",
+            "aAnswer": "Tal incumplimiento no se considera falta.",
+            "bAnswer": "Falta leve.",
+            "cAnswer": "Falta grave.",
+            "dAnswer": "Falta muy grave.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 318,
+            "question": "El personal estatutario de los servicios de salud tendrá derecho aunas vacaciones retribuidas anualmente cuya duración no será inferior a:",
+            "aAnswer": "33 días naturales, o al tiempo que proporcionalmente corresponda enfunción del tiempo de servicio.",
+            "bAnswer": "30 días naturales, o al tiempo que proporcionalmente corresponda enfunción del tiempo de servicio.",
+            "cAnswer": "25 días naturales, o al tiempo que proporcionalmente corresponda enfunción del tiempo de servicio.",
+            "dAnswer": "22 días naturales, o al tiempo que proporcionalmente corresponda enfunción del tiempo de servicio.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 319,
+            "question": "El personal estatutario de los servicios de salud tendrá derecho a unperíodo mínimo de descanso diario ininterrumpido, entre el fin de una jor-nada y el comienzo de la siguiente, de:",
+            "aAnswer": "15 horas.",
+            "bAnswer": "12 horas.",
+            "cAnswer": "10 horas.",
+            "dAnswer": "9 horas.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 320,
+            "question": "El personal estatutario de los servicios de salud declarado en la si-tuación de suspensión firme quedará privado, durante el tiempo de perma-nencia en la misma, del ejercicio de sus funciones y de todos los derechosinherentes a su condición. La suspensión firme por sanción disciplinariano podrá exceder de:",
+            "aAnswer": "Diez años.",
+            "bAnswer": "Siete años.",
+            "cAnswer": "Seis años.",
+            "dAnswer": "Cinco años.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 321,
+            "question": "La sanción de traslado forzoso a otra institución o centro sin cam-bio de localidad, con prohibición temporal, hasta un máximo de dos años,de participar en procedimientos de movilidad para reincorporarse al cen-tro de procedencia, se impondrá como consecuencia de la comisión deuna falta:",
+            "aAnswer": "Muy grave.",
+            "bAnswer": "Grave.",
+            "cAnswer": "Leve.",
+            "dAnswer": "Tal sanción no existe.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 322,
+            "question": "El Estado y las Comunidades Autónomas podrán establecer Planesde Salud conjuntos. Cuando estos Planes conjuntos impliquen a todas lasComunidades Autónomas, se formularán en:",
+            "aAnswer": "El Consejo Interterritorial del Sistema Nacional de Salud.",
+            "bAnswer": "La Comisión Nacional de Seguridad y Salud en el Trabajo.",
+            "cAnswer": "La Inspección Nacional de Trabajo y Seguridad Social.",
+            "dAnswer": "El Consejo Interterritorial de Calidad, Seguridad e Higiene en el Trabajo.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 323,
+            "question": "Entre los permisos contemplados en la Ley 39/1999, en la Ley Orgá-nica 3/2007 y en el artículo 49 del Estatuto Básico de la Función Pública,que tiene carácter básico, puede citarse:",
+            "aAnswer": "El permiso para la lactancia de hijos/as menores de 12 meses.",
+            "bAnswer": "El permiso por adopción y acogimiento permanente y preadoptivo (12semanas, ampliables a 14 en el supuesto de discapacidad del/de lamenor adoptado/a o acogido/a y en el supuesto de adopción o acogi-mie",
+            "cAnswer": "El permiso de paternidad por el nacimiento, acogimiento o adopciónde un/a hijo/a (10 días).",
+            "dAnswer": "Todas las respuestas son incorrectas.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 324,
+            "question": "La aceptación de cualquier tipo de contraprestación por los serviciosprestados a los/as usuarios/as de los servicios de salud, es considerado porla Ley 55/2003, de 16 de diciembre, del Estatuto Marco del Personal Es-tatutario de los Servicios de Salud, como:",
+            "aAnswer": "Falta muy grave.",
+            "bAnswer": "Falta grave.",
+            "cAnswer": "Falta leve.",
+            "dAnswer": "No es considerado como falta.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 325,
+            "question": "Par poder obtener la excedencia voluntaria, según el Estatuto Marcodel Personal Estatutario de los Servicios de Salud, será preciso:",
+            "aAnswer": "Haber prestado servicios efectivos en cualquiera de las Administracio-nes públicas durante los cinco años inmediatamente anteriores.",
+            "bAnswer": "Haber prestado servicios efectivos en un hospital durante los sieteaños inmediatamente anteriores.",
+            "cAnswer": "Haber prestado servicios efectivos en la Administración pública duran-te los seis años inmediatamente anteriores.",
+            "dAnswer": "Haber prestado servicios efectivos en un hospital o centro de saluddurante los ocho años inmediatamente anteriores.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 326,
+            "question": "Cuándo entró en vigor la Ley 55/2003, del Estatuto Marco del perso-nal estatutario de los servicios de salud:",
+            "aAnswer": "El 17 de diciembre de 2003.",
+            "bAnswer": "El 18 de diciembre de 2003.",
+            "cAnswer": "El 19 de diciembre de 2003.",
+            "dAnswer": "El 21 de diciembre de 2003.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 327,
+            "question": "El tiempo de trabajo correspondiente a la jornada ordinaria del perso-nal nocturno no excederá de 12 horas ininterrumpidas. No obstante, cuandoasí lo aconsejen razones organizativas o asistenciales, mediante la programa-ión funcional de los centros, se podrán establecer jornadas de hasta:",
+            "aAnswer": "18 horas en determinados servicios o unidades sanitarias.",
+            "bAnswer": "24 horas en determinados servicios o unidades sanitarias.",
+            "cAnswer": "36 horas en determinados servicios o unidades sanitarias.",
+            "dAnswer": "48 horas en determinados servicios o unidades sanitarias.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 328,
+            "question": "Señale la respuesta incorrecta respecto a la formación de los/as tra-bajadores/as:",
+            "aAnswer": "El/la empresario/a deberá garantizar que cada trabajador/a reciba unaformación teórica y práctica, suficiente y adecuada, en materia pre-ventiva, tanto en el momento de su contratación como cuanto se ",
+            "bAnswer": "La formación deberá estar enfocada específicamente en el puesto detrabajo o función que cada trabajador/a desempeñe, adaptándose a laevolución de los riesgos.",
+            "cAnswer": "La formación deberá impartirse, siempre que sea posible, fuera de lajornada de trabajo.",
+            "dAnswer": "La formación se podrá impartir por la empresa mediante medios pro-pios o concertándola con servicios ajenos, y su coste no recaerá enningún caso sobre los/as trabajadores/as.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 329,
+            "question": "Es una fibra sintética:",
+            "aAnswer": "Seda.",
+            "bAnswer": "Algodón.",
+            "cAnswer": "Lino.",
+            "dAnswer": "Poliéster.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 330,
+            "question": "La “douppioni” es:",
+            "aAnswer": "Una lana.",
+            "bAnswer": "Una clase de lino.",
+            "cAnswer": "Una seda.",
+            "dAnswer": "Una hilatura.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 331,
+            "question": "Señale la opción incorrecta. Según el método de tejido los textilespueden ser:",
+            "aAnswer": "Tafeta.",
+            "bAnswer": "Satín.",
+            "cAnswer": "Jacquard.",
+            "dAnswer": "Tejido paralelo.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 332,
+            "question": "En lavandería, el “pesebre” es:",
+            "aAnswer": "Un selector de programas.",
+            "bAnswer": "Un clasificador de ropa.",
+            "cAnswer": "Un selector de temperatura.",
+            "dAnswer": "Un contenedor de ropa limpia.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 333,
+            "question": "Señale la opción incorrecta. El tambor de la lavadora recibe tambiénel nombre de:",
+            "aAnswer": "Bombón.",
+            "bAnswer": "Clasificador.",
+            "cAnswer": "Cilindro.",
+            "dAnswer": "Túnel.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 334,
+            "question": "En el primer ciclo de la fase de prelavado de la ropa, entra una can-tidad de agua del:",
+            "aAnswer": "100% de la capacidad de llenado.",
+            "bAnswer": "50% de la capacidad de llenado.",
+            "cAnswer": "30% de la capacidad de llenado.",
+            "dAnswer": "60% de la capacidad de llenado.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 335,
+            "question": "La acción continuada de una sola máquina capaz de",
+            "aAnswer": "Tren de auto-secado.",
+            "bAnswer": "Convoy de secado y planchado.",
+            "cAnswer": "Tren de planchado.",
+            "dAnswer": "Hilera de planchado.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 336,
+            "question": "La lavadora consistente en una cámara cilíndrica con un eje en suinterior en forma de espiral, con varios compartimentos en cada uno de losuales hay un receptáculo en forma de tambor, y que sirve para la aperturade entrada y salida de la ropa, se denomina:",
+            "aAnswer": "Zigzag.",
+            "bAnswer": "Cilíndrica.",
+            "cAnswer": "Lineal.",
+            "dAnswer": "Armilla.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 337,
+            "question": "La “Calandra” es:",
+            "aAnswer": "Una plancha de secado.",
+            "bAnswer": "Una plancha por difusión de vapor.",
+            "cAnswer": "Una plancha de rodillos.",
+            "dAnswer": "Un robot de planchado.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 338,
+            "question": "El algodón, lino e hilo se planchan:",
+            "aAnswer": "Se coloca la prenda al revés, se sobrepone un paño húmedo y se plan-ha sin apretar; posteriormente se da un repaso al derecho tambiénprotegiendo la prenda con el paño húmedo.",
+            "bAnswer": "Debe estar muy humedecida la prenda, o mejor, mojada pero que ape-nas gotee. Se plancha al revés, y luego se hace un repaso de planchaal derecho.",
+            "cAnswer": "Se planchan al derecho y la prenda debe estar muy húmeda.",
+            "dAnswer": "Se plancha al revés utilizando un paño húmedo. No apretar la plancha.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 339,
+            "question": "Para la realización de ojales, utilizaremos el punto:",
+            "aAnswer": "Punto por encima.",
+            "bAnswer": "Punto de lado.",
+            "cAnswer": "Punto de escapulario.",
+            "dAnswer": "Punto de festón.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 340,
+            "question": "Señale la opción incorrecta. En la costura de la ropa los principalespuntos a máquina son:",
+            "aAnswer": "Punto zigzag.",
+            "bAnswer": "Surjete.",
+            "cAnswer": "Punto izquierdo.",
+            "dAnswer": "Punto derecho.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 341,
+            "question": "El tejido más constreñido de los bordes laterales de una tela se de-nomina:",
+            "aAnswer": "Espiguilla.",
+            "bAnswer": "Orillo.",
+            "cAnswer": "Trama.",
+            "dAnswer": "Urdimbre.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 342,
+            "question": "Para el servicio de costura no se encuentran entre la maquinaria yel mobiliario:",
+            "aAnswer": "Bustos de distintas tallas.",
+            "bAnswer": "Mesas de corte.",
+            "cAnswer": "Calandras.",
+            "dAnswer": "Máquinas de coser.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 343,
+            "question": "Se entiende que un interruptor de alta sensibilidad actúa con inten-sidades de:",
+            "aAnswer": "3 mA.",
+            "bAnswer": "30 mA.",
+            "cAnswer": "300 mA.",
+            "dAnswer": "3000 mA.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 344,
+            "question": "Señale cuál de las siguientes telas se corresponde con el método bá-sico de tejido, en el que cada hilo de la urdimbre se entrelaza con el hilode la trama:",
+            "aAnswer": "La batista.",
+            "bAnswer": "El raso.",
+            "cAnswer": "El damasco.",
+            "dAnswer": "La felpa.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 345,
+            "question": "El surjete es:",
+            "aAnswer": "El tejido más constreñido de los bordes laterales de una tela.",
+            "bAnswer": "Los contenedores utilizados en lencería para introducir la ropa y clasi-ficarla.",
+            "cAnswer": "Un accesorio común a muchas planchas industriales.",
+            "dAnswer": "Un punto a máquina.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 346,
+            "question": "El hilo de torzal permite:",
+            "aAnswer": "Deshilvanar fácilmente.",
+            "bAnswer": "Coser tejidos gruesos.",
+            "cAnswer": "Realizar labores de costura a máquina.",
+            "dAnswer": "Ninguna respuesta es correcta.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 347,
+            "question": "Para el planchado a mano de una prenda de lana es recomendableuna temperatura de:",
+            "aAnswer": "60o",
+            "bAnswer": "85o",
+            "cAnswer": "100-110o",
+            "dAnswer": "120o",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 348,
+            "question": "El rulo o máquina planchadora también se denomina:",
+            "aAnswer": "Calandria.",
+            "bAnswer": "Borriquete.",
+            "cAnswer": "Bastidor.",
+            "dAnswer": "Pesebre.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 348,
+            "question": "El rulo o máquina planchadora también se denomina:",
+            "aAnswer": "Calandria.",
+            "bAnswer": "Borriquete.",
+            "cAnswer": "Bastidor.",
+            "dAnswer": "Pesebre.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 349,
+            "question": "La fabricación de tejidos por la aglomeración de hilos y pelos bajoompresión de calor y humedad se denomina:",
+            "aAnswer": "Orillo.",
+            "bAnswer": "Abatanado.",
+            "cAnswer": "Trama.",
+            "dAnswer": "Urdimbre.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 6,
+            "number": 350,
+            "question": "El manipulador de alimentos usará guantes y mascarilla en:",
+            "aAnswer": "En el proceso de envasado o emplatado.",
+            "bAnswer": "En el proceso de envasado o emplatado usará la mascarilla solo si selleva barba.",
+            "cAnswer": "Guantes durante todo el proceso de manipulación de alimentos, perola mascarilla no es necesaria.",
+            "dAnswer": "En el proceso de envasado solo es necesario el lavado de manos aséptico.",
+            "correctAnswer": "A"
+        }
+    }
+]

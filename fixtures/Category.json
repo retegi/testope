@@ -1,0 +1,51 @@
+[
+{
+    "model": "learning.category",
+    "pk": 1,
+    "fields": {
+        "name": "Auxiliar Administrativo"
+    }
+},
+{
+    "model": "learning.category",
+    "pk": 2,
+    "fields": {
+        "name": "Auxiliar de Enfermería"
+    }
+},
+{
+    "model": "learning.category",
+    "pk": 3,
+    "fields": {
+        "name": "Celador"
+    }
+},
+{
+    "model": "learning.category",
+    "pk": 4,
+    "fields": {
+        "name": "Enfermería"
+    }
+},
+{
+    "model": "learning.category",
+    "pk": 5,
+    "fields": {
+        "name": "Médico de Familia"
+    }
+},
+{
+    "model": "learning.category",
+    "pk": 6,
+    "fields": {
+        "name": "Operario de Servicios"
+    }
+},
+{
+    "model": "learning.category",
+    "pk": 7,
+    "fields": {
+        "name": "Técnico especialista en Radiodiagnóstico"
+    }
+}
+]

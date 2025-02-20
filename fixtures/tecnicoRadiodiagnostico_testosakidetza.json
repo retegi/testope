@@ -1,0 +1,352 @@
+[
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 1,
+            "question": "¿Qué técnicas incluye la radiología convencional?",
+            "aAnswer": "RM y TC.",
+            "bAnswer": "Radiografía simple y radiografía contrastada.",
+            "cAnswer": "Radiografía convencional y fluoroscopia convencional.",
+            "dAnswer": "TC y radiografía telemandada.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 2,
+            "question": "Del tubo de Rayos X surge un haz de radiación X debido a la colisión de:",
+            "aAnswer": "Electrones con un cátodo.",
+            "bAnswer": "Electrones con una placa metálica de signo eléctrico positivo.",
+            "cAnswer": "Electrones con una placa metálica de signo eléctrico negativo.",
+            "dAnswer": "Radiación infrarroja sobre partículas gaseosas del tubo electrónico.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 3,
+            "question": "¿En qué se convierte la mayor parte de la energía de movimiento queanima a los electrones cuando se produce un disparo del aparato de ra-yos X?",
+            "aAnswer": "Energía radiante ultravioleta.",
+            "bAnswer": "Energía térmica o calor.",
+            "cAnswer": "Energía radiante en forma de rayos X.",
+            "dAnswer": "Energía cuántica corpuscular.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 4,
+            "question": "¿Qué forma debe de tener el haz que emite el tubo de rayos X?",
+            "aAnswer": "Cúbica.",
+            "bAnswer": "Triangular.",
+            "cAnswer": "Cilíndrica.",
+            "dAnswer": "Cónica.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 5,
+            "question": "Según el tipo de examen radiológico que se va a realizar, es necesarioemplear un haz de radiación X con:",
+            "aAnswer": "Una velocidad apropiada.",
+            "bAnswer": "Unos electrones específicos.",
+            "cAnswer": "Una determinada técnica (factores de exposición).",
+            "dAnswer": "Una densidad adecuada.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 6,
+            "question": "Cuanto mayor sea la intensidad del haz de rayos X emitido por el tubo:",
+            "aAnswer": "Mayor será la cantidad de electrones emitidos o que produce y menorla cantidad de rayos X generados.",
+            "bAnswer": "Menor será la cantidad de electrones emitidos o que produce y menorla cantidad de rayos X generados.",
+            "cAnswer": "Menor será la cantidad de electrones emitidos o que produce y mayorla cantidad de rayos X generados.",
+            "dAnswer": "Mayor será la cantidad de electrones emitidos o que produce y mayorla cantidad de rayos X generados.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 7,
+            "question": "Cuanto mayor sea la tensión generada en el tubo de rayos X:",
+            "aAnswer": "Mayor será la calidad del haz de rayos X emitido.",
+            "bAnswer": "Menor será el kilovoltaje aplicado.",
+            "cAnswer": "Menor será la diferencia de potencial entre ánodo y cátodo.",
+            "dAnswer": "Mayor será la cantidad de calor y menor la cantidad de rayos X emiti-dos.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 8,
+            "question": "¿Qué es cierto de estas afirmaciones cuando se da la interacción de unhaz de rayos X con la materia?",
+            "aAnswer": "Todos los rayos X atraviesan la materia sin interacción.",
+            "bAnswer": "Algunos rayos son absorbidos en su totalidad por efecto Compton.",
+            "cAnswer": "Algunos rayos son absorbidos en su totalidad por efecto fotoeléctrico.",
+            "dAnswer": "Algunos rayos son desviados de su itinerario por efecto fotoeléctrico.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 9,
+            "question": "La reducción de la intensidad de la radiación X al interaccionar con lamateria se denomina:",
+            "aAnswer": "Atenuación.",
+            "bAnswer": "Absorción.",
+            "cAnswer": "Refracción.",
+            "dAnswer": "Dispersión.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 10,
+            "question": "¿Por qué efecto se produce el velado de la película radiográfica, quedisminuye la calidad de la imagen?",
+            "aAnswer": "Penetración del haz sin interacción.",
+            "bAnswer": "Efecto fotoeléctrico.",
+            "cAnswer": "Efecto Edison.",
+            "dAnswer": "Efecto Compton.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 11,
+            "question": "¿Qué factor de estos aumenta la probabilidad de absorción de los rayosX emitidos que interaccionan con la materia?",
+            "aAnswer": "Menor espesor del medio material con el que interacciona la radiaciónsea o no homogéneo.",
+            "bAnswer": "Menor densidad del medio de interacción.",
+            "cAnswer": "Mayor número atómico (Z) del material.",
+            "dAnswer": "Mayor energía del haz incidente de radiación X.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 12,
+            "question": "El haz emergente resultante de la interacción de la radiación X con elorganismo:",
+            "aAnswer": "Poseerá mayor energía que el primario o incidente.",
+            "bAnswer": "Tendrá una intensidad variable o no homogénea según la zona con laque interacciona el haz incidente.",
+            "cAnswer": "Tendrá homogeneidad en toda su área y una menor calidad energética.",
+            "dAnswer": "Tendrá una mayor cantidad de fotones y mayor calidad energética.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 13,
+            "question": "¿Qué circunstancia del haz de radiación es la responsable de que seforme en el receptor la imagen radiográfica en contraste?",
+            "aAnswer": "La diferente intensidad del haz emergente.",
+            "bAnswer": "La homogeneidad del haz emergente.",
+            "cAnswer": "La heterogeneidad del haz incidente.",
+            "dAnswer": "La inadecuada técnica que se aplique en la consola de control.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 14,
+            "question": "¿Qué efectos se producen en la película cuando se realizan radiogra-fías con pantalla intensificadora en la consecución de la imagen visible?",
+            "aAnswer": "Termoluminiscente y Luminiscente.",
+            "bAnswer": "Fotográfico y Termoluminiscente.",
+            "cAnswer": "Fotográfico y Catalítico.",
+            "dAnswer": "Fotográfico y Luminiscente.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 15,
+            "question": "El empleo de pantallas intensificadoras o de refuerzo en combinacióncon películas radiográficas, consigue:",
+            "aAnswer": "Aumentar la dosis de radiación X para conseguir la imagen visible conmayor calidad.",
+            "bAnswer": "Disminuir la dosis de radiación X para conseguir la imagen visible conmayor calidad.",
+            "cAnswer": "Aumentar la dosis de radiación X para conseguir la imagen visible conmenor calidad.",
+            "dAnswer": "Disminuir la dosis de radiación X para conseguir la imagen visible conmenor nitidez.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 16,
+            "question": "Las zonas claras observables en la imagen radiográfica, se correspon-den a las estructuras anatómicas que:",
+            "aAnswer": "Han dejado pasar mayor cantidad de rayos X, que son los menosenergéticos.",
+            "bAnswer": "Han dejado pasar mayor cantidad de rayos X y por tanto de mayoratenuación.",
+            "cAnswer": "Han dejado pasar menor cantidad de rayos X y por tanto de menoratenuación.",
+            "dAnswer": "Han dejado pasar menor cantidad de rayos X y por tanto de mayoratenuación.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 17,
+            "question": "¿Qué elemento posee el receptor de imagen de la fluoroscopia o ra-dioscopia entre las dos pantallas fluorescentes que lo componen?",
+            "aAnswer": "Un monitor TV.",
+            "bAnswer": "Un fotocátodo.",
+            "cAnswer": "Un fotoánodo.",
+            "dAnswer": "Un tubo de infrarrojos convertidor.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 18,
+            "question": "¿En qué se convierten directamente los fotones de luz que surgen dela pantalla fluorescente primaria cuando inciden sobre el fotocátodo delintensificador de imagen de la radioscopia?",
+            "aAnswer": "Electrones.",
+            "bAnswer": "Fotones de luz amplificados.",
+            "cAnswer": "Fotones de radiación X.",
+            "dAnswer": "Protones.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 19,
+            "question": "Las zonas de menor luminosidad (o más oscuras) de la imagen radio-gráfica:",
+            "aAnswer": "Estarán más atenuados los rayos X y serán imágenes más claras.",
+            "bAnswer": "Estarán menos atenuados los rayos X y serán imágenes más claras.",
+            "cAnswer": "Estarán menos atenuados los rayos X y serán imágenes más oscuras.",
+            "dAnswer": "Estarán más atenuados los rayos X y serán imágenes más oscuras.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 20,
+            "question": "¿Qué densidad radiológica de estas es menor?",
+            "aAnswer": "Agua (tejidos blandos).",
+            "bAnswer": "Hueso.",
+            "cAnswer": "Metal.",
+            "dAnswer": "Aire (pulmones).",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 21,
+            "question": "¿Qué tono de densidad radiológica tendrá el metal?",
+            "aAnswer": "Blanco o transparente.",
+            "bAnswer": "Gris oscuro.",
+            "cAnswer": "Gris claro.",
+            "dAnswer": "Negro.",
+            "correctAnswer": "A"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 22,
+            "question": "¿Qué densidad radiológica se corresponde con la de nuestra muscula-tura? Densidad:",
+            "aAnswer": "Aire.",
+            "bAnswer": "Agua.",
+            "cAnswer": "Hueso.",
+            "dAnswer": "Metal.",
+            "correctAnswer": "B"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 23,
+            "question": "¿Qué material o/y estructura nos dará una densidad radiológica en laimagen tipo metal?",
+            "aAnswer": "Huesos.",
+            "bAnswer": "Cartílagos.",
+            "cAnswer": "Grasa.",
+            "dAnswer": "Contrastes baritados.",
+            "correctAnswer": "D"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 24,
+            "question": "¿Cuáles son los factores técnicos de exposición radiológica de más in-terés?",
+            "aAnswer": "Kilovoltaje, tiempo y energía de la radiación.",
+            "bAnswer": "Miliamperaje, energía térmica y kilovoltaje.",
+            "cAnswer": "Tiempo, miliamperaje y kilovoltaje.",
+            "dAnswer": "Tiempo, intensidad radiante y voltaje del filamento.",
+            "correctAnswer": "C"
+        }
+    },
+    {
+        "model": "learning.test",
+        
+        "fields": {
+            "category": 7,
+            "number": 25,
+            "question": "La dosis de radiación X se expresa en:",
+            "aAnswer": "Kv.",
+            "bAnswer": "mAs.",
+            "cAnswer": "cmea.",
+            "dAnswer": "Kv pico.",
+            "correctAnswer": "B"
+        }
+    }
+]

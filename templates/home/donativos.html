@@ -1,0 +1,63 @@
+{% extends 'home/base.html' %}
+
+
+{% load static %}
+{% block head %}
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM6GBKCS3R"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZM6GBKCS3R');
+</script>
+
+
+
+{% endblock %}
+
+{% block contenido %}
+
+
+<div class="container">
+    <div class="row">
+
+        <div></div>
+
+
+
+        <div>
+            <title>{% trans 'donativos' %}</title>
+
+            <div id="donate-button-container">
+                <div id="donate-button"></div>
+                <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                <script>
+                    PayPal.Donation.Button({
+                        env: 'production',
+                        hosted_button_id: 'CQ3YC62A9K8XW',
+                        image: {
+                            src: 'https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donate_LG.gif',
+                            alt: 'Botón Donar con PayPal',
+                            title: 'PayPal - The safer, easier way to pay online!',
+                        }
+                    }).render('#donate-button');
+                </script>
+            </div>
+
+        </div>
+
+
+
+
+        <div></div>
+
+    </div>
+</div>
+
+{% endblock %}

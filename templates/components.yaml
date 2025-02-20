@@ -1,0 +1,5 @@
+components:
+  button:
+    path: components/button.html
+  card:
+    path: components/card.html

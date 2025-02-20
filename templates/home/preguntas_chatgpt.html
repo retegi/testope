@@ -1,0 +1,62 @@
+{% extends 'home/base_sin_menu_sin_footer.html' %}
+{% block contenido %}
+<div class="container">
+    <h1>{{ category.name }}</h1>
+
+    {% if question %}
+    <!-- Mostrar la pregunta -->
+    <div id="test-container">
+        <p id="question-text"><strong>{{ question.number }}.</strong> {{ question.question }}</p>
+        <div id="answers">
+            <button onclick="submitAnswer('A')">{{ question.aAnswer }}</button>
+            <button onclick="submitAnswer('B')">{{ question.bAnswer }}</button>
+            <button onclick="submitAnswer('C')">{{ question.cAnswer }}</button>
+            <button onclick="submitAnswer('D')">{{ question.dAnswer }}</button>
+        </div>
+    </div>
+    {% else %}
+    <!-- Mostrar el mensaje si no hay preguntas -->
+    <p>{{ message }}</p>
+    {% endif %}
+</div>
+
+<script>
+function submitAnswer(answer) {
+    const csrfToken = "{{ csrf_token }}"; // Token CSRF
+    const questionNumber = "{{ question.number }}"; // Número de la pregunta actual
+    const categoryId = "{{ category.id }}"; // ID de la categoría actual
+
+    fetch(`/nextQuestion/${categoryId}/`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "X-CSRFToken": csrfToken, // Adjuntar el token CSRF
+        },
+        body: JSON.stringify({
+            response: answer, // Respuesta seleccionada
+            question_number: questionNumber, // Número de pregunta
+        }),
+    })
+    .then((response) => response.json())
+    .then((data) => {
+        if (data.error) {
+            alert(data.error); // Mostrar errores si los hay
+        } else if (data.message) {
+            alert(data.message); // Mostrar mensaje al finalizar las preguntas
+        } else if (data.question) {
+            // Actualizar la pregunta en la página
+            document.getElementById("question-text").innerHTML = `<strong>${data.number}.</strong> ${data.question}`;
+            document.getElementById("answers").innerHTML = `
+                <button onclick="submitAnswer('A')">${data.aAnswer}</button>
+                <button onclick="submitAnswer('B')">${data.bAnswer}</button>
+                <button onclick="submitAnswer('C')">${data.cAnswer}</button>
+                <button onclick="submitAnswer('D')">${data.dAnswer}</button>
+            `;
+        }
+    })
+    .catch((error) => {
+        console.error("Error en la solicitud:", error);
+    });
+}
+</script>
+{% endblock %}
