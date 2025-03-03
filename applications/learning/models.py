@@ -6,16 +6,36 @@ from django.utils import timezone
 # Create your models here
 
 
-class Category(models.Model):
+
+class Ope(models.Model):
+    name = models.CharField(max_length=200, blank=True, null=True)
+    entity = models.CharField(max_length=50, blank=True, null=True)
+    dateTime = models.DateTimeField(null=True, blank=True)
+    address = models.CharField(max_length=50, blank=True, null=True)
+    locality = models.CharField(max_length=50, blank=True, null=True)
+    province = models.CharField(max_length=50, blank=True, null=True)
+    autonomousCommunity = models.CharField(max_length=50, blank=True, null=True)
+    shortDescription = models.TextField(max_length=500, verbose_name="Descripción breve", null=True, blank=True)
+    longDescription = models.TextField(max_length=10000, verbose_name="Descripción completa", null=True, blank=True)
+    urlOpe = models.URLField(max_length=1000, verbose_name="Enlace de la Ope", null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+
+
+class Topic(models.Model):
+    number = models.IntegerField(blank=True, null=True)
+    ope = models.ForeignKey(Ope, on_delete=models.CASCADE, blank=True, null=True)
     name = models.CharField(max_length=50, blank=True, null=True)
-    categoryImage = models.ImageField(upload_to='static/category/images', null=True, blank=True)
     def __str__(self):
         return self.name
 
 correctAnswer = [('A','A'),('B','B'),('C','C'),('D','D'),('No detallado','No detallado')]
 
 class Test(models.Model):
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    ope = models.ForeignKey(Ope, on_delete=models.CASCADE, null=True, blank=True)
+    topic = models.ForeignKey(Topic, max_length=200, blank=True, null=True, on_delete=models.CASCADE)
     number = models.IntegerField(blank=True, null=True)
     question = models.TextField(max_length=500, blank=True, null=True)
     aAnswer = models.CharField(max_length=350, blank=True, null=True)
@@ -30,7 +50,7 @@ class Test(models.Model):
 class UserAnswer(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     number = models.IntegerField(blank=True, null=True)
-    category = models.CharField(max_length=30,blank=True, null=True)
+    ope = models.ForeignKey(Ope,max_length=30,blank=True, null=True, on_delete=models.CASCADE)
     answerProgresionCorrect = models.IntegerField(blank=True, null=True)
     correctAnswerCounterTotal = models.IntegerField(blank=True, null=True) #Si se redsponde incorrecto se resetea a cero
     incorrectAnswerCounterTotal = models.IntegerField(blank=True, null=True)
@@ -42,8 +62,8 @@ class UserAnswer(models.Model):
     
 class MyLearning(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True, blank=True)
+    ope = models.ForeignKey(Ope, on_delete=models.CASCADE, null=True, blank=True)
     datetime = models.DateTimeField(default=timezone.now, null=True)
     def __str__(self):
-        return str(self.category)
+        return str(self.ope)
     

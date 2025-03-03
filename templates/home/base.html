@@ -77,6 +77,14 @@
     overflow-y: auto; /* Activar scroll vertical */
   }
 
+  .bg-testope{
+    background-color: #1D7BAD;
+  }
+  .text-testope{
+    color: #1D7BAD;
+  }
+
+
 </style>
 <body>
 
@@ -86,42 +94,40 @@
     <header
       class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
       <div class="col-md-3 mb-2 mb-md-0">
-        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">TestOPE
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none"><label><b>TestOPE.eus</b></label>
         </a>
       </div>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
 
         <li>
-          <a href="{% url 'home_app:home' %}" class="nav-link px-2 link-secondary"
-            style="color: #250f64;">{% trans 'Home' %}</a>
+          <a href="{% url 'home_app:home' %}" class="nav-link px-2 link-secondary text-testope">{% trans 'Home' %}</a>
 
         </li>
 
         <li>
-          <a href="{% url 'home_app:sobre-nosotros' %}" class="nav-link px-2"
-            style="color: #250f64;">{% trans 'Sobre nosotros' %}</a>
+          <a href="{% url 'home_app:sobre-nosotros' %}" class="nav-link px-2 text-testope" style="text-decoration:none;">{% trans 'Sobre nosotros' %}</a>
+        </li>
+        <li>
+          <a href="{% url 'home_app:sobre-nosotros' %}" class="nav-link px-2 text-testope" style="text-decoration:none;">Bot</a>
+        </li>
+        <li>
+          <a href="{% url 'home_app:sobre-nosotros' %}" class="nav-link px-2 text-testope" style="text-decoration:none;">Contactar</a>
         </li>
         <!--  <li><a href="#" class="nav-link px-2" style="color: #250f64;">Pricing</a></li>-->
 
-        <li>
-           <button type="button" class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      indartBot
-                  </button>
-          <a href="{% url 'home_app:contactar' %}" class="nav-link px-2"
-            style="color: #250f64;">{% trans 'Contactar' %}</a>
-        </li>
+       
 
         {% get_current_language as CURRENT_LANGUAGE %}
         {% get_available_languages as AVAILABLE_LANGUAGES %}
         {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle"
-            style="text-transform:uppercase; background-color: #250f64; color:white; border-radius:25px;" href="#"
+          <a class="nav-link dropdown-toggle bg-testope"
+            style="text-transform:uppercase; color:white; border-radius:25px;" href="#"
             data-bs-toggle="dropdown" aria-expanded="false">{{ CURRENT_LANGUAGE }}</a>
           <ul class="dropdown-menu">
             {% for language in languages %}
-            <li><a class="dropdown-item" style="text-transform:uppercase; color: #250f64;"
+            <li><a class="dropdown-item test-testope" style="text-transform:uppercase;"
                 href="/{{ language.code }}/{{ request.get_full_path|slice:'4:' }}">{{ language.code }}</a></li>
             {% endfor %}
           </ul>
@@ -129,14 +135,14 @@
         <!-- <li><a href="#" class="nav-link px-2" style="color: #250f64;">About</a></li>-->
 
       </ul>
-      <a class="dropdown-toggle btn text-white"
-          style="text-transform:uppercase; border-radius:25px; background-color:#250f64;" href="#"
+      <a class="dropdown-toggle btn text-white bg-testope"
+          style="text-transform:uppercase; border-radius:25px;" href="#"
           data-bs-toggle="dropdown" aria-expanded="false">Mi aprendizaje</a>
         <ul class="dropdown-menu">
 
           {% for myLearning in myLearning %}
           <li>
-            <button class="btn">{{ myLearning.category }}</button>
+            <a href="#"><button class="btn">{{ myLearning.ope }}</button></a>
 
           </li>
           {% endfor %}
@@ -151,12 +157,12 @@
 
         {% if user.is_authenticated %}
      
-        <a class="dropdown-toggle btn text-white"
-          style="text-transform:uppercase; border-radius:25px; background-color:#250f64;" href="#"
+        <a class="dropdown-toggle btn text-white bg-testope"
+          style="text-transform:uppercase; border-radius:25px;" href="#"
           data-bs-toggle="dropdown" aria-expanded="false">{{ user.username }}</a>
         <ul class="dropdown-menu">
           <li class="">
-            <a href="{% url 'account_logout' %}"class="dropdown-item" style="text-transform:uppercase; color: #250f64;">
+            <a href="{% url 'account_logout' %}"class="dropdown-item test-testope" style="text-transform:uppercase;">
               {% trans 'Cerrar sesión' %}
               </a>
           </li>
@@ -172,8 +178,8 @@
 
         <!--aca inicia el boton de registrarse-->
 
-        <a href=" {% url 'account_signup' %}"> <button type="button" class="btn text-white"
-            style="background-color: #250f64;">{% trans 'Registrarse' %}</button></a>
+        <a href=" {% url 'account_signup' %}"> <button type="button" class="btn text-white bg-testope"
+            style="">{% trans 'Registrarse' %}</button></a>
 
         <!--aca termina el boton de registrarse-->
 {% endif %}
@@ -187,7 +193,7 @@
 
   {% endblock %}
   <!--aca comienza la parte de el footer-->
-  <footer class="container-fluid text-center text-white" style="background-color: #250f64;">
+  <footer class="container-fluid text-center text-white bg-testope">
     <div class="row">
       <p class="display-4" style="margin-top: 5%; margin-bottom: 10%;">{% trans '¡Eskerrik asko!' %}</p>
       <p>

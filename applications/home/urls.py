@@ -47,12 +47,9 @@ urlpatterns = [
         name='donativos',
     ),
 
-
-
     path('sobre-nosotros/',
         views.SobrenosotrosView.as_view(),
         name='sobre-nosotros',
     )
-
 
 ]

@@ -5,149 +5,163 @@
 {% block head %}
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<style>
+
+.chat-box {
+    filter: blur(5px);
+}
+
+
+.btn-premium {
+    position: fixed;
+    left: 0;
+    bottom: 20px;
+    background: #1D7BAD;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    writing-mode: vertical-rl; /* Texto de abajo hacia arriba */
+    transform: rotate(180deg);
+    z-index: 999;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-premium:hover {
+    background: #1D7BAD;
+    color: #fff;
+}
+
+</style>
 {% endblock %}
 
 {% block contenido %}
 <div class="container-fluid">
     <div class="row">
-        <div class="col-2"></div>
-        <div class="col-8 p-5" style="position:relative;">
+        <div class="col-lg-2 col-md-12 bg-light border" style="">
+            <h3 class="text-center mt-3">Noticias OPE</h3>
+
+            <!-- Área de Mensajes -->
+            <div class="news-box flex-grow-1 p-3 overflow-auto" id="chat-box">
+       
+        </div>
+        </div>
+        <div class="col-lg-8 col-md-0 p-5" style="position:relative;">
         
             <a href="{% url 'home_app:home' %}" class="" style="position:fixed;">
                 <button class="btn bg-light">Volver</button>
             </a>
 
-            <h1 class="text-center display-6 col-lg-12 col-md-12">{{ test.category }}</h1>
+            <h5 class="text-center col-lg-12 col-md-12 mt-5">{{ test.ope }}</h5>
 
             <!-- Pregunta -->
             <h3 class="text-center">{{ currentQuestion }}/{{ totalQuestions }}</h3>
             <div>
-                <p class="display-6 col-lg-12 col-md-12" id="questionText">{{ test.number }}.- {{ test.question }}</p>
+                <p class="col-lg-12 col-md-12" id="questionText"><b>{{ test.number }}.- {{ test.question }}</b></p>
             </div>
 
             <div id="answersContainer" class="d-flex flex-column">
                 <!-- Las respuestas se generarán dinámicamente -->
             </div>
 
-            <!-- Botón "Siguiente" inicialmente oculto -->
-            <div id="nextButtonContainer" class="mt-4 text-center" style="display: none;">
-                <form method="get" action="{% url 'learning_app:next_question' category.id currentQuestion|add:1 %}">
-                    <button type="submit" class="btn btn-secondary" id="nextButton">Siguiente</button>
-                </form>
-            </div>
+  <!-- Formulario para enviar la respuesta -->
+<form id="answerForm" method="POST" action="{% url 'learning_app:submit_answer' ope.id test.number %}">
+    {% csrf_token %}
+    <input type="hidden" name="answer" id="userAnswerInput">
+</form>
 
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    const answersContainer = document.getElementById("answersContainer");
-                    const nextButtonContainer = document.getElementById("nextButtonContainer");
-                    const questionText = document.getElementById("questionText");
+<!-- Botón "Siguiente" inicialmente oculto -->
+<div id="nextButtonContainer" class="mt-4 text-center" style="display: none;">
+    <button type="submit" class="btn btn-secondary" id="nextButton">Siguiente</button>
+</div>
 
-                    // Respuestas originales de la plantilla
-                    const answers = [
-                        { text: "{{ test.aAnswer }}", value: "A" },
-                        { text: "{{ test.bAnswer }}", value: "B" },
-                        { text: "{{ test.cAnswer }}", value: "C" },
-                        { text: "{{ test.dAnswer }}", value: "D" },
-                    ];
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const answersContainer = document.getElementById("answersContainer");
+        const nextButtonContainer = document.getElementById("nextButtonContainer");
+        const userAnswerInput = document.getElementById("userAnswerInput");
+        const answerForm = document.getElementById("answerForm");
 
-                    // Obtener la respuesta correcta del backend
-                    const correctAnswer = "{{ test.correctAnswer }}".trim();
+        const answers = [
+            { text: "{{ test.aAnswer }}", value: "A" },
+            { text: "{{ test.bAnswer }}", value: "B" },
+            { text: "{{ test.cAnswer }}", value: "C" },
+            { text: "{{ test.dAnswer }}", value: "D" },
+        ];
 
-                    // Barajar las respuestas
-                    const shuffledAnswers = answers.sort(() => Math.random() - 0.5);
+        const correctAnswer = "{{ test.correctAnswer }}".trim();
+        const shuffledAnswers = answers.sort(() => Math.random() - 0.5);
+        const buttons = [];
 
-                    // Crear los botones de respuestas
-                    const buttons = [];
-                    shuffledAnswers.forEach((answer) => {
-                        const button = document.createElement("button");
-                        button.type = "button";
-                        button.className = "btn btn-primary text-start mb-2";
-                        button.innerHTML = answer.text;
-                        button.dataset.value = answer.value;
-                        button.addEventListener("click", () => submitAnswer(button));
-                        answersContainer.appendChild(button);
-                        buttons.push(button);
-                    });
+        shuffledAnswers.forEach((answer) => {
+            const button = document.createElement("button");
+            button.type = "button";
+            button.className = "btn bg-testope text-start mb-2 text-white";
+            button.style = "background-color:#1D7BAD;";
+            button.innerHTML = answer.text;
+            button.dataset.value = answer.value;
+            button.addEventListener("click", () => submitAnswer(button));
+            answersContainer.appendChild(button);
+            buttons.push(button);
+        });
 
-                    // Manejar la selección de respuestas
-                    function submitAnswer(selectedButton) {
-                        const userAnswer = selectedButton.dataset.value; // Respuesta seleccionada por el usuario
+        function submitAnswer(selectedButton) {
+            const userAnswer = selectedButton.dataset.value;
+            userAnswerInput.value = userAnswer;  // Guardar respuesta en el formulario
 
-                        // Deshabilitar todos los botones
-                        buttons.forEach(button => button.disabled = true);
+            buttons.forEach(button => button.disabled = true); // Deshabilitar botones al responder
 
-                        // Validar la respuesta seleccionada
-                        if (userAnswer === correctAnswer) {
-                            selectedButton.classList.replace("btn-primary", "btn-success"); // Correcto
-                            playSound("{% static 'sound/correct.mp3' %}");
-                        } else {
-                            selectedButton.classList.replace("btn-primary", "btn-danger"); // Incorrecto
-                            playSound("{% static 'sound/wrong.wav' %}");
+            if (userAnswer === correctAnswer) {
+                selectedButton.classList.replace("bg-testope", "bg-success"); // Respuesta correcta
+                playSound("{% static 'sound/correct.mp3' %}");
+            } else {
+                selectedButton.classList.replace("bg-testope", "bg-danger"); // Respuesta incorrecta
+                playSound("{% static 'sound/wrong.wav' %}");
 
-                            // Mostrar la respuesta correcta en verde
-                            buttons.forEach(button => {
-                                if (button.dataset.value === correctAnswer) {
-                                    button.classList.replace("btn-primary", "btn-success");
-                                }
-                            });
-                        }
-
-                        // Mostrar el botón "Siguiente"
-                        nextButtonContainer.style.display = "block";
-                    }
-
-                    // Reproducir el sonido correspondiente
-                    function playSound(src) {
-                        const audio = new Audio(src);
-                        audio.play();
-                    }
-
-                    // Manejar eventos de teclado
-                    document.addEventListener("keydown", (event) => {
-                        const key = event.key.toLowerCase();
-
-                        if (key >= "1" && key <= "4") {
-                            const buttonIndex = parseInt(key) - 1;
-                            if (buttons[buttonIndex]) {
-                                buttons[buttonIndex].click();
-                            }
-                        } else if (["a", "b", "c", "d"].includes(key)) {
-                            const buttonMap = { a: 0, b: 1, c: 2, d: 3 };
-                            const buttonIndex = buttonMap[key];
-                            if (buttons[buttonIndex]) {
-                                buttons[buttonIndex].click();
-                            }
-                        } else if (key === "enter" && nextButtonContainer.style.display === "block") {
-                            document.getElementById("nextButton").click();
-                        } else if (key === "º") {
-                            speakQuestion();
-                        }
-                    });
-
-                    // Función para reproducir el texto de la pregunta
-                    function speakQuestion() {
-                        const utterance = new SpeechSynthesisUtterance(questionText.innerText);
-                        speechSynthesis.speak(utterance);
+                // Resaltar en verde la respuesta correcta
+                buttons.forEach(button => {
+                    if (button.dataset.value === correctAnswer) {
+                        button.classList.replace("bg-testope", "bg-success");
                     }
                 });
-            </script>
+            }
+
+            nextButtonContainer.style.display = "block"; // Mostrar botón "Siguiente"
+        }
+
+        document.getElementById("nextButton").addEventListener("click", function () {
+            answerForm.submit();  // Enviar el formulario con la respuesta
+        });
+
+        function playSound(src) {
+            const audio = new Audio(src);
+            audio.play();
+        }
+    });
+</script>
+
+
             {{ learned_question_numbers }}
             {% if progresion_questions %}
-    <ul>
-    
-        {% for question in progresion_questions %}
-            <li>
-                Pregunta Número: {{ question.number }} <br>
-                Respuestas Correctas Totales: {{ question.correctAnswerCounterTotal }}
-            </li>
-        {% endfor %}
-    </ul>
-{% else %}
-    <p>No hay preguntas aprendidas en esta categoría.</p>
-{% endif %}
+            <ul>
+            
+                {% for question in progresion_questions %}
+                    <li>
+                        Pregunta Número: {{ question.number }} <br>
+                        Respuestas Correctas Totales: {{ question.correctAnswerCounterTotal }}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No hay preguntas aprendidas en esta categoría.</p>
+        {% endif %}
 
             <!-- Progesion panel-->
-            <div class="p-5 bg-light" style="position:absolute;bottom:0; width:100%;">
+            <div class="p-5 bg-light w-100" style="">
                 <h4 class="">Tu progresión</h4>
                 {% for test in questionList %}
                 {% if test.answerProgresionCorrect == 4 %}
@@ -168,14 +182,162 @@
             <!--Fin del Progresion panel-->
         </div>
 
-        <div class="col-2 bg-light border pl-1 pr-1" style="height:100vh;">
-            <h3 class="text-center">Social</h3>
-            <p style="color: black; background-color:pink;"><b>Último donativo:<br>Olvin Daniel (Donostia): </b>¡Mucha suerte y ánimo a todos!</p>
+        <div class="col-lg-2 col-md-12 bg-light border d-flex flex-column" style="height: 100vh; overflow: hidden;">
+            <h3 class="text-center mt-3">Chat Social</h3>
+
+            <!-- Área de Mensajes -->
+            <div class="chat-box flex-grow-1 p-3 overflow-auto" id="chat-box">
+       
         </div>
+
+    <!-- Formulario de Envío -->
+<form id="chat-form" class="p-3 border-top bg-white">
+    <div class="input-group">
+        <input type="text" id="chat-input" class="form-control" placeholder="Escribe un mensaje..." required>
+        <button type="submit" class="btn text-white" style="background-color:#1D7BAD;">Enviar</button>
+    </div>
+</form>
+</div>
     </div>
 </div>
 
+
+
+<!-- Modal -->
+<div class="modal fade" id="premium" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+        <h1>Pásate a Premium</h1>
+        <p>Activa las ventajas de premium</p>
+            <ul class="list-group">
+            <li class="list-group-item">Acceso al 100% del contenido</li>
+            <li class="list-group-item">Acceso a todas las OPES</li>
+            <li class="list-group-item">Continua donde lo dejaste</li>
+            <li class="list-group-item">Análisis de progresión</li>
+            <li class="list-group-item">Selección por Inteligencia Artificial</li>
+            </ul>
+      </div>
+      <div class="modal-footer">
+       
+        <button type="button" class="btn text-white w-100" style="background-color:#1D7BAD;">Aceptar</button>
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<a href="https://www.google.com" target="_blank" class="btn-premium">
+    ACTIVAR <br> PREMIUM
+</a>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>document.addEventListener("DOMContentLoaded", function () {
+    const chatBox = document.getElementById("chat-box");
+    const input = document.getElementById("chat-input");
+    const form = document.getElementById("chat-form");
+
+    // Lista de nombres españoles y vascos
+    const nombres = [
+        "Aitor", "Unai", "Iker", "Jon", "Ander", "Mikel", "Xabier", "Gorka", "Eneko", "Ibai",
+        "Álvaro", "Carlos", "Javier", "Raúl", "Pedro", "Manuel", "Sergio", "Antonio", "Rubén", "Fernando",
+        "Maite", "Nerea", "Ane", "Irati", "Amaia", "Uxue", "Leire", "Miren", "Nahia", "Olatz",
+        "Sofía", "María", "Carmen", "Lucía", "Clara", "Beatriz", "Laura", "Elena", "Teresa", "Silvia"
+    ];
+
+    // Lista de mensajes aleatorios
+    const mensajes = [
+        "El derecho constitucional es clave en cualquier oposición.",
+        "El artículo 14 de la Constitución garantiza la igualdad.",
+        "¿Sabías que el derecho administrativo regula la función pública?",
+        "La separación de poderes es fundamental en el Estado de derecho.",
+        "El Tribunal Constitucional vela por la constitucionalidad de las leyes.",
+        "Los funcionarios tienen derechos y deberes en su estatuto.",
+        "El acceso a la función pública es por mérito y capacidad.",
+        "Las oposiciones requieren conocimientos en derecho administrativo y constitucional.",
+        "El BOE publica las convocatorias de oposiciones oficiales.",
+        "El derecho penal establece las penas y sanciones en España.",
+        "Las oposiciones de justicia exigen conocimientos en procedimiento judicial.",
+        "La ley de procedimiento administrativo regula las relaciones con la administración.",
+        "El artículo 1 de la Constitución define a España como un Estado social y democrático.",
+        "La presunción de inocencia es un derecho fundamental.",
+        "El Estatuto Básico del Empleado Público regula la función pública.",
+        "El Poder Legislativo está formado por el Congreso y el Senado.",
+        "El derecho laboral protege los derechos de los trabajadores.",
+        "Los actos administrativos pueden ser impugnados ante la jurisdicción contencioso-administrativa.",
+        "El recurso de amparo protege los derechos fundamentales.",
+        "Las oposiciones de policía exigen conocimientos en derecho penal.",
+        "El Tribunal Supremo es la cúspide del poder judicial.",
+        "El principio de legalidad es fundamental en el derecho penal.",
+        "La Constitución de 1978 es la norma suprema en España.",
+        "El derecho civil regula las relaciones entre particulares.",
+        "El habeas corpus protege contra detenciones ilegales.",
+        "¡Hola! 😊", "¿Cómo estás?", "¡Buenos días! 🌞", "¡Buenas tardes! ☕", "¡Buenas noches! 🌙",
+        "¿Qué tal tu día?", "Espero que estés bien.", "¡Mucho ánimo hoy!", "¡Vamos a por ello! 💪",
+        "¿Alguien por aquí?", "¿Qué estás haciendo?", "¡Hace tiempo que no hablamos!", "¿Alguna novedad?",
+        "¡Qué bien verte aquí!", "Me alegra hablar contigo.", "¡Eso suena genial! 😃", "Jaja, qué divertido.",
+        "¡Buena idea! 👍", "No estoy seguro, ¿tú qué piensas?", "¡Eso es interesante!", "Cuéntame más sobre eso.",
+        "¡Qué sorpresa! 😮", "¡Eso no me lo esperaba!", "¿Quieres hacer algo más tarde?", "Vamos a seguir en contacto.",
+        "¡Nos vemos pronto! 👋", "¡Hasta luego!", "¡Adiós! Que tengas un buen día.", "Nos hablamos luego. 😊"
+    ];
+
+    // Función para obtener un nombre aleatorio
+    function obtenerNombreAleatorio() {
+        return nombres[Math.floor(Math.random() * nombres.length)];
+    }
+
+    // Función para agregar un mensaje recibido al chat con nombre aleatorio
+    function agregarMensaje() {
+        const mensaje = mensajes[Math.floor(Math.random() * mensajes.length)];
+        const nombreUsuario = obtenerNombreAleatorio(); // Obtener un nombre aleatorio
+        const messageDiv = document.createElement("div");
+        messageDiv.className = "message received";
+        messageDiv.innerHTML = `<span class="text-muted small">${nombreUsuario}:</span><p>${mensaje}</p>`;
+        
+        chatBox.appendChild(messageDiv);
+        chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll al final
+        
+        // Llamar nuevamente con tiempo aleatorio entre 5 y 60 segundos
+        setTimeout(agregarMensaje, Math.floor(Math.random() * (60000 - 5000) + 5000));
+    }
+
+    // Escuchar el formulario para enviar mensajes manualmente
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        
+        if (input.value.trim() !== "") {
+            const messageDiv = document.createElement("div");
+            messageDiv.className = "message sent";
+            messageDiv.innerHTML = `<span class="text-muted small">Tú:</span><p>${input.value}</p>`;
+            
+            chatBox.appendChild(messageDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+            
+            input.value = ""; // Limpiar input
+        }
+    });
+
+    // Iniciar el ciclo de mensajes automáticos
+    setTimeout(agregarMensaje, 5000); // Primer mensaje en 5s
+});
+
+</script>
+
+
+<!-- JavaScript para Abrir el Modal al Hacer Clic en el Input -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const chatInput = document.getElementById("chat-input");
+
+    chatInput.addEventListener("focus", function () {
+        // Mostrar el modal al hacer clic en el input
+        var modal = new bootstrap.Modal(document.getElementById("premium"));
+        modal.show();
+    });
+});
+</script>
 
 {% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'home/base_sin_menu_sin_footer.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block head %}
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+{% endblock %}
+
+{% block contenido %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2 col-md-0"></div>
+        <div class="col-lg-8 col-md-0 p-5" style="position:relative;">
+        
+            <a href="{% url 'home_app:home' %}" class="" style="position:fixed;">
+                <button class="btn bg-light">Volver</button>
+                
+            </a>
+            <div class="w-100 bg-success text-center p-5 mt-5">
+                    <h3 class="text-white">¡Felicidades! Has completado los test. ; )</h3>
+                </div>
+
+          
+
+            <!-- Progesion panel-->
+            <div class="p-5 bg-light" style="position:absolute;bottom:0; width:100%;">
+                <h4 class="">Tu progresión</h4>
+                {% for test in questionList %}
+                {% if test.answerProgresionCorrect == 4 %}
+                <div class="border" style="width:20px; height:20px; font-size:10px; color:black;text-align:center; float:left; background-color: lime;">{{ test.number }}</div>
+                {% elif test.answerProgresionCorrect == 1 %}
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #e1dfff;">{{ test.number }}</div>
+                {% elif test.answerProgresionCorrect == 2 %}
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #b0abde;">{{ test.number }}</div>
+                {% elif test.answerProgresionCorrect == 3 %}
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #250f64;">{{ test.number }}</div>
+                {% elif test.answerProgresionCorrect > 4 %}
+                <div style="width:20px; height:20px; font-size:10px; color:black;text-align:center; float:left; background-color: lime;">{{ test.number }}</div>
+                {% else %}
+                <div style="width:20px; height:20px; font-size:10px; color:black;text-align:center; float:left; background-color: white;">{{ test.number }}</div>
+                {% endif %}
+            {% endfor %}
+            </div>
+            <!--Fin del Progresion panel-->
+        </div>
+
+        <div class="col-lg-2 col-md-12 bg-light border pl-1 pr-1" style="height:100vh;">
+            <h3 class="text-center">Social</h3>
+            <p style="color: black;">Prueba</p>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+{% endblock %}

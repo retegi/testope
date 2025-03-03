@@ -4,7 +4,7 @@ from django.views.generic import (
     ListView
 )
 from django.contrib.auth.models import User
-from applications.learning.models import MyLearning, Category
+from applications.learning.models import MyLearning, Topic, Ope
 from django.http import HttpResponse
 
 
@@ -15,9 +15,11 @@ class HomePageView(TemplateView):
         context = super().get_context_data(**kwargs)
         context['user']=self.request.user
         context['myLearning']=MyLearning.objects.filter(user=self.request.user.id)
-        context['category']=Category.objects.all()
+        #context['category']=Category.objects.all()
         context['countUsersRegistered']=13603
         context['countUsersLearning']=539
+        context['ope']=Ope.objects.all()
+        context['locality']=Ope.objects.all().distinct()
         return context
     
     def post(self, request, *args, **kwargs):
