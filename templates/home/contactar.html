@@ -24,59 +24,112 @@
 {% block contenido %}
 
 
+<!--inicio de el formulario de contactar-->
 
+<div class="container mt-5 py-5">
+  <h2 class="text-center mb-4">Contactar</h2>
+  <form method="post" action="/contact/">
+      {% csrf_token %}
+      
+      <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="name">Nombre</label>
+                  <input type="text" class="form-control border-primary" id="name" name="name" required>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control border-primary" id="email" name="email" required>
+              </div>
+          </div>
+      </div>
 
-<div class="col-lg-2 col-md-12 col-sm-12"></div>
+      <div class="row mt-3">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="phone">Teléfono</label>
+                  <input type="text" class="form-control border-primary" id="phone" name="phone">
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="company">Empresa</label>
+                  <input type="text" class="form-control border-primary" id="company" name="company">
+              </div>
+          </div>
+      </div>
 
-<div class="container-fluid" style="padding-bottom: 180px">
-  <div class="row mb-5 p-5">
-    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-      <h1 class="H3 mb-4" id="Contact">{% trans 'Contacto' %}</h1>
-    </div>
-  </div>
+      <div class="row mt-3">
+          <div class="col-12">
+              <div class="form-group">
+                  <label for="message">Mensaje</label>
+                  <textarea class="form-control border-primary" id="message" name="message" rows="5" required></textarea>
+              </div>
+          </div>
+      </div>
 
-  <div class="row mb-5"">
-    <div class=" col-lg-4 col-md-12 col-sm-12"></div>
-  <div class="col-lg-4 col-md-12 col-sm-12">
-    <form class="bg-light p-3" style="border-radius: 15px">
-      <div class="form-group">
-        <label for="exampleFormControlInput1">{% trans 'Escriba un Correo Electrónico' %}</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1"
-          placeholder="{% trans 'Escriba su email' %}" />
-        <br>
-        <label for="exampleFormControlInput1">{% trans 'Escriba un nombre de Usuario' %}</label>
-        <br>
+      <div class="row mt-3 text-center">
+          <div class="col-12 d-flex justify-content-center">
+              <div class="g-recaptcha" data-sitekey="6Ld-Td4qAAAAABFa0JgDzvoJhu9kswUuwbAT41NZ"></div>
+          </div>
+      </div>
 
-        <input class="form-control" type="text" placeholder="{% trans 'Escriba un nomsbre de usuario' %}">
-
-        <br />
-
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">{% trans 'Escribe tu mensaje' %}</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-            placeholder="{% trans 'Escribe aquí' %}"></textarea>
-        </div>
-        <br />
-        <button type="button" class="btn btn-outline-dark w-100 text-white" style="background-color: #250f64">
-          {% trans 'enviar' %}
-        </button>
-    </form>
-  </div>
-  <div class="col-lg-4 col-md-12 col-sm-12"></div>
-
-
-  <!--aca inicia l boton de donativos-->
-
-  <div class="text-center mt-5 mb-5 " style="padding-top: 100px;">
-    <a href="https://www.paypal.com/donate/?hosted_button_id=REM3EZBPZBPMW"><button class="btn"
-        style="background-color: pink;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-          fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-          <path
-            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-        </svg>{% trans 'Donar' %}</button></a>
-
-  </div>
-  <!--aca termiina el boton de donativos-->
+      <div class="row mt-3">
+          <div class="col-12 text-center">
+              <button type="submit" class="btn text-white w-100" style="background-color:#1D7BAD;">Enviar</button>
+          </div>
+      </div>
+  </form>
 </div>
-</div>
+
+<!--fin de el formulario de contactar-->
+
+
+<!-- Cargar el script de Google reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Desaparece los mensajes de alerta después de 5 segundos
+    setTimeout(function () {
+        let alerts = document.querySelectorAll(".alert");
+        alerts.forEach(function (alert) {
+            alert.style.transition = "opacity 0.5s";
+            alert.style.opacity = "0";
+            setTimeout(() => alert.remove(), 500); // Elimina el mensaje después de la animación
+        });
+    }, 5000);
+
+    // Obtener el formulario y agregar validación
+    document.querySelector("form").addEventListener("submit", function (event) {
+        let recaptchaResponse = grecaptcha.getResponse();
+        
+        if (!recaptchaResponse) { // Si no se ha marcado el reCAPTCHA
+            event.preventDefault(); // Evita que el formulario se envíe
+            
+            // Verificar si ya existe una alerta y evitar duplicados
+            if (!document.querySelector(".recaptcha-alert")) {
+                let alerta = document.createElement("div");
+                alerta.className = "alert alert-danger text-center mt-3 recaptcha-alert";
+                alerta.innerHTML = "⚠️ Debes completar el reCAPTCHA antes de enviar.";
+                
+                // Insertar el mensaje después del botón de enviar
+                let botonEnviar = document.getElementById("btn-enviar");
+                botonEnviar.parentNode.appendChild(alerta);
+
+                // Desaparece la alerta después de 5 segundos
+                setTimeout(() => alerta.remove(), 5000);
+            }
+        }
+    });
+});
+</script>
+
+
+
+
+
+
 {% endblock %}

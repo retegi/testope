@@ -7,6 +7,15 @@ from django.contrib.auth.models import User
 from applications.learning.models import MyLearning, Topic, Ope
 from django.http import HttpResponse
 
+from django.core.mail import send_mail
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from .forms import ContactForm  # Importa el formulario
+
+
+
+
+
 
 class HomePageView(TemplateView):
     template_name = "home/index.html"
@@ -60,4 +69,66 @@ class DonativosView(TemplateView):
 class SobrenosotrosView(TemplateView):
     template_name = "home/sobrenosotros.html"
 
+
+
+def formulario_contactar(request):
+    if request.method == "POST":
+        name = request.POST.get("name", "")
+        email = request.POST.get("email", "")
+        phone = request.POST.get("phone", "")
+        company = request.POST.get("company", "")
+        message = request.POST.get("message", "")
+        recaptcha_response = request.POST.get("g-recaptcha-response")
+
+        # Validar reCAPTCHA con Google
+        recaptcha_verify = requests.post(
+            "https://www.google.com/recaptcha/api/siteverify",
+            data={
+                "secret": settings.RECAPTCHA_PRIVATE_KEY,
+                "response": recaptcha_response,
+            }
+        ).json()
+
+        if not recaptcha_verify.get("success"):
+            messages.error(request, "Error: reCAPTCHA inválido. Intenta nuevamente.")
+            return render(request, "home/index.html", {
+                "name": name,
+                "email": email,
+                "phone": phone,
+                "company": company,
+                "message": message
+            })
+
+        # Enviar correo con los datos ingresados desde la web
+        asunto = f"Tu Asistente Inteligente Nuevo mensaje de contacto de {name}"
+        contenido = (
+            f"Nombre: {name}\n"
+            f"Email: {email}\n"
+            f"Teléfono: {phone}\n"
+            f"Empresa: {company}\n"
+            f"Mensaje:\n{message}"
+        )
+
+        try:
+            send_mail(
+                asunto,
+                contenido,
+                settings.EMAIL_HOST_USER,  # Remitente
+                ["euskodev@gmail.com"],  # Cambia por el correo real
+                fail_silently=False,
+            )
+            messages.success(request, "Tu mensaje ha sido enviado con éxito.")
+            return redirect("home_app:home")
+
+        except Exception as e:
+            messages.error(request, f"Error al enviar el correo: {str(e)}")
+            return render(request, "home/index.html", {
+                "name": name,
+                "email": email,
+                "phone": phone,
+                "company": company,
+                "message": message
+            })
+
+    return redirect("home_app:home")
 
