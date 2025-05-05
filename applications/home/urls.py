@@ -2,14 +2,6 @@ from os import name
 from django.urls import include, path
 from . import views
 
-"""
-{% url 'home_app:aviso_legal' %}
-{% url 'home_app:politica_de_privacidad' %}
-{% url 'home_app:politica_de_cookies' %}
-c
-
-
-"""
 
 app_name = 'home_app'
 

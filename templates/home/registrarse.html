@@ -1,9 +1,8 @@
 {% extends 'home/base.html' %}
-
 {% load static %}
 {% load i18n %}
-{% block head %}
 
+{% block head %}
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM6GBKCS3R"></script>
 <script>
@@ -13,120 +12,88 @@
     dataLayer.push(arguments);
   }
   gtag('js', new Date());
-
   gtag('config', 'G-ZM6GBKCS3R');
 </script>
-
-
-
 {% endblock %}
 
 {% block contenido %}
-
-
-
-<!--aca inician los formularios para registrarse-->
-
-
 <div class="container-fluid p-4">
-
   <div class="row mt-5">
-
-
-
-
     <div class="col-lg-4 col-md-12"></div>
 
     <div class="col-lg-4 col-md-12">
+      <form method="post">
+        {% csrf_token %}
 
-
-
-      <form>
-
-        <div class="w-100">
-          <div
-            style="background-image: url(img/pais\ vasco.png); border-radius: 35px; height: 70px; background-size: cover; width: 70px; background-position: center; margin:auto;">
+        <div class="w-100 text-center">
+          <div 
+            style="background-image: url('{% static 'img/pais_vasco.png' %}'); 
+                   border-radius: 35px; 
+                   height: 70px; 
+                   background-size: cover; 
+                   width: 70px; 
+                   background-position: center; 
+                   margin: auto;">
           </div>
         </div>
 
-
-
-        <h1 class="text-center" style="margin-bottom: 60px; color: #250f64; margin-top: -35px;">
-          {% trans 'Registrarse' %}</h1>
-
+        <h1 class="text-center mt-3 mb-4" style="color: #250f64;">
+          {% trans 'Registrarse' %}
+        </h1>
 
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">{% trans 'Correo electrónico' %}</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+          <label for="email" class="form-label">{% trans 'Correo electrónico' %}</label>
+          <input type="email" class="form-control" id="email" name="email" required>
           <div id="emailHelp" class="form-text">
             {% trans 'Nunca compartiremos su correo electrónico con nadie más.' %}
           </div>
         </div>
+
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">{% trans 'Usuario' %}</label>
-          <input type="text" class="form-control" id="exampleInputPassword1" />
-
-
-          <label for="exampleInputPassword1" class="form-label">{% trans 'Contraseña' %}</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" />
-
-          <label for="exampleInputPassword1" class="form-label">{% trans 'Nombre' %}</label>
-          <input type="text" class="form-control" id="exampleInputPassword1" />
-
-          <!--
- <label for="exampleInputPassword1" class="form-label">Localidad</label>
-        <input
-          type="password"
-          class="form-control"
-          id="exampleInputPassword1"/>
-      -->
-
-
-
-          <button type="submit" class="btn w-100 mt-3 text-white"
-            style="background-color: #250f64;">{% trans 'Enviar' %}</button>
-
-
-
+          <label for="username" class="form-label">{% trans 'Usuario' %}</label>
+          <input type="text" class="form-control" id="username" name="username" required>
         </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">{% trans 'Contraseña' %}</label>
+          <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="name" class="form-label">{% trans 'Nombre' %}</label>
+          <input type="text" class="form-control" id="name" name="name">
+        </div>
+
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1">{% trans 'Verificado' %}</label>
+          <input type="checkbox" class="form-check-input" id="verified">
+          <label class="form-check-label" for="verified">{% trans 'Verificado' %}</label>
         </div>
 
+        <button type="submit" class="btn w-100 text-white" style="background-color: #250f64;">
+          {% trans 'Enviar' %}
+        </button>
 
-        <br>
-          <a href="http://localhost:8000/es/accounts/google/login/?process=login">
-            <div class="w-100 btn bg-light p-1">
-              <img src="{% static 'img/google-icon.png' %}" class="text-left mr-5" style="width:30px; margin-right:10px;">
-              <label class="ml-5">{% trans 'Iniciar con gmail' %}</label>
-            </div>
+        <div class="text-center mt-3">
+          <a href="{% provider_login_url 'google' %}" class="btn bg-light d-flex align-items-center justify-content-center">
+            <img src="{% static 'img/google-icon.png' %}" class="mr-2" style="width:30px;">
+            <span>{% trans 'Iniciar con Google' %}</span>
           </a>
-        <!--aca terminan los botones-->
-
-
-
-        <!--aca inicia l boton de donativos-->
-
-        <div class="text-center mt-5 mb-5 " style="padding-top: 100px;">
-          <a href="https://www.paypal.com/donate/?hosted_button_id=REM3EZBPZBPMW"><button class="btn"
-              style="background-color: pink;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                <path
-                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-              </svg> {% trans 'Donar' %}</button></a>
-
         </div>
 
-        <!--aca termiina el boton de donativos-->
-
-
-
+        <div class="text-center mt-5">
+          <a href="https://www.paypal.com/donate/?hosted_button_id=REM3EZBPZBPMW">
+            <button class="btn" style="background-color: pink;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+              </svg> 
+              {% trans 'Donar' %}
+            </button>
+          </a>
+        </div>
+      </form>
     </div>
 
     <div class="col-lg-4 col-md-12"></div>
-
-    <!--aca termina el formulario a rellenar-->
   </div>
 </div>
 {% endblock %}

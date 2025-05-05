@@ -86,109 +86,120 @@
 
 
 </style>
+
+
 <body>
 
-  <!--aca inicia el menu-->
 
+  <!--aca inicia el menu-->
   <div class="container">
-    <header
-      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      
+      <!-- Logo -->
       <div class="col-md-3 mb-2 mb-md-0">
+<<<<<<< HEAD
         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none"><label><b>TestOPE.net</b></label>
+=======
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <label>
+            <a style="text-decoration: none; color: #1D7BAD;" href="{% url 'home_app:home' %}"><b>TestOPE.eus</b></a>
+          </label>
+>>>>>>> 9c0f89c79e610944f8b71293f14e419c34af2a19
         </a>
       </div>
+  
+<!-- Menú de navegación -->
+<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+  <li><a href="{% url 'home_app:home' %}" class="nav-link px-2 link-secondary text-testope">{% trans 'Home' %}</a></li>
+  <li><a href="{% url 'home_app:sobre-nosotros' %}" class="nav-link px-2 text-testope">{% trans 'Sobre nosotros' %}</a></li>
+  <li><a href="https://www.tuasistenteinteligente.com/testope/" class="nav-link px-2 text-testope">Bot</a></li>
+  <li><a href="{% url 'home_app:contactar' %}" class="nav-link px-2 text-testope">{% trans 'Contactar' %}</a></li>
 
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+  <!-- Selector de idioma -->
+  {% get_current_language as CURRENT_LANGUAGE %}
+  {% get_available_languages as AVAILABLE_LANGUAGES %}
+  {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
 
-        <li>
-          <a href="{% url 'home_app:home' %}" class="nav-link px-2 link-secondary text-testope">{% trans 'Home' %}</a>
-
-        </li>
-
-        <li>
-          <a href="{% url 'home_app:sobre-nosotros' %}" class="nav-link px-2 text-testope" style="text-decoration:none;">{% trans 'Sobre nosotros' %}</a>
-        </li>
-        <li>
-          <a href="{% url 'home_app:sobre-nosotros' %}" class="nav-link px-2 text-testope" style="text-decoration:none;">Bot</a>
-        </li>
-        <li>
-          <a href="{% url 'home_app:sobre-nosotros' %}" class="nav-link px-2 text-testope" style="text-decoration:none;">Contactar</a>
-        </li>
-        <!--  <li><a href="#" class="nav-link px-2" style="color: #250f64;">Pricing</a></li>-->
-
-       
-
-        {% get_current_language as CURRENT_LANGUAGE %}
-        {% get_available_languages as AVAILABLE_LANGUAGES %}
-        {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle bg-testope"
-            style="text-transform:uppercase; color:white; border-radius:25px;" href="#"
-            data-bs-toggle="dropdown" aria-expanded="false">{{ CURRENT_LANGUAGE }}</a>
-          <ul class="dropdown-menu">
-            {% for language in languages %}
-            <li><a class="dropdown-item test-testope" style="text-transform:uppercase;"
-                href="/{{ language.code }}/{{ request.get_full_path|slice:'4:' }}">{{ language.code }}</a></li>
-            {% endfor %}
-          </ul>
-        </li>
-        <!-- <li><a href="#" class="nav-link px-2" style="color: #250f64;">About</a></li>-->
-
-      </ul>
-      <a class="dropdown-toggle btn text-white bg-testope"
-          style="text-transform:uppercase; border-radius:25px;" href="#"
-          data-bs-toggle="dropdown" aria-expanded="false">Mi aprendizaje</a>
-        <ul class="dropdown-menu">
-
-          {% for myLearning in myLearning %}
+  <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle bg-testope text-white rounded-pill text-uppercase" href="#" data-bs-toggle="dropdown">
+          {{ CURRENT_LANGUAGE }}
+      </a>
+      <ul class="dropdown-menu">
+          {% for language in languages %}
           <li>
-            <a href="#"><button class="btn">{{ myLearning.ope }}</button></a>
-
+              <form action="{% url 'set_language' %}" method="post">
+                  {% csrf_token %}
+                  <input type="hidden" name="next" value="{{ request.path }}">
+                  <input type="hidden" name="language" value="{{ language.code }}">
+                  <button type="submit" class="dropdown-item test-testope text-uppercase">
+                      {{ language.name_local }}
+                  </button>
+              </form>
           </li>
           {% endfor %}
-          <li>
-            <button class="btn bg-light">Ver todos</button>
-          </li>
-        </ul>
+      </ul>
+  </li>
+</ul>
 
-      <div class="col-md-3 text-end">
-
-        
-
-        {% if user.is_authenticated %}
-     
-        <a class="dropdown-toggle btn text-white bg-testope"
-          style="text-transform:uppercase; border-radius:25px;" href="#"
-          data-bs-toggle="dropdown" aria-expanded="false">{{ user.username }}</a>
+  
+      <!-- Menú Mi aprendizaje -->
+      <div class="dropdown">
+        <a class="btn text-white bg-testope rounded-pill text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          Mi aprendizaje
+        </a>
         <ul class="dropdown-menu">
-          <li class="">
-            <a href="{% url 'account_logout' %}"class="dropdown-item test-testope" style="text-transform:uppercase;">
-              {% trans 'Cerrar sesión' %}
-              </a>
-          </li>
+          {% for myLearning in myLearning %}
+          <li><a href="#" class="dropdown-item"><button class="btn">{{ myLearning.ope }}</button></a></li>
+          {% endfor %}
+          <li><button class="btn bg-light w-100">Ver todos</button></li>
         </ul>
-        {% else %}
-        <!--aca inicia el boton  de iniciar sesion-->
-        <a href="{% url 'account_login' %}"> <button type="button" class="btn me-2"
-            style=" border: 2px solid #250f64">
-            {% trans 'Iniciar sesión' %}
-          </button></a>
-
-        <!--aca termina el boton de iniciar sesion-->
-
-        <!--aca inicia el boton de registrarse-->
-
-        <a href=" {% url 'account_signup' %}"> <button type="button" class="btn text-white bg-testope"
-            style="">{% trans 'Registrarse' %}</button></a>
-
-        <!--aca termina el boton de registrarse-->
-{% endif %}
       </div>
+  
+      <!-- Menú de usuario -->
+      <div class="col-md-3 text-end">
+        {% if user.is_authenticated %}
+        <div class="dropdown">
+          <a class="btn text-white bg-testope rounded-pill text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            {{ user.username }}
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="{% url 'account_logout' %}" class="dropdown-item test-testope text-uppercase">{% trans 'Cerrar sesión' %}</a></li>
+          </ul>
+        </div>
+        {% else %}
+        <a href="{% url 'account_login' %}">
+          <button type="button" class="btn border-2 border-primary me-2">{% trans 'Iniciar sesión' %}</button>
+        </a>
+        <a href="{% url 'account_signup' %}">
+          <button type="button" class="btn text-white bg-testope">{% trans 'Registrarse' %}</button>
+        </a>
+        {% endif %}
+      </div>
+  
     </header>
-
+  
     <div class="b-example-divider"></div>
   </div>
+  
   <!--aca termina el menu-->
+
+<!--===================================
+  boton flotante para el asistente
+========================================-->
+<!-- Botón flotante -->
+<a href="https://www.tuasistenteinteligente.com/testope/" class="btn btn-primary rounded-circle shadow-lg d-flex justify-content-center align-items-center"
+   id="assistant-button"
+   style="width: 60px; height: 60px; position: fixed; bottom: 20px; right: 20px; font-size: 24px;">
+    💬
+</a>
+
+
+<!--===================================
+  boton flotante para el asistente
+========================================-->
+
+
+
   {% block contenido %}
 
   {% endblock %}

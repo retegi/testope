@@ -1,81 +1,60 @@
 {% extends 'home/base.html' %}
-
 {% load static %}
 {% load i18n %}
-{% block head %}
 
-<!-- Google tag (gtag.js) -->
+{% block head %}
+<!-- Google Tag Manager -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM6GBKCS3R"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
-
   gtag('config', 'G-ZM6GBKCS3R');
 </script>
-
-
-
 {% endblock %}
 
 {% block contenido %}
-
-
-
 <div class="container-fluid"
-  style="padding-bottom: 180px; background-image: url('{% static "img/preguntasyrespuestas.png" %}');background-size:cover; padding-top:0px; margin-top:-120px;">
-  <div class=" row mb-5 p-5">
-    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-      <h1 class="H3 mb-4" style="margin-top:200px;" id="sobrenosotros">{% trans 'Sobre Nosotros' %}</h1>
+     style="padding-bottom: 180px; background-image: url('{% static "img/preguntasyrespuestas.png" %}'); background-size: cover; margin-top: -120px;">
+  
+  <!-- Título "Sobre Nosotros" -->
+  <div class="row mb-5 p-5 text-center">
+    <div class="col-lg-12">
+      <h1 class="display-4 font-weight-bold" style="margin-top: 180px;" id="sobrenosotros">{% trans 'Sobre Nosotros' %}</h1>
     </div>
   </div>
 
-  <div class="row">
-
-    <div class="col-lg-4 col-md-12"></div>
-
-    <div class="col-lg-4 col-md-12">
-      <b>
-        <p>
-          {% trans '"En Euskodev, nos enorgullecemos de ser una empresa de desarrollo web en el País Vasco. Fundada por desarrolladores y rediseñadores web, Iñaki Retegi y Olvin Duarte, nuestra misión es crear experiencias excepcionales que impulsen el éxito de nuestros clientes.' %}
-
-
-
-          <br><br>
-
-          {% trans 'Con una combinación única de creatividad, experiencia técnica y pasión por la innovación, en Euskodev nos esforzamos por superar las expectativas en cada proyecto que emprendemos. Ya sea que estemos creando un nuevo sitio web desde cero o revitalizando una presencia en línea existente, nuestro enfoque centrado en el cliente garantiza resultados sobresalientes y duraderos.' %}
-
-          <br>
-          {% trans 'En Euskodev, creemos en la colaboración, la transparencia y la excelencia en todo lo que hacemos. Estamos comprometidos a brindar soluciones personalizadas y de alta calidad que impulsen el crecimiento de nuestros clientes y los ayuden a destacarse en un mercado digital cada vez más competitivo.' %}
-          <br><br>
-
-
-          {% trans '¡Confía en Euskodev para llevar tu presencia en línea al siguiente nivel y descubre lo que podemos lograr juntos!"' %}
-
-
-        </p>
-      </b>
-
+  <!-- Contenedor con el texto centrado y con un ancho controlado -->
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8 col-sm-10 p-4 rounded" 
+         style="background: rgba(255, 255, 255, 0.9); box-shadow: 0px 4px 10px rgba(0,0,0,0.1); border-radius: 15px;text-align: justify;">
+      <p class="lead font-weight-normal text-muted">
+        {% trans '"En Euskodev, nos enorgullecemos de ser una empresa de desarrollo web en el País Vasco. Fundada por desarrolladores y rediseñadores web, Iñaki Retegi y Olvin Duarte, nuestra misión es crear experiencias excepcionales que impulsen el éxito de nuestros clientes.' %}
+      </p>
+      <p class="text-muted">
+        {% trans 'Con una combinación única de creatividad, experiencia técnica y pasión por la innovación, en Euskodev nos esforzamos por superar las expectativas en cada proyecto que emprendemos. Ya sea que estemos creando un nuevo sitio web desde cero o revitalizando una presencia en línea existente, nuestro enfoque centrado en el cliente garantiza resultados sobresalientes y duraderos.' %}
+      </p>
+      <p class="text-muted">
+        {% trans 'En Euskodev, creemos en la colaboración, la transparencia y la excelencia en todo lo que hacemos. Estamos comprometidos a brindar soluciones personalizadas y de alta calidad que impulsen el crecimiento de nuestros clientes y los ayuden a destacarse en un mercado digital cada vez más competitivo.' %}
+      </p>
+      <p class="font-italic text-dark">
+        {% trans '¡Confía en Euskodev para llevar tu presencia en línea al siguiente nivel y descubre lo que podemos lograr juntos!"' %}
+      </p>
     </div>
-
-
-    <div class="col-lg-4 col-md-12"></div>
-
-    <!--aca inicia l boton de donativos-->
-
-    <div class="text-center mt-5 mb-5 " style="padding-top: 100px;">
-      <a href="https://www.paypal.com/donate/?hosted_button_id=REM3EZBPZBPMW"><button class="btn"
-          style="background-color: pink;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-            fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-            <path
-              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-          </svg> {% trans 'Donar' %}</button></a>
-
-    </div>
-    <!--aca termiina el boton de donativos-->
   </div>
+
+  <!-- Botón de Donativos -->
+  <div class="text-center mt-5 mb-5">
+    <a href="https://www.paypal.com/donate/?hosted_button_id=REM3EZBPZBPMW">
+      <button class="btn text-white px-4 py-2"
+              style="background-color: #ff6b6b; border-radius: 25px; font-size: 1.2rem; box-shadow: 2px 2px 8px rgba(0,0,0,0.2);">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+          <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+        </svg> 
+        {% trans 'Donar' %}
+      </button>
+    </a>
+  </div>
+
 </div>
 {% endblock %}
