@@ -51,3 +51,5 @@ docker-compose.override.yml
 # 🚀 Archivos de compilación
 *.egg-info/
 *.so
+
+settings.py

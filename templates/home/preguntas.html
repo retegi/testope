@@ -36,21 +36,36 @@
     color: #fff;
 }
 
+.news-box {
+    filter: blur(5px);
+}
+
 </style>
 {% endblock %}
 
 {% block contenido %}
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-2 col-md-12 bg-light border" style="">
             <h3 class="text-center mt-3">Noticias OPE</h3>
 
             <!-- Área de Mensajes -->
-            <div class="news-box flex-grow-1 p-3 overflow-auto" id="chat-box">
+            <div class="news-box flex-grow-1 p-3 overflow-auto" id="news-box">
        
-        </div>
+             </div>
         </div>
         <div class="col-lg-8 col-md-0 p-5" style="position:relative;">
+
+        
+
+        <div class="container-fluid">
+            <div class="row">
+                <p class="p-3 bg-success text-white text-center">Pásate a <b>PREMIUM</b> para tener acceso a todos test, progresión inteligente, acceso al chat y a las noticias sobre Opes</p>
+            </div>
+        </div>
+
+
         
             <a href="{% url 'home_app:home' %}" class="" style="position:fixed;">
                 <button class="btn bg-light">Volver</button>
@@ -77,7 +92,15 @@
 <!-- Botón "Siguiente" inicialmente oculto -->
 <div id="nextButtonContainer" class="mt-4 text-center" style="display: none;">
     <button type="submit" class="btn btn-secondary" id="nextButton">Siguiente</button>
+    <button type="submit" class="btn btn-secondary" id="chat-input"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+  <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+  <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+  <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"/>
+</svg> Escuchar explicación</button>
 </div>
+
+
+
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -145,8 +168,8 @@
 </script>
 
 
-            {{ learned_question_numbers }}
-            {% if progresion_questions %}
+        {{ learned_question_numbers }}
+        {% if progresion_questions %}
             <ul>
             
                 {% for question in progresion_questions %}
@@ -163,21 +186,42 @@
             <!-- Progesion panel-->
             <div class="p-5 bg-light w-100" style="">
                 <h4 class="">Tu progresión</h4>
-                {% for test in questionList %}
-                {% if test.answerProgresionCorrect == 4 %}
-                <div class="border" style="width:20px; height:20px; font-size:10px; color:black;text-align:center; float:left; background-color: lime;">{{ test.number }}</div>
-                {% elif test.answerProgresionCorrect == 1 %}
-                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #e1dfff;">{{ test.number }}</div>
-                {% elif test.answerProgresionCorrect == 2 %}
+                <div class="border" style="width:20px; height:20px; font-size:10px; color:black;text-align:center; float:left; background-color: #1D7BAD;">{{ test.number }}</div>
+                <div class="border" style="width:20px; height:20px; font-size:10px; color:black;text-align:center; float:left; background-color: #1D7BAD;">{{ test.number }}</div>
+                <div class="border" style="width:20px; height:20px; font-size:10px; color:black;text-align:center; float:left; background-color: #1D7BAD;">{{ test.number }}</div>
+                <div class="border" style="width:20px; height:20px; font-size:10px; color:black;text-align:center; float:left; background-color: #1D7BAD;">{{ test.number }}</div>
+                <div class="border" style="width:20px; height:20px; font-size:10px; color:black;text-align:center; float:left; background-color: #1D7BAD;">{{ test.number }}</div>
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #dddddd;">{{ test.number }}</div>
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #dddddd;">{{ test.number }}</div>
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #dddddd;">{{ test.number }}</div>
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #dddddd;">{{ test.number }}</div>
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #dddddd;">{{ test.number }}</div>
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #aaa;">{{ test.number }}</div>
                 <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #b0abde;">{{ test.number }}</div>
-                {% elif test.answerProgresionCorrect == 3 %}
-                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #250f64;">{{ test.number }}</div>
-                {% elif test.answerProgresionCorrect > 4 %}
-                <div style="width:20px; height:20px; font-size:10px; color:black;text-align:center; float:left; background-color: lime;">{{ test.number }}</div>
-                {% else %}
-                <div style="width:20px; height:20px; font-size:10px; color:black;text-align:center; float:left; background-color: white;">{{ test.number }}</div>
-                {% endif %}
-            {% endfor %}
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #b0abde;">{{ test.number }}</div>
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #b0abde;">{{ test.number }}</div>
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #b0abde;">{{ test.number }}</div>
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #555555;">{{ test.number }}</div>
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #555555;">{{ test.number }}</div>
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #555555;">{{ test.number }}</div>
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #555555;">{{ test.number }}</div>
+                <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #555555;">{{ test.number }}</div>
+
+                {% for test in questionList %}
+                    {% if test.answerProgresionCorrect == 4 %}
+                    <div class="border" style="width:20px; height:20px; font-size:10px; color:black;text-align:center; float:left; background-color: #1D7BAD;">{{ test.number }}</div>
+                    {% elif test.answerProgresionCorrect == 1 %}
+                    <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #e1dfff;">{{ test.number }}</div>
+                    {% elif test.answerProgresionCorrect == 2 %}
+                    <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #b0abde;">{{ test.number }}</div>
+                    {% elif test.answerProgresionCorrect == 3 %}
+                    <div style="width:20px; height:20px; font-size:10px; color:white;text-align:center; float:left; background-color: #555555;">{{ test.number }}</div>
+                    {% elif test.answerProgresionCorrect > 4 %}
+                    <div style="width:20px; height:20px; font-size:10px; color:black;text-align:center; float:left; background-color: #1D7BAD;">{{ test.number }}</div>
+                    {% else %}
+                    <div style="width:20px; height:20px; font-size:10px; color:black;text-align:center; float:left; background-color: white;">{{ test.number }}</div>
+                    {% endif %}
+                {% endfor %}
             </div>
             <!--Fin del Progresion panel-->
         </div>
@@ -200,8 +244,6 @@
 </div>
     </div>
 </div>
-
-
 
 <!-- Modal -->
 <div class="modal fade" id="premium" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -227,7 +269,6 @@
     </div>
   </div>
 </div>
-
 
 <a href="https://www.google.com" target="_blank" class="btn-premium">
     ACTIVAR <br> PREMIUM
@@ -326,8 +367,6 @@
 
 </script>
 
-
-<!-- JavaScript para Abrir el Modal al Hacer Clic en el Input -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const chatInput = document.getElementById("chat-input");
@@ -339,5 +378,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 </script>
+
+<script>
+    const newsBox = document.getElementById('news-box');
+
+    const newsArray = [
+        "El sector tecnológico sigue en auge con nuevas inversiones en inteligencia artificial, impulsando el crecimiento del mercado global.",
+        "Una nueva misión espacial ha sido anunciada por la NASA, con el objetivo de explorar Marte en busca de signos de vida pasada.",
+        "La economía global muestra señales de recuperación tras la crisis, con un aumento en las exportaciones y el consumo interno.",
+        "Investigadores han descubierto una nueva especie de mariposa en la selva amazónica, destacando la biodiversidad del planeta.",
+        "Se ha desarrollado una vacuna prometedora contra una enfermedad rara, brindando esperanza a miles de personas afectadas.",
+        "Un nuevo récord de temperatura ha sido registrado en el Ártico, alertando sobre el impacto del cambio climático en la región.",
+        "El fútbol internacional se prepara para una temporada emocionante con fichajes millonarios y nuevos talentos emergentes.",
+        "Las empresas están adoptando estrategias ecológicas para reducir su huella de carbono y contribuir a la sostenibilidad del planeta."
+    ];
+
+    function updateNews() {
+        const randomIndex = Math.floor(Math.random() * newsArray.length);
+        newsBox.innerHTML = `<p>${newsArray[randomIndex]}</p>`;
+    }
+
+    // Mostrar la primera noticia al cargar la página
+    updateNews();
+
+    // Actualizar cada 2 minutos (120000 ms)
+    setInterval(updateNews, 120000);
+</script>
+
 
 {% endblock %}

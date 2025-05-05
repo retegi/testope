@@ -70,7 +70,6 @@ def start_test(request, ope_id):
     return redirect('learning_app:next_question', ope_id=ope_id, question_number=first_question.number, total_questions=total_questions)
 
 
-
 def next_question(request, ope_id, question_number, total_questions):
     """
     Selecciona la siguiente pregunta en orden, evitando preguntas ya aprendidas.

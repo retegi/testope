@@ -3,8 +3,6 @@ from django.urls import include, path
 from . import views
 from .views import AddToMyLearningView
 
-
-
 app_name = 'learning_app'
 
 urlpatterns = [

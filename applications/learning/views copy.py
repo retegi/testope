@@ -24,48 +24,47 @@ def start_test(request, ope_id):
     total_questions = Test.objects.filter(ope=ope).count()
     print("Total de preguntas: ", total_questions)
 
-    if total_questions == 0:
-        return render(request, 'home/error.html', {
-            'message': 'No hay preguntas en esta categoría.',
-            'totalQuestions': total_questions
-        })
-
     # Obtener la última pregunta respondida por el usuario en esta categoría
     last_answered_question = (
-        UserAnswer.objects.filter(user=user, ope=ope)
+        UserAnswer.objects.filter(user=user, ope=ope_id)
         .order_by('-lastAnsweredQuestion')
         .values_list('lastAnsweredQuestion', flat=True)
         .first()
-    ) or 0  # Si no hay preguntas respondidas, empezamos desde la primera disponible
+    ) or 0  # Si no hay preguntas respondidas, empezamos desde la 1
 
     # Obtener preguntas ya aprendidas
-    learned_question_numbers = set(
+    learned_question_numbers = list(
         UserAnswer.objects.filter(user=user, ope=ope, correctAnswerCounterTotal__gte=4)
         .values_list('number', flat=True)
     )
 
-    # Si todas las preguntas han sido aprendidas, reiniciar desde la primera disponible
-    available_questions = Test.objects.filter(ope=ope).exclude(number__in=learned_question_numbers)
-    
-    if not available_questions.exists():
-        last_answered_question = 0  # Reiniciar el test con la primera pregunta disponible
-        available_questions = Test.objects.filter(ope=ope)  # Tomar todas las preguntas
+    # Si la última respondida es la última del total, reiniciar desde la primera
+    if last_answered_question >= total_questions:
+        last_answered_question = 0  # Reinicia el test
 
-    # Seleccionar la siguiente pregunta en orden
-    first_question = available_questions.filter(number__gt=last_answered_question).order_by('number').first()
+    # Intentar seleccionar la siguiente pregunta exacta
+    first_question = (
+        Test.objects.filter(ope=ope)
+        .exclude(number__in=learned_question_numbers)
+        .filter(number=last_answered_question + 1)
+        .first()
+    )
 
-    # Si aún no encontramos una pregunta, tomar la primera disponible
+    # Si no existe la pregunta exacta, buscar la más cercana superior
     if not first_question:
-        first_question = available_questions.order_by('number').first()
+        first_question = (
+            Test.objects.filter(ope=ope)
+            .exclude(number__in=learned_question_numbers)
+            .filter(number__gt=last_answered_question)
+            .order_by('number')
+            .first()
+        )
 
-    # Si aún así no hay preguntas, mostrar error
     if not first_question:
-        return render(request, 'home/error.html', {
-            'message': 'No hay preguntas disponibles en esta categoría.',
+        return render(request, 'error.html', {
+            'message': 'No hay preguntas disponibles en esta categoría',
             'totalQuestions': total_questions
         })
-
-    print("Primera pregunta seleccionada:", first_question.number)
 
     return redirect('learning_app:next_question', ope_id=ope_id, question_number=first_question.number, total_questions=total_questions)
 
