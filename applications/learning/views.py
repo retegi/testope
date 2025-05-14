@@ -1,270 +1,189 @@
-from django.shortcuts import render, get_object_or_404, redirect
-from .models import Test, Topic, UserAnswer  # Asegúrate de importar UserAnswer
-from django.utils.timezone import now
-from django.http import JsonResponse
-
-from django.shortcuts import render, redirect, get_object_or_404
-from .models import Topic, Test, UserAnswer, MyLearning, Ope
-from django.views.generic import CreateView, ListView, UpdateView, TemplateView, DeleteView
-
+from django.views import View
+from django.shortcuts import get_object_or_404, render, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin
+from .models import Test, Ope, UserAnswer,  MyLearning
+from django.views.generic.edit import CreateView
+from django.views.generic import TemplateView
+
+from django.utils import timezone
 
 
-def start_test(request, ope_id):
-    """
-    Inicia el test desde la primera pregunta no aprendida o desde donde el usuario lo dejó.
-    Si ya se han respondido todas las preguntas, reinicia desde la primera disponible.
-    """
-    ope = get_object_or_404(Ope, id=ope_id)
-    user = request.user
-    print("Usuario actual:", user)
-    print("Ope actual es:", ope_id)
-
-    # Obtener el número total de preguntas de la categoría (ope)
-    total_questions = Test.objects.filter(ope=ope).count()
-    print("Total de preguntas: ", total_questions)
-
-    if total_questions == 0:
-        return render(request, 'home/error.html', {
-            'message': 'No hay preguntas en esta categoría.',
-            'totalQuestions': total_questions
-        })
-
-    # Obtener la última pregunta respondida por el usuario en esta categoría
-    last_answered_question = (
-        UserAnswer.objects.filter(user=user, ope=ope)
-        .order_by('-lastAnsweredQuestion')
-        .values_list('lastAnsweredQuestion', flat=True)
-        .first()
-    ) or 0  # Si no hay preguntas respondidas, empezamos desde la primera disponible
-
-    # Obtener preguntas ya aprendidas
-    learned_question_numbers = set(
-        UserAnswer.objects.filter(user=user, ope=ope, correctAnswerCounterTotal__gte=4)
-        .values_list('number', flat=True)
-    )
-
-    # Si todas las preguntas han sido aprendidas, reiniciar desde la primera disponible
-    available_questions = Test.objects.filter(ope=ope).exclude(number__in=learned_question_numbers)
-    
-    if not available_questions.exists():
-        last_answered_question = 0  # Reiniciar el test con la primera pregunta disponible
-        available_questions = Test.objects.filter(ope=ope)  # Tomar todas las preguntas
-
-    # Seleccionar la siguiente pregunta en orden
-    first_question = available_questions.filter(number__gt=last_answered_question).order_by('number').first()
-
-    # Si aún no encontramos una pregunta, tomar la primera disponible
-    if not first_question:
-        first_question = available_questions.order_by('number').first()
-
-    # Si aún así no hay preguntas, mostrar error
-    if not first_question:
-        return render(request, 'home/error.html', {
-            'message': 'No hay preguntas disponibles en esta categoría.',
-            'totalQuestions': total_questions
-        })
-
-    print("Primera pregunta seleccionada:", first_question.number)
-
-    return redirect('learning_app:next_question', ope_id=ope_id, question_number=first_question.number, total_questions=total_questions)
-
-
-
-def next_question(request, ope_id, question_number, total_questions):
-    """
-    Selecciona la siguiente pregunta en orden, evitando preguntas ya aprendidas.
-    Si se alcanza la última pregunta, vuelve a la primera.
-    """
-    ope = get_object_or_404(Ope, id=ope_id)
-    user = request.user
-
-    # Obtener preguntas aprendidas
-    learned_question_numbers = UserAnswer.objects.filter(
-        user=user, ope=ope, correctAnswerCounterTotal__gte=4
-    ).values_list('number', flat=True)
-
-    # Si la pregunta actual es la última, reiniciar desde la primera pregunta disponible
-    if question_number > total_questions:
-        question_number = 0  # Reinicia el test desde la primera
-
-    # Intentar seleccionar la siguiente pregunta exacta
-    next_question = (
-        Test.objects.filter(ope=ope)
-        .exclude(number__in=learned_question_numbers)
-        .filter(number=question_number)
-        .first()
-    )
-
-    # Si no existe la pregunta exacta, buscar la más cercana superior
-    if not next_question:
-        next_question = (
-            Test.objects.filter(ope=ope)
-            .exclude(number__in=learned_question_numbers)
-            .filter(number__gt=question_number)
-            .order_by('number')
-            .first()
-        )
-
-    if not next_question:
-        return render(request, 'error.html', {'message': 'No hay más preguntas disponibles en esta categoría'})
-
-    context = {
-        'test': next_question,
-        'ope': ope,
-        'currentQuestion': next_question.number,
-        'totalQuestions': total_questions,
-    }
-
-    return render(request, 'home/preguntas.html', context)
-
-
-def submit_answer(request, ope_id, question_number):
-    if request.method == 'POST':
+class StartTestView(LoginRequiredMixin, View):
+    def get(self, request, ope_id):
         user = request.user
-        user_answer = request.POST.get('answer', '').strip()
         ope = get_object_or_404(Ope, id=ope_id)
-        question = get_object_or_404(Test, ope=ope, number=question_number)
 
-        if not user_answer:
-            return JsonResponse({'error': 'No se recibió respuesta'}, status=400)
+        # Todas las preguntas ordenadas por número
+        all_questions = Test.objects.filter(ope=ope).order_by('number')
+        total_questions = all_questions.count()
 
-        is_correct = user_answer.lower() == question.correctAnswer.strip().lower()
+        if total_questions == 0:
+            return render(request, 'home/no_questions.html', {'ope': ope})
 
-        # Obtener o crear UserAnswer
-        user_answer_entry, created = UserAnswer.objects.get_or_create(
+        # Números de preguntas aprendidas (progresión >= 4)
+        learned_numbers = UserAnswer.objects.filter(
+            user=user, ope=ope, answerProgresionCorrect__gte=4
+        ).values_list('number', flat=True)
+
+        # Filtrar las preguntas no aprendidas
+        unlearned_questions = [q for q in all_questions if q.number not in learned_numbers]
+
+        if not unlearned_questions:
+            return render(request, 'home/test_completed.html', {'ope': ope})
+
+        # Obtener la última pregunta respondida (puede ser aprendida o no)
+        last_answer = UserAnswer.objects.filter(user=user, ope=ope).order_by('-datetime').first()
+        last_number = last_answer.lastAnsweredQuestion if last_answer else 0
+
+        # Generar el ciclo de 10 preguntas activas, saltando las aprendidas
+        cycle_questions = []
+        seen = set()
+        for q in unlearned_questions:
+            if q.number > last_number and q.number not in seen:
+                cycle_questions.append(q)
+                seen.add(q.number)
+                if len(cycle_questions) == 10:
+                    break
+        for q in unlearned_questions:
+            if q.number not in seen:
+                cycle_questions.append(q)
+                seen.add(q.number)
+                if len(cycle_questions) == 10:
+                    break
+
+        if not cycle_questions:
+            return render(request, 'home/test_completed.html', {'ope': ope})
+
+        # Determinar la siguiente pregunta
+        next_question = None
+        for q in cycle_questions:
+            if q.number > last_number:
+                next_question = q
+                break
+        if not next_question:
+            next_question = cycle_questions[0]  # Si no hay mayor, volver al inicio del ciclo
+
+        return render(request, 'home/preguntas.html', {
+            'test': next_question,
+            'currentQuestion': next_question.number,
+            'totalQuestions': total_questions,
+            'ope': ope,
+            'learned_question_numbers': learned_numbers,
+            'progresion_questions': UserAnswer.objects.filter(user=user, ope=ope)
+        })
+
+
+class SubmitAnswerView(LoginRequiredMixin, View):
+    def post(self, request, ope_id, test_number):
+        user = request.user
+        ope = get_object_or_404(Ope, id=ope_id)
+        test = get_object_or_404(Test, ope=ope, number=test_number)
+
+        user_answer_value = request.POST.get("answer")
+        is_correct = (user_answer_value == test.correctAnswer)
+
+        # Obtener o crear UserAnswer para esta pregunta
+        user_answer, created = UserAnswer.objects.get_or_create(
             user=user,
-            number=question.number,
             ope=ope,
+            number=test.number,
             defaults={
                 'answerProgresionCorrect': 0,
                 'correctAnswerCounterTotal': 0,
                 'incorrectAnswerCounterTotal': 0,
-                'questionCircleCounter': 1,
-                'lastAnsweredQuestion': question.number,
-                'datetime': now(),
+                'questionCircleCounter': 0,
+                'lastAnsweredQuestion': test.number,
+                'datetime': timezone.now()
             }
         )
 
-        # Actualizar datos del usuario según si la respuesta es correcta
+        # Actualizar datos
+        user_answer.lastAnsweredQuestion = test.number
+        user_answer.datetime = timezone.now()
+        user_answer.questionCircleCounter = (user_answer.questionCircleCounter or 0) + 1
+
         if is_correct:
-            user_answer_entry.answerProgresionCorrect += 1
-            user_answer_entry.correctAnswerCounterTotal += 1
+            user_answer.answerProgresionCorrect = (user_answer.answerProgresionCorrect or 0) + 1
+            user_answer.correctAnswerCounterTotal = (user_answer.correctAnswerCounterTotal or 0) + 1
         else:
-            user_answer_entry.answerProgresionCorrect = 0
-            user_answer_entry.incorrectAnswerCounterTotal += 1
+            user_answer.answerProgresionCorrect = 0
+            user_answer.incorrectAnswerCounterTotal = (user_answer.incorrectAnswerCounterTotal or 0) + 1
 
-        user_answer_entry.lastAnsweredQuestion = question.number
-        user_answer_entry.datetime = now()
-        user_answer_entry.save()
+        user_answer.save()
 
-        # Buscar la siguiente pregunta
-        learned_question_numbers = UserAnswer.objects.filter(
-            user=user, ope=ope, correctAnswerCounterTotal__gte=4
-        ).values_list('number', flat=True)
+        # Redirigir al ciclo de 10 activas, omitiendo las aprendidas
+        return redirect('learning_app:start_test', ope_id=ope.id)
 
-        next_question = (
-            Test.objects.filter(ope=ope)
-            .exclude(number__in=learned_question_numbers)
-            .filter(number__gt=question.number)
-            .order_by('number')
-            .first()
-        )
 
-        if next_question:
-            return redirect('learning_app:next_question', ope_id=ope_id, question_number=next_question.number, total_questions=Test.objects.filter(ope=ope).count())
 
-        return render(request, 'home/test_completed.html', {
-            'message': '¡Test completado!',
-            'is_correct': is_correct,
-            'correct_answer': question.correctAnswer,
-            'user_answer': user_answer
-        })
-
-    return JsonResponse({'error': 'Método no permitido'}, status=405)
-    if request.method == 'POST':
+class StartTestView(LoginRequiredMixin, View):
+    def get(self, request, ope_id):
         user = request.user
-        print("post user:",user)
-        user_answer = request.POST.get('answer', '').strip()
-        print("post user_answer",user_answer)
         ope = get_object_or_404(Ope, id=ope_id)
-        print("post ope:",ope)
-        question = get_object_or_404(Test, ope=ope, number=question_number)
-        print("post question:",question)
 
-        is_correct = user_answer.lower() == question.correctAnswer.strip().lower()
+        # Todas las preguntas de esta OPE
+        all_questions = Test.objects.filter(ope=ope).order_by('number')
+        total_questions = all_questions.count()
 
-        # Obtener o crear UserAnswer
-        user_answer_entry, created = UserAnswer.objects.get_or_create(
-            user=user,
-            number=question.number,
-            ope=ope,
-            defaults={
-                'answerProgresionCorrect': 0,
-                'correctAnswerCounterTotal': 0,
-                'incorrectAnswerCounterTotal': 0,
-                'questionCircleCounter': 1,
-                'lastAnsweredQuestion': question.number,
-                'datetime': now(),
-            }
-        )
+        # IDs de preguntas que el usuario ya ha aprendido (progress == 4)
+        learned_numbers = UserAnswer.objects.filter(user=user, ope=ope, answerProgresionCorrect=4).values_list('number', flat=True)
 
-        # Actualizar datos del usuario según si la respuesta es correcta
-        if is_correct:
-            user_answer_entry.answerProgresionCorrect += 1
-            user_answer_entry.correctAnswerCounterTotal += 1
-        else:
-            user_answer_entry.answerProgresionCorrect = 0
-            user_answer_entry.incorrectAnswerCounterTotal += 1
+        # Lista de preguntas no aprendidas
+        unlearned_questions = [q for q in all_questions if q.number not in learned_numbers]
 
-        user_answer_entry.lastAnsweredQuestion = question.number
-        user_answer_entry.datetime = now()
-        user_answer_entry.save()
+        # Última pregunta que respondió (cualquiera, aprendida o no)
+        last_answer = UserAnswer.objects.filter(user=user, ope=ope).order_by('-datetime').first()
+        last_number = last_answer.lastAnsweredQuestion if last_answer else 0
 
-        # Buscar la siguiente pregunta
-        learned_question_numbers = UserAnswer.objects.filter(
-            user=user, ope=ope, correctAnswerCounterTotal__gte=4
-        ).values_list('number', flat=True)
+        # Crear el ciclo de 10 preguntas activas, ignorando aprendidas
+        cycle_questions = []
+        for q in unlearned_questions:
+            if len(cycle_questions) < 10:
+                if q.number > last_number or last_number == 0:
+                    cycle_questions.append(q)
+        # Si no hay suficientes tras el número actual, completamos desde el inicio
+        for q in unlearned_questions:
+            if len(cycle_questions) < 10 and q not in cycle_questions:
+                cycle_questions.append(q)
 
-        next_question = (
-            Test.objects.filter(ope=ope)
-            .exclude(number__in=learned_question_numbers)
-            .filter(number__gt=question.number)
-            .order_by('number')
-            .first()
-        )
+        # Si no quedan preguntas nuevas sin aprender
+        if not cycle_questions:
+            return render(request, 'home/test_completed.html', {'ope': ope})
 
-        if next_question:
-            return render(request, 'home/preguntas.html', {
-                'test': next_question,
-                'ope': ope,
-                'is_correct': is_correct,
-                'correct_answer': question.correctAnswer,
-                'user_answer': user_answer,
-                'currentQuestion': next_question.number
-            })
+        # Buscar la siguiente pregunta en el ciclo (siguiendo orden tras la última)
+        next_question = None
+        for q in cycle_questions:
+            if q.number > last_number:
+                next_question = q
+                break
+        if not next_question:
+            # Si no hay ninguna con número mayor, volver al inicio del ciclo
+            next_question = cycle_questions[0]
 
-        return render(request, 'home/test_completed.html', {
-            'message': '¡Test completado!',
-            'is_correct': is_correct,
-            'correct_answer': question.correctAnswer,
-            'user_answer': user_answer
+        return render(request, 'home/preguntas.html', {
+            'test': next_question,
+            'currentQuestion': next_question.number,
+            'totalQuestions': total_questions,
+            'ope': ope,
+            'learned_question_numbers': learned_numbers,
+            'questionList': UserAnswer.objects.filter(user=user, ope=ope).order_by('number'),
         })
 
-    return JsonResponse({'error': 'Método no permitido'}, status=405)
 
 
-class AddToMyLearningView(LoginRequiredMixin, CreateView):
-    model = MyLearning
-    fields = []  # No usamos un formulario, solo procesamos la solicitud
 
-    def post(self, request, *args, **kwargs):
-        ope_id = self.kwargs.get("ope_id")
+class AddToMyLearningView(LoginRequiredMixin, View):
+    def post(self, request, ope_id):
         ope = get_object_or_404(Ope, id=ope_id)
-
-        # Verificar si ya existe en MyLearning para el usuario actual
-        my_learning, created = MyLearning.objects.get_or_create(user=request.user, ope=ope)
-
-        return redirect("home_app:home")  # Redirige a la lista de aprendizajes del usuario
+        MyLearning.objects.get_or_create(user=request.user, ope=ope)
+        return redirect('home_app:home')  # o la vista que tú quieras redirigir
 
 
+class TestCompletedView(LoginRequiredMixin, TemplateView):
+    template_name = 'home/test_completed.html'
+
+class ResetOpeProgressView(LoginRequiredMixin, View):
+    def post(self, request, ope_id):
+        ope = get_object_or_404(Ope, id=ope_id)
+        UserAnswer.objects.filter(user=request.user, ope=ope).delete()
+        return redirect('learning_app:start_test', ope_id=ope.id)

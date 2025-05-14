@@ -19,6 +19,12 @@
             </a>
             <div class="w-100 bg-success text-center p-5 mt-5">
                     <h3 class="text-white">¡Felicidades! Has completado los test. ; )</h3>
+                    <form method="post" action="{% url 'learning_app:reset_progress' ope.id %}">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger mt-4">
+        🔄 Resetear progreso y volver a empezar
+    </button>
+</form>
                 </div>
 
           

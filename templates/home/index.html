@@ -64,7 +64,7 @@
           <label class="">{{ dato.locality }}</label>,
           <label class="">{{ dato.province }}</label>
           <a href="{{ dato.urlOpe }}" target="_blank" class="btn bg-secondary text-white mt-1 w-100">Información oficial</a>
-          <a href="{% url 'learning_app:startTest' dato.id %}" class="btn bg-testope text-white mt-1 w-100 py-3">Comenzar</a>
+          <a href="{% url 'learning_app:start_test' dato.id %}" class="btn bg-testope text-white mt-1 w-100 py-3">Comenzar</a>
 
           <!-- Formulario para enviar POST -->
           <form action="{% url 'learning_app:add_to_my_learning' dato.id %}" method="post">
