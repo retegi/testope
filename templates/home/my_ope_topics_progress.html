@@ -1,0 +1,70 @@
+{% extends 'home/base.html' %}
+{% load i18n %}
+{% load static %}
+{% block head %}
+<meta name="google-adsense-account" content="ca-pub-1565972943494658">
+<title>TestOPE - Web</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM6GBKCS3R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZM6GBKCS3R');
+</script> 
+<!--Google Adsense-->
+
+
+
+{% endblock %}
+{% block contenido %}
+
+<div class="container mt-5">
+  <div class="text-center mb-5">
+    <h2 class="text-primary">Temas de la OPE: {{ ope.name }}</h2>
+  </div>
+
+  {% for prog in progresos %}
+    <div class="card mb-4 shadow-sm">
+      <div class="card-body">
+        <h4 class="card-title">{{ prog.tema.number }}. {{ prog.tema.name }}</h4>
+        <p class="card-text">
+          Preguntas aprendidas: {{ prog.aprendidas }} / {{ prog.total }} 
+          ({{ prog.porcentaje }}%)
+        </p>
+     <a href="{% url 'learning_app:start_test' ope.id prog.tema.id %}" class="btn btn-sm btn-primary">
+  Estudiar este tema
+</a>
+
+        <!-- Panel de progreso visual -->
+        <div class="p-4 mt-3 bg-light rounded">
+          <h5 class="mb-3">Tu progresión</h5>
+          {% for ua in prog.detalles %}
+            <div class="d-inline-block rounded-circle text-center me-1 mb-1"
+              style="width: 24px; height: 24px; line-height: 24px; background-color:
+                {% if ua.answerProgresionCorrect == 4 %}#1D7BAD
+                {% elif ua.answerProgresionCorrect == 3 %}#555
+                {% elif ua.answerProgresionCorrect == 2 %}#b0abde
+                {% elif ua.answerProgresionCorrect == 1 %}#e1dfff
+                {% else %}white
+                {% endif %};
+                color: black;">
+              {{ ua.number }}
+            </div>
+          {% empty %}
+            <p class="text-muted">Aún no has empezado este tema.</p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% empty %}
+    <p class="text-muted">No se han encontrado temas para esta OPE.</p>
+  {% endfor %}
+</div>
+
+
+{% endblock %}

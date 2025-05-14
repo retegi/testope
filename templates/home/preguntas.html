@@ -71,34 +71,42 @@
                 <button class="btn bg-light">Volver</button>
             </a>
 
-            <h5 class="text-center col-lg-12 col-md-12 mt-5">{{ test.ope }}</h5>
+            <div class="text-center my-4">
+    <h3 class="text-primary">{{ ope.name }}</h3>
+    <h5 class="text-muted">{{ topic.number }}. {{ topic.name }}</h5>
+    <p class="mt-2">
+        <strong>Pregunta {{ currentQuestion }} / {{ totalQuestions }}</strong>
+    </p>
+</div>
 
-            <!-- Pregunta -->
-            <h3 class="text-center">{{ currentQuestion }}/{{ totalQuestions }}</h3>
-            <div>
-                <p class="col-lg-12 col-md-12" id="questionText"><b>{{ test.number }}.- {{ test.question }}</b></p>
-            </div>
+<div>
+    <p class="col-lg-12 col-md-12" id="questionText"><b>{{ test.number }}.- {{ test.question }}</b></p>
+</div>
+
 
             <div id="answersContainer" class="d-flex flex-column">
                 <!-- Las respuestas se generarán dinámicamente -->
             </div>
 
   <!-- Formulario para enviar la respuesta -->
-<form id="answerForm" method="POST" action="{% url 'learning_app:submit_answer' ope.id test.number %}">
+<form id="answerForm" method="POST" action="{% url 'learning_app:submit_answer' ope.id topic.id test.id %}">
     {% csrf_token %}
-    <input type="hidden" name="answer" id="userAnswerInput">
+    <input type="hidden" name="respuesta" id="userAnswerInput">
+
+    <!-- Botón "Siguiente" aquí dentro -->
+    <div id="nextButtonContainer" class="mt-4 text-center" style="visibility: hidden; min-height: 80px;">
+        <button type="submit" class="btn btn-secondary" id="nextButton">Siguiente</button>
+        <button type="button" class="btn btn-secondary" id="listen-explanation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"/>
+            </svg>
+            Escuchar explicación
+        </button>
+    </div>
 </form>
 
-<!-- Botón "Siguiente" inicialmente oculto -->
-<div id="nextButtonContainer" class="mt-4 text-center" style="visibility: hidden; min-height: 80px;">
-
-    <button type="submit" class="btn btn-secondary" id="nextButton">Siguiente</button>
-    <button type="submit" class="btn btn-secondary" id="listen-explanation"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
-  <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
-  <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
-  <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"/>
-</svg> Escuchar explicación</button>
-</div>
 
 
 

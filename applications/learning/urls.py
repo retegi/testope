@@ -1,22 +1,27 @@
 from os import name
 from django.urls import include, path
 from . import views
-from .views import AddToMyLearningView, TestCompletedView, SubmitAnswerView, StartTestView, ResetOpeProgressView
+from .views import AddToMyLearningView, TestCompletedView, SubmitAnswerView, StartTestView, ResetOpeProgressView, TopicProgressView
+
 
 app_name = 'learning_app'
 
 urlpatterns = [
-    #path('start-test/<int:ope_id>/', views.start_test, name='startTest'),
-    #path('next-question/<int:ope_id>/<int:question_number>/<int:total_questions>/', views.next_question, name='next_question'),
-    #path('submit-answer/<int:ope_id>/<int:question_number>/', views.submit_answer, name='submit_answer'),
-    #path('add-to-my-learning/<int:ope_id>/', AddToMyLearningView.as_view(), name='add_to_my_learning'),
+    # Página de selección de temas de una OPE
+    path('ope/<int:ope_id>/temas/', TopicProgressView.as_view(), name='my_ope_topics'),
 
-    path('comenzar/<int:ope_id>/', StartTestView.as_view(), name='start_test'),
-    path('respuesta/<int:ope_id>/<int:test_number>/', SubmitAnswerView.as_view(), name='submit_answer'),
+    # Comenzar test para un topic concreto de una OPE
+    path('ope/<int:ope_id>/topic/<int:topic_id>/comenzar/', StartTestView.as_view(), name='start_test'),
 
-    path('completado/<int:ope_id>/', TestCompletedView.as_view(), name='test_completed'),
+    # Enviar respuesta para una pregunta de un test
+    path('ope/<int:ope_id>/topic/<int:topic_id>/respuesta/<int:test_id>/', SubmitAnswerView.as_view(), name='submit_answer'),
 
+    # Finalización del test en un topic concreto
+    path('ope/<int:ope_id>/topic/<int:topic_id>/completado/', TestCompletedView.as_view(), name='test_completed'),
 
+    # Añadir a mi aprendizaje una OPE
     path('anadir-aprendizaje/<int:ope_id>/', AddToMyLearningView.as_view(), name='add_to_my_learning'),
+
+    # Reiniciar el progreso en una OPE
     path('reset/<int:ope_id>/', ResetOpeProgressView.as_view(), name='reset_progress'),
 ]

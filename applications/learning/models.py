@@ -27,7 +27,7 @@ class Ope(models.Model):
 class Topic(models.Model):
     number = models.IntegerField(blank=True, null=True)
     ope = models.ForeignKey(Ope, on_delete=models.CASCADE, blank=True, null=True)
-    name = models.CharField(max_length=50, blank=True, null=True)
+    name = models.CharField(max_length=300, blank=True, null=True)
     def __str__(self):
         return self.name
 
