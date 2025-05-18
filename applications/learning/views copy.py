@@ -7,6 +7,7 @@ from django.views.generic import TemplateView, ListView
 
 from django.utils import timezone
 
+
 class StartTestView(LoginRequiredMixin, View):
     def get(self, request, ope_id, topic_id):
         user = request.user
@@ -25,50 +26,58 @@ class StartTestView(LoginRequiredMixin, View):
             progreso_usuario.filter(answerProgresionCorrect__gte=4).values_list('number', flat=True)
         )
 
+        # Preguntas no aprendidas
         unlearned_questions = [q for q in all_questions if q.number not in learned_numbers]
 
         if not unlearned_questions:
             return render(request, 'home/test_completed.html', {'ope': ope, 'topic': topic})
 
-        # Ciclo actual
+        # Obtener ciclo actual desde sesión
         session_key = f'cycle_{ope_id}_{topic_id}'
         current_cycle_numbers = request.session.get(session_key)
+
+        # Asegurar que sea una lista válida
         if not isinstance(current_cycle_numbers, list):
             current_cycle_numbers = []
 
-        # Eliminar aprendidas
+        # Eliminar del ciclo las ya aprendidas
         current_cycle_numbers = [n for n in current_cycle_numbers if n not in learned_numbers]
 
-        # Completar ciclo si faltan preguntas
+        # Rellenar ciclo con nuevas preguntas no aprendidas
         next_candidates = [q for q in unlearned_questions if q.number not in current_cycle_numbers]
         while len(current_cycle_numbers) < 10 and next_candidates:
             current_cycle_numbers.append(next_candidates.pop(0).number)
 
-        # Si no quedan preguntas
+        # Si el ciclo está vacío (puede pasar si todas han sido aprendidas justo ahora)
         if not current_cycle_numbers:
             return render(request, 'home/test_completed.html', {'ope': ope, 'topic': topic})
 
-        # Guardar ciclo actualizado
+        # Guardar el ciclo actualizado
         request.session[session_key] = current_cycle_numbers
         request.session.modified = True
 
-        # Ordenar ciclo y cargar objetos
-        current_cycle_numbers.sort()
-        cycle_questions = list(Test.objects.filter(topic=topic, number__in=current_cycle_numbers).order_by('number'))
+        # Cargar objetos Test del ciclo
+        cycle_questions = Test.objects.filter(topic=topic, number__in=current_cycle_numbers).order_by('number')
 
-        # Obtener índice actual del ciclo
-        index_key = f'cycle_index_{ope_id}_{topic_id}'
-        current_index = request.session.get(index_key, 0)
+        # Última pregunta respondida en el ciclo
+        last_answer = progreso_usuario.filter(number__in=current_cycle_numbers).order_by('-datetime').first()
+        last_number = last_answer.lastAnsweredQuestion if last_answer else -1
 
-        # Asegurar que el índice esté dentro del rango
-        if current_index >= len(cycle_questions):
-            current_index = 0
+        # Ordenar el ciclo y seleccionar la siguiente pregunta
+        sorted_cycle = list(cycle_questions.order_by('number'))
 
-        next_question = cycle_questions[current_index]
+        # Si el ciclo quedó vacío por alguna razón, evitar error
+        if not sorted_cycle:
+            return render(request, 'home/test_completed.html', {'ope': ope, 'topic': topic})
 
-        # Incrementar índice para próxima vez
-        request.session[index_key] = (current_index + 1) % len(cycle_questions)
-        request.session.modified = True
+        next_question = None
+        for q in sorted_cycle:
+            if q.number > last_number:
+                next_question = q
+                break
+
+        if not next_question:
+            next_question = sorted_cycle[0]  # reiniciar el ciclo si ya se llegó al final
 
         return render(request, 'home/preguntas.html', {
             'test': next_question,
@@ -79,7 +88,6 @@ class StartTestView(LoginRequiredMixin, View):
             'learned_question_numbers': learned_numbers,
             'questionList': progreso_usuario,
         })
-
 
 
 
