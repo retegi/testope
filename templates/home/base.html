@@ -89,7 +89,7 @@
 
 
 <body>
-
+<div class="bg-dark w-100" style="height:12px;">
 
   <!--aca inicia el menu-->
   <div class="container">
@@ -100,7 +100,7 @@
 
         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
           <label>
-            <a style="text-decoration: none; color: #1D7BAD;" href="{% url 'home_app:home' %}"><b>TestOPE.eus</b></a>
+            <a style="text-decoration: none; color: #1D7BAD;" href="{% url 'home_app:home' %}"><b class="bg-dark text-white p-3" style="border-radius: 0px 0px 5px 5px;"><label style="color:#1D7BAD;">Test</label>OPE.eus</b></a>
           </label>
         </a>
       </div>
@@ -202,8 +202,7 @@
   {% endblock %}
   <!--aca comienza la parte de el footer-->
   <footer class="container-fluid text-center text-white bg-testope">
-    <div class="row">
-      <p class="display-4" style="margin-top: 5%; margin-bottom: 10%;">{% trans '¡Eskerrik asko!' %}</p>
+    <div class="row p-5">
       <p>
         <a href="{% url 'home_app:politica_de_privacidad' %}" style="text-decoration: none;"
           class="text-white">{% trans 'Política de privacidad' %}</a> / <a href="{% url 'home_app:aviso_legal' %}"

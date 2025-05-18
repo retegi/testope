@@ -217,45 +217,6 @@ class TopicProgressView(LoginRequiredMixin, ListView):
         progresos = []
 
         for tema in temas:
-            preguntas = Test.objects.filter(topic=tema).order_by('number')
-            total = preguntas.count()
-            pregunta_numbers = preguntas.values_list('number', flat=True)
-
-            respuestas_usuario = UserAnswer.objects.filter(
-                user=user,
-                ope=tema.ope,
-                number__in=pregunta_numbers
-            ).order_by('number')
-
-            aprendidas = respuestas_usuario.filter(answerProgresionCorrect__gte=4).count()
-
-            progresos.append({
-                'tema': tema,
-                'total': total,
-                'aprendidas': aprendidas,
-                'porcentaje': round((aprendidas / total) * 100) if total > 0 else 0,
-                'detalles': respuestas_usuario  # para usar igual que en preguntas.html
-            })
-
-        context['progresos'] = progresos
-        context['ope'] = Ope.objects.get(id=self.kwargs['ope_id'])
-        return context
-
-    model = Topic
-    template_name = 'home/my_ope_topics_progress.html'
-    context_object_name = 'temas'
-
-    def get_queryset(self):
-        ope_id = self.kwargs['ope_id']
-        return Topic.objects.filter(ope_id=ope_id).order_by('number')
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        user = self.request.user
-        temas = context['temas']
-        progresos = []
-
-        for tema in temas:
             preguntas = Test.objects.filter(topic=tema)
             total = preguntas.count()
             pregunta_ids = preguntas.values_list('id', flat=True)

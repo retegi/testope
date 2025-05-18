@@ -26,18 +26,18 @@
 
 <!--aca termina el carousel-->
 <a href="#" style="text-decoration:none;"><div class="container bg-testope">
-  <!--<div class="row">
+  <div class="row">
     <div class="col-12 text-white p-3 text-center">
       Pásate a <b>PREMIUM</b> para seguir donde lo dejaste, tengas acceso al 100% de aprendizaje, y la inteligencia artificial gestione tu aprendizaje
     </div>
-  </div>-->
+  </div>
 </div></a>
 <div class="container my-1" style="background:url('{% static "img/testope-cabecera.png" %}');background-size:100%;height:270px;">
 
 </div>
 <div class="container">
 <div class="w-100 text-center">
-  <h1 class="">¡Comienza tu OPE!</h1>
+  <h1 class="">OPEs vigentes</h1>
 </div>
   <div class="row">
     <form>
@@ -80,11 +80,55 @@
   </div>
 </div>
 
+<!--aca comienza un parrafo-->
 
+<div class="container mt-5">
+  <div class="row">
+
+    <p class="display-6" style="text-align: center;">
+      {% trans '¡Bienvenido a TestOPE! Tu plataforma ideal para preparar oposiciones. Ofrecemos una experiencia de aprendizaje cómoda, amena y eficiente, diseñada para ayudarte a alcanzar tus metas. Conéctate con otros aspirantes, comparte experiencias y accede a recursos exclusivos. Únete a nuestra comunidad y comienza tu camino hacia el éxito hoy mismo. ¡Prepárate con TestOsakidetza!' %}
+    </p>
+
+  </div>
+</div>
+<br>
+<!--aca termina el parrafo-->
+
+<!--boton para registrarce-->
+<div class="text-center mt-5 mb-5 ">
+  <a href="{% url 'account_signup' %}"><button class="btn text-white"
+      style="background-color: #250f64;">{% trans 'Registrate' %}</button></a>
+</div>
+
+<!-- aca termina el  boton-->
+
+
+
+<!--aca comienza el numero de personas haciendoo test-->
+<div>
+
+  <p class="display-5 text-center" style="margin-top: 80px;">
+    <b style="color:#250f64; font-size: 2em;" id="dynamic-number">{{ countUsersLearning }}</b>
+    <br><b>{% trans 'USUARIOS HACIENDO TEST' %}</b>
+  </p>
+
+</div>
+
+<div class="container-fluid" style="background-color:lime;">
+
+  <p class="display-5 text-center m-5" style="margin-top: 80px;">
+    <b style="color:#250f64">{{ countUsersRegistered }}<br>{% trans 'USUARIOS REGISTRADOS' %}</b>
+  </p>
+
+</div>
+<!--aca termina el div de personas  haciendo test-->
+
+<!---aca inicia el div de personas que hacen donativos-->
 
 <div class="text-center display-5" style="margin-top: 90px; color: #250f64;">
 
-
+  <p><b>{% trans 'Último Donativo' %}</b><br>Maria Aguilar <br>(Donostia)</p>
+  <!--aca inicia l boton de donativos-->
   <div class="text-center mt-5 mb-5 " style="padding-top: 60px; padding-bottom: 30px;">
     <a href="https://www.paypal.com/donate/?hosted_button_id=REM3EZBPZBPMW"><button class="btn"
         style="background-color: pink;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
