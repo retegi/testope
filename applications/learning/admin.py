@@ -15,7 +15,7 @@ admin.site.register(Topic,TopicAdmin)
 
 
 class TestAdmin(admin.ModelAdmin):
-    list_display = ("number","topic", "question", "aAnswer", "bAnswer", "cAnswer", "dAnswer", "correctAnswer")
+    list_display = ("id", "number","topic", "question", "aAnswer", "bAnswer", "cAnswer", "dAnswer", "correctAnswer")
     list_filter = ('ope',)
 admin.site.register(Test,TestAdmin)
 
