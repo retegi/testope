@@ -37,7 +37,7 @@
 </div>
 <div class="container">
 <div class="w-100 text-center">
-  <h1 class="">¡Comienza tu OPE!</h1>
+  <h3 class=""><i class="test-secondary">¡Prepara tu OPE para conseguir un puesto en el servicio público!</i></h3>
 </div>
   <div class="row">
     <form>
@@ -57,25 +57,28 @@
 <div class="container">
   <div class="row">
     {% for dato in ope %}
+    {% if dato.published %}
       <div class="card" style="width: 18rem;">
         <!--<img src="..." class="card-img-top" alt="...">-->
         <div class="card-body">
-          <h5 class="card-title text-testope">{{ dato.name }}</h5>
+          <a href="{% url 'learning_app:my_ope_topics' dato.id %}" style="text-decoration:none;"><h5 class="card-title text-testope">{{ dato.name }}</h5></a>
+          <h5 class="card-title text-dark">{{ dato.entity }}</h5>
           <label class="">{{ dato.locality }}</label>,
           <label class="">{{ dato.province }}</label>
           <a href="{{ dato.urlOpe }}" target="_blank" class="btn bg-secondary text-white mt-1 w-100">Información oficial</a>
-          <a href="{% url 'learning_app:my_ope_topics' dato.id %}" class="btn bg-testope text-white mt-1 w-100 py-3">Comenzar</a>
+          <a href="{% url 'learning_app:my_ope_topics' dato.id %}" class="btn bg-testope text-dark mt-1 w-100 py-3">Comenzar</a>
 
           <!-- Formulario para enviar POST -->
           <form action="{% url 'learning_app:add_to_my_learning' dato.id %}" method="post">
               {% csrf_token %}
-              <button type="submit" class="btn bg-testope text-white mt-1 w-100 py-3">
+              <button type="submit" class="btn bg-testope text-dark mt-1 w-100 py-3">
                   Añadir a mi aprendizaje
               </button>
           </form>
          
         </div>
       </div>
+      {% endif %}
     {% endfor %}
   </div>
 </div>

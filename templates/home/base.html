@@ -85,6 +85,7 @@
   }
 
 
+
 </style>
 
 
@@ -141,12 +142,12 @@
   
       <!-- Menú Mi aprendizaje -->
       <div class="dropdown">
-        <a class="btn text-white bg-testope rounded-pill text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">
+        <a class="btn text-dark bg-testope rounded-pill text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">
           Mi aprendizaje
         </a>
         <ul class="dropdown-menu">
           {% for myLearning in myLearning %}
-          <li><a href="#" class="dropdown-item"><button class="btn">{{ myLearning.ope }}</button></a></li>
+          <li><a href="{% url 'learning_app:my_ope_topics' myLearning.id %}" class="dropdown-item"><button class="btn">{{ myLearning.ope }}</button></a></li>
           {% endfor %}
           <li><button class="btn bg-light w-100">Ver todos</button></li>
         </ul>
@@ -156,7 +157,7 @@
       <div class="col-md-3 text-end">
         {% if user.is_authenticated %}
         <div class="dropdown">
-          <a class="btn text-white bg-testope rounded-pill text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <a class="btn text-dark bg-testope rounded-pill text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">
             {{ user.username }}
           </a>
           <ul class="dropdown-menu">

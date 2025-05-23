@@ -18,6 +18,7 @@ class Ope(models.Model):
     shortDescription = models.TextField(max_length=500, verbose_name="Descripción breve", null=True, blank=True)
     longDescription = models.TextField(max_length=10000, verbose_name="Descripción completa", null=True, blank=True)
     urlOpe = models.URLField(max_length=1000, verbose_name="Enlace de la Ope", null=True, blank=True)
+    published = models.BooleanField(default=False, null=True, blank=True)
 
     def __str__(self):
         return self.name

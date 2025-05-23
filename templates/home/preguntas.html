@@ -60,7 +60,7 @@
 
 
         
-            <a href="{% url 'home_app:home' %}" class="" style="position:fixed;">
+            <a href="{% url 'learning_app:my_ope_topics' ope.id %}" class="" style="position:fixed;">
                 <button class="btn bg-light">Volver</button>
             </a>
 
@@ -82,7 +82,7 @@
             </div>
 
   <!-- Formulario para enviar la respuesta -->
-<form id="answerForm" method="POST" action="{% url 'learning_app:submit_answer' ope.id topic.id test.id %}">
+<form id="answerForm" method="POST" action="{% url 'learning_app:submit_answer' ope.id topic.id test.number %}">
     {% csrf_token %}
     <input type="hidden" name="respuesta" id="userAnswerInput">
 
@@ -179,10 +179,10 @@
     {% for ua in questionList %}
         <div class="d-inline-block rounded-circle text-center me-1"
             style="width: 24px; height: 24px; line-height: 24px; background-color:
-            {% if ua.answerProgresionCorrect == 4 %}#1D7BAD
-            {% elif ua.answerProgresionCorrect == 3 %}#333
-            {% elif ua.answerProgresionCorrect == 2 %}#777
-            {% elif ua.answerProgresionCorrect == 1 %}#aaa
+            {% if ua.answerProgresionCorrect >= 4 %}green
+                            {% elif ua.answerProgresionCorrect == 3 %}#999
+                            {% elif ua.answerProgresionCorrect == 2 %}#bbb
+                            {% elif ua.answerProgresionCorrect == 1 %}#ddd
             {% else %}white
             {% endif %};
             color: black;">

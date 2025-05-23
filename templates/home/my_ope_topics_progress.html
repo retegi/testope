@@ -4,7 +4,7 @@
 
 {% block head %}
   <meta name="google-adsense-account" content="ca-pub-1565972943494658">
-  <title>TestOPE - Web</title>
+  <title>TestOPE - Progreso por temas</title>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM6GBKCS3R"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -17,42 +17,63 @@
 {% block contenido %}
 <div class="container mt-5">
   <div class="text-center mb-5">
-    <h2 class="text-primary">Temas de la OPE: {{ ope.name }}</h2>
+    <h2 class="text-testope">Temas de la OPE: {{ ope.name }}</h2>
   </div>
 
   {% for prog in progresos %}
     <div class="card mb-4 shadow-sm">
       <div class="card-body">
         <h4 class="card-title">{{ prog.tema.number }}. {{ prog.tema.name }}</h4>
-        <p class="card-text">
+        <p><strong>Rango de preguntas:</strong>
+       {% if prog.first_number and prog.last_number %}
+         {{ prog.first_number }} - {{ prog.last_number }}
+       {% else %}
+         Sin preguntas asignadas
+       {% endif %}
+    </p>
+        <p class="card-text mb-2">
           <strong>Progreso:</strong> {{ prog.aprendidas }} / {{ prog.total }} preguntas aprendidas 
           (<span class="text-success">{{ prog.porcentaje }}%</span>)
         </p>
 
-        <a href="{% url 'learning_app:start_test' ope.id prog.tema.id %}" class="btn btn-sm btn-primary mb-3">
+        <!-- Barra de progreso -->
+<div class="progress mb-3" style="height: 20px;">
+  <div class="progress-bar bg-success" role="progressbar"
+       style="width: {{ prog.porcentaje }}%;" aria-valuenow="{{ prog.porcentaje }}"
+       aria-valuemin="0" aria-valuemax="100">
+    {{ prog.porcentaje }}%
+  </div>
+</div>
+{% if prog.porcentaje == 100 %}
+  <span class="badge bg-success">✅ Tema completado</span>
+{% endif %}
+
+        <a href="{% url 'learning_app:start_test' ope.id prog.tema.id %}" class="btn btn-sm bg-testope mb-3">
           Estudiar este tema
         </a>
 
-        <!-- Panel de progreso visual -->
-        <div class="p-3 bg-light rounded">
-          <h6 class="mb-3">Progreso pregunta por pregunta</h6>
+        <!-- Visualización pregunta por pregunta -->
+        <div class="p-3 bg-light rounded border">
+          <h6 class="mb-3">Progreso pregunta por pregunta:</h6>
 
           {% if prog.detalles %}
-            {% for ua in prog.detalles %}
-              <div class="d-inline-block rounded-circle text-center me-1 mb-1"
-                title="Correctas: {{ ua.correctAnswerCounterTotal }} | Incorrectas: {{ ua.incorrectAnswerCounterTotal }}"
-                style="width: 28px; height: 28px; line-height: 28px; font-size: 14px;
-                       background-color:
-                       {% if ua.answerProgresionCorrect >= 4 %}#1D7BAD
-                       {% elif ua.answerProgresionCorrect == 3 %}#555
-                       {% elif ua.answerProgresionCorrect == 2 %}#b0abde
-                       {% elif ua.answerProgresionCorrect == 1 %}#e1dfff
-                       {% else %}#ffffff{% endif %};
-                       color: {% if ua.answerProgresionCorrect >= 1 %}white{% else %}black{% endif %};
-                       border: 1px solid #ccc;">
-                {{ ua.number }}
-              </div>
-            {% endfor %}
+            <div class="d-flex flex-wrap">
+              {% for ua in prog.detalles %}
+                <div class="d-inline-block rounded-circle text-center me-1 mb-1"
+                     title="Correctas: {{ ua.correctAnswerCounterTotal }} | Incorrectas: {{ ua.incorrectAnswerCounterTotal }}"
+                     style="width: 28px; height: 28px; line-height: 28px; font-size: 14px;
+                            background-color:
+                            {% if ua.answerProgresionCorrect >= 4 %}green
+                            {% elif ua.answerProgresionCorrect == 3 %}#999
+                            {% elif ua.answerProgresionCorrect == 2 %}#bbb
+                            {% elif ua.answerProgresionCorrect == 1 %}#ddd
+                            {% else %}#ffffff{% endif %};
+                            color: {% if ua.answerProgresionCorrect >= 1 %}white{% else %}black{% endif %};
+                            border: 1px solid #ccc;">
+                  {{ ua.number }}
+                </div>
+              {% endfor %}
+            </div>
           {% else %}
             <p class="text-muted">Aún no has comenzado este tema.</p>
           {% endif %}

@@ -10,12 +10,12 @@ admin.site.register(Ope,TestOpeAdmin)
 
 
 class TopicAdmin(admin.ModelAdmin):
-    list_display = ("id","name","ope")
+    list_display = ("number","name","ope")
 admin.site.register(Topic,TopicAdmin)
 
 
 class TestAdmin(admin.ModelAdmin):
-    list_display = ("id", "number","topic", "question", "aAnswer", "bAnswer", "cAnswer", "dAnswer", "correctAnswer")
+    list_display = ("number","topic", "question", "aAnswer", "bAnswer", "cAnswer", "dAnswer", "correctAnswer")
     list_filter = ('ope',)
 admin.site.register(Test,TestAdmin)
 

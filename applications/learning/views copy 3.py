@@ -227,22 +227,13 @@ class TopicProgressView(LoginRequiredMixin, ListView):
 
             aprendidas = respuestas_usuario.filter(answerProgresionCorrect__gte=4).count()
 
-            if pregunta_numbers:
-                first_number = min(pregunta_numbers)
-                last_number = max(pregunta_numbers)
-            else:
-                first_number = last_number = None
-
             progresos.append({
                 'tema': tema,
                 'total': total,
                 'aprendidas': aprendidas,
                 'porcentaje': round((aprendidas / total) * 100) if total > 0 else 0,
-                'detalles': respuestas_usuario,
-                'first_number': first_number,
-                'last_number': last_number,
+                'detalles': respuestas_usuario
             })
-
 
         context['progresos'] = progresos
         context['ope'] = get_object_or_404(Ope, id=self.kwargs['ope_id'])

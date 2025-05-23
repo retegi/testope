@@ -14,7 +14,9 @@ urlpatterns = [
     path('ope/<int:ope_id>/topic/<int:topic_id>/comenzar/', StartTestView.as_view(), name='start_test'),
 
     # Enviar respuesta para una pregunta de un test
-    path('ope/<int:ope_id>/topic/<int:topic_id>/respuesta/<int:test_id>/', SubmitAnswerView.as_view(), name='submit_answer'),
+    #path('ope/<int:ope_id>/topic/<int:topic_id>/respuesta/<int:test_id>/', SubmitAnswerView.as_view(), name='submit_answer'),
+    path('ope/<int:ope_id>/topic/<int:topic_id>/respuesta/numero/<int:number>/', SubmitAnswerView.as_view(), name='submit_answer'),
+
 
     # Finalización del test en un topic concreto
     path('ope/<int:ope_id>/topic/<int:topic_id>/completado/', TestCompletedView.as_view(), name='test_completed'),
