@@ -38,11 +38,11 @@ class Test(models.Model):
     ope = models.ForeignKey(Ope, on_delete=models.CASCADE, null=True, blank=True)
     topic = models.ForeignKey(Topic, max_length=200, blank=True, null=True, on_delete=models.CASCADE)
     number = models.IntegerField(blank=True, null=True)
-    question = models.TextField(max_length=550, blank=True, null=True)
-    aAnswer = models.CharField(max_length=550, blank=True, null=True)
-    bAnswer = models.CharField(max_length=550, blank=True, null=True)
-    cAnswer = models.CharField(max_length=550, blank=True, null=True)
-    dAnswer = models.CharField(max_length=550, blank=True, null=True)
+    question = models.TextField(max_length=750, blank=True, null=True)
+    aAnswer = models.CharField(max_length=750, blank=True, null=True)
+    bAnswer = models.CharField(max_length=750, blank=True, null=True)
+    cAnswer = models.CharField(max_length=750, blank=True, null=True)
+    dAnswer = models.CharField(max_length=750, blank=True, null=True)
     correctAnswer = models.CharField(choices=correctAnswer,max_length=15, blank=True, null=True)
     def __str__(self):
         return self.question
