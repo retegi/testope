@@ -19,6 +19,7 @@ class Ope(models.Model):
     longDescription = models.TextField(max_length=10000, verbose_name="Descripción completa", null=True, blank=True)
     urlOpe = models.URLField(max_length=1000, verbose_name="Enlace de la Ope", null=True, blank=True)
     published = models.BooleanField(default=False, null=True, blank=True)
+    language = models.CharField(max_length=15, default='ES', null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -27,7 +28,7 @@ class Ope(models.Model):
 
 class Topic(models.Model):
     number = models.IntegerField(blank=True, null=True)
-    ope = models.ForeignKey(Ope, on_delete=models.CASCADE, blank=True, null=True)
+    ope = models.ForeignKey(Ope, on_delete=models.CASCADE, blank=True, null=True, related_name='topic')
     name = models.CharField(max_length=300, blank=True, null=True)
     def __str__(self):
         return self.name

@@ -12,6 +12,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import ContactForm  # Importa el formulario
 
+from django.db.models import Count
 
 
 
@@ -22,13 +23,22 @@ class HomePageView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['user']=self.request.user
-        context['myLearning']=MyLearning.objects.filter(user=self.request.user.id)
-        #context['category']=Category.objects.all()
-        context['countUsersRegistered']=13603
-        context['countUsersLearning']=539
-        context['ope']=Ope.objects.all()
-        context['locality']=Ope.objects.all().distinct()
+        context['user'] = self.request.user
+        context['myLearning'] = MyLearning.objects.filter(user=self.request.user.id)
+        context['countUsersRegistered'] = 13603
+        context['countUsersLearning'] = 539
+
+        opes = Ope.objects.filter(published=True).annotate(
+            num_topics=Count('topic', distinct=True),
+            num_tests=Count('test', distinct=True)
+        )
+        context['ope'] = opes
+
+        # Localidades únicas sin valores None
+        localities = Ope.objects.values_list('locality', flat=True)
+        localities = [loc for loc in localities if loc is not None]
+        context['locality'] = sorted(set(localities))
+
         return context
     
     def post(self, request, *args, **kwargs):

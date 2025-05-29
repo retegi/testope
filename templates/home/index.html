@@ -44,9 +44,9 @@
       <div class="form-group">
         <label for="exampleFormControlSelect1">Filtrar OPE por localidad</label>
         <select class="form-control" id="exampleFormControlSelect1">
-          {% for dato in locality %}
-          <option>{{ dato.locality }}</option>
-          {% endfor %}
+          {% for loc in locality %}
+  <p>{{ loc.locality }} ({{ loc.province }})</p>
+{% endfor %}
           <option>Ver todos</option>
         </select>
       </div>
@@ -58,24 +58,35 @@
   <div class="row">
     {% for dato in ope %}
     {% if dato.published %}
-      <div class="card" style="width: 18rem;">
-        <!--<img src="..." class="card-img-top" alt="...">-->
-        <div class="card-body">
-          <a href="{% url 'learning_app:my_ope_topics' dato.id %}" style="text-decoration:none;"><h5 class="card-title text-testope">{{ dato.name }}</h5></a>
-          <h5 class="card-title text-dark">{{ dato.entity }}</h5>
-          <label class="">{{ dato.locality }}</label>,
-          <label class="">{{ dato.province }}</label>
-          <a href="{{ dato.urlOpe }}" target="_blank" class="btn bg-secondary text-white mt-1 w-100">Información oficial</a>
-          <a href="{% url 'learning_app:my_ope_topics' dato.id %}" class="btn bg-testope text-dark mt-1 w-100 py-3">Comenzar</a>
+      <div class="col-lg-3 col-md-6 col-sm-12" style="">
+        <div class="card">
+          <!--<img src="..." class="card-img-top" alt="...">-->
+          <div class="card-body">
+            <div class="" style="min-height:80px;">
+            <a href="{% url 'learning_app:my_ope_topics' dato.id %}" style="text-decoration:none;"><h5 class="card-title text-testope">{{ dato.name }}</h5></a>
+            </div>
+            <h5 class="card-title text-dark">{{ dato.entity }}</h5>
+            <label class="">{{ dato.locality }}</label>,
+            <label class="">{{ dato.province }}</label><br>
+            <div class="container mt-1 mb-1">
+              <div class="row">
+              <label class="btn btn-sm bg-light col-4">Idioma:<br><b>{{ dato.language }}</b></label>
+              <label class="btn btn-sm bg-light col-4">Temas:<br><b>{{ dato.num_topics }}</b></label>
+              <label class="btn btn-sm bg-light col-4">Preguntas:<br><b>{{ dato.num_tests }}</b></label>
+              </div>
+            </div>
+            <a href="{{ dato.urlOpe }}" target="_blank" class="btn bg-secondary text-white mt-1 w-100">Información oficial</a>
+            <a href="{% url 'learning_app:my_ope_topics' dato.id %}" class="btn bg-testope text-dark mt-1 w-100 py-3">Comenzar</a>
 
-          <!-- Formulario para enviar POST -->
-          <form action="{% url 'learning_app:add_to_my_learning' dato.id %}" method="post">
-              {% csrf_token %}
-              <button type="submit" class="btn bg-testope text-dark mt-1 w-100 py-3">
-                  Añadir a mi aprendizaje
-              </button>
-          </form>
-         
+            <!-- Formulario para enviar POST -->
+            <form action="{% url 'learning_app:add_to_my_learning' dato.id %}" method="post">
+                {% csrf_token %}
+                <button type="submit" class="btn bg-testope text-dark mt-1 w-100 py-3">
+                    Añadir a mi aprendizaje
+                </button>
+            </form>
+          
+          </div>
         </div>
       </div>
       {% endif %}
