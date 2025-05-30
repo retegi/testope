@@ -71,7 +71,6 @@ SOCIALACCOUNT_PROVIDERS = {
         'OAUTH_PKCE_ENABLED': True,
     }
 }
-
 SITE_ID = 1
 
 MIDDLEWARE = [
@@ -88,6 +87,7 @@ MIDDLEWARE = [
 
 
 AUTHENTICATION_BACKENDS = [
+    ...
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
