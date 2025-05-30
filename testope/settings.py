@@ -41,15 +41,15 @@ INSTALLED_APPS = [
     #recaptcha
     'django_recaptcha',
 
-
+    # Allauth UI
+    'allauth_ui',
     # Django-Allauth
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google', 
 
-    # Allauth UI
-    'allauth_ui',
+    
     'widget_tweaks',
     'slippers',
 
@@ -58,6 +58,8 @@ INSTALLED_APPS = [
     'normalize',
     'channels',
 ]
+
+ALLAUTH_UI_THEME = "light"
 
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
@@ -87,7 +89,6 @@ MIDDLEWARE = [
 
 
 AUTHENTICATION_BACKENDS = [
-    ...
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
