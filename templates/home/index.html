@@ -37,16 +37,16 @@
 </div>
 <div class="container">
 <div class="w-100 text-center">
-  <h3 class=""><i class="test-secondary">¡Prepara tu OPE para conseguir un puesto en el servicio público!</i></h3>
+  <h3 class=""><i class="test-secondary">{% trans '¡Prepara tu OPE para conseguir un puesto en el servicio público!' %}</i></h3>
 </div>
   <div class="row">
     <form>
       <div class="form-group">
-        <label for="exampleFormControlSelect1">Filtrar OPE por localidad</label>
+        <label for="exampleFormControlSelect1">{% trans 'Filtrar OPE por localidad' %}</label>
         <select class="form-control" id="exampleFormControlSelect1">
           {% for loc in locality %}
-  <p>{{ loc.locality }} ({{ loc.province }})</p>
-{% endfor %}
+        <p>{{ loc.locality }} ({{ loc.province }})</p>
+        {% endfor %}
           <option>Ver todos</option>
         </select>
       </div>
