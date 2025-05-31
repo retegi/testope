@@ -147,7 +147,7 @@
         </a>
         <ul class="dropdown-menu">
           {% for myLearning in myLearning %}
-          <li><a href="{% url 'learning_app:my_ope_topics' myLearning.id %}" class="dropdown-item"><button class="btn">{{ myLearning.ope }}</button></a></li>
+          <li><a href="{% url 'learning_app:my_ope_topics' myLearning.ope.id %}" class="dropdown-item"><button class="btn">{{ myLearning.ope }}</button></a></li>
           {% endfor %}
           <li><button class="btn bg-light w-100">Ver todos</button></li>
         </ul>
